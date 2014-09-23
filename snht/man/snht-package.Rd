@@ -1,6 +1,5 @@
 \name{snht-package}
 \alias{snht-package}
-\alias{snht}
 \docType{package}
 \title{
 Robust and Non-Robust Standard Normal Homogeneity Test

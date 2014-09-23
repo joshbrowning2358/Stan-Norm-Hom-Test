@@ -1,0 +1,103 @@
+
+R version 3.1.1 (2014-07-10) -- "Sock it to Me"
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "snht"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('snht')
+Loading required package: Rcpp
+Loading required package: RcppArmadillo
+Loading required package: inline
+
+Attaching package: ‘inline’
+
+The following object is masked from ‘package:Rcpp’:
+
+    registerPlugin
+
+Loading required package: MASS
+Loading required package: zoo
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+Loading required package: plyr
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("snht")
+> ### * snht
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: snht
+> ### Title: Standard Normal Homogeneity Test
+> ### Aliases: snht robustSNHT robustSNHTunequal
+> ### Keywords: ~snht ~homogeneity
+> 
+> ### ** Examples
+> 
+> data = rnorm(1000)
+> brk = sample(1000, size=1)
+> data[1:brk] = data[1:brk]-2
+> out = snht( data, period=50, robust=FALSE, useC=FALSE )
+> summary(out)
+     score            rightMean          leftMean      
+ Min.   : 0.00000   Min.   :-2.3839   Min.   :-2.3839  
+ 1st Qu.: 0.05759   1st Qu.:-2.0660   1st Qu.:-2.0660  
+ Median : 0.38826   Median :-1.9823   Median :-1.9823  
+ Mean   : 3.74989   Mean   :-1.7089   Mean   :-1.6102  
+ 3rd Qu.: 1.53400   3rd Qu.:-1.8634   3rd Qu.:-1.8162  
+ Max.   :98.94641   Max.   : 0.1137   Max.   : 0.2296  
+> 
+> data = rnorm(1000)
+> time = 1:1000 + rnorm(1000)
+> brk = sample(1000, size=1)
+> data[1:brk] = data[1:brk]-2
+> out = snht( data, period=50, time=time, robust=FALSE, useC=FALSE )
+Warning in robustSNHTunequal(data = data, period = period, time = time,  :
+  Only integer values of time are used!  Rounding down.
+> summary(out)
+   Statistic           leftMean          rightMean             time    
+ Min.   :  0.0000   Min.   :-2.33220   Min.   :-2.33220   Min.   :  1  
+ 1st Qu.:  0.3125   1st Qu.:-2.06781   1st Qu.:-2.03550   1st Qu.:250  
+ Median :  1.8489   Median :-1.90967   Median :-1.88565   Median :500  
+ Mean   : 14.3145   Mean   :-1.33500   Mean   :-1.23898   Mean   :500  
+ 3rd Qu.:  5.4009   3rd Qu.:-0.01116   3rd Qu.:-0.01116   3rd Qu.:750  
+ Max.   :371.3847   Max.   : 0.24944   Max.   : 0.24944   Max.   :999  
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  1.376 0.012 1.425 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

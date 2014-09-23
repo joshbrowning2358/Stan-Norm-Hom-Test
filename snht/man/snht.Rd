@@ -37,7 +37,7 @@ Should the C++ implementation of the SNHT be used?  This algorithm is much faste
   \item{time}{
 Numeric vector specifying times for the observations.  If not supplied, it is assumed that each observation occurs on one time period.  If supplied, then the algorithm will create a new dataset with the same number of observations for each time unit by adding missing values.
 }
-  \item{estimator}
+  \item{estimator}{
 A custom function may be supplied to this function which computes estimates for the mean and standard deviation.  The function should only take one argument (a numeric vector of data) and should return a vector of length two: the estimated center and spread.  The huber function from MASS is implemented for the robust SNHT by default (along with some data quality checks).
 }
   \item{\dots}{
@@ -45,9 +45,9 @@ Additional arguments to pass to the robustSNHT function.
 }
 }
 \details{
-The SNHT works by calculating the mean of the data on the previous period and on the following period.  The test statistic at each observation is computed as 
-\deqn{\frac{N}{s_t} \left( (\bar{X}_{L,t}-\bar{X}_t)^2 + (\bar{X}_{R,t}-\bar{X}_t)^2 \right)}
-is computed where $\bar{X}_t$ is the mean of $\bar{X}_{L;t}$ and $\bar{X_R;t}$, and $s_t$ is the estimated standard deviation over the $N$ days prior and $N$ days following observation $t$. If there are not $N$ observations both before and after the current observation, no test is performed.
+The SNHT works by calculating the mean of the data on the previous period and on the following period.  The test statistic at each observation is then computed as described in Haimberger (2007).  Essentially, though, it just compares the means of these two periods and normalizes by the standard deviation.
+
+Note: if there are not enough observations both before and after the current observation, no test is performed.
 
 Large values of the test statistic suggests the presence of a changepoint.  Haimberger (see references) suggests values larger than 100 should be considered changepoints.
 }
@@ -71,14 +71,14 @@ Josh Browning (jbrownin@mines.edu)
 data = rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, robust=F, useC=F )
+out = snht( data, period=50, robust=FALSE, useC=FALSE )
 summary(out)
 
 data = rnorm(1000)
 time = 1:1000 + rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, time=time, robust=F, useC=F )
+out = snht( data, period=50, time=time, robust=FALSE, useC=FALSE )
 summary(out)
 }
 \keyword{ ~snht }
