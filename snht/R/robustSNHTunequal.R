@@ -28,7 +28,8 @@ function(data, period, time, estimator=NULL){
   obsPerDay$toBind = maxObs - obsPerDay[,2]
   #Determine which times are missing, and repeat the appropriate amount.  Then, bind on.
   toBind = rep( obsPerDay$time, times=obsPerDay$toBind )
-  d = rbind(d, data.frame(data=NA, time=toBind, realObs=0) )
+  if(length(toBind)>0)
+    d = rbind(d, data.frame(data=NA, time=toBind, realObs=0) )
   d = d[order(d$time),]
   
   if(is.null(estimator))
