@@ -64,8 +64,7 @@ statistics. Journal of Climate, 20(7): 1377-1403, 2007.
 Josh Browning (jbrownin@mines.edu)
 }
 \seealso{
-\code{\link{huber}}, 
-\code{\link{robustSNHT}}
+\code{\link{huber}}
 }
 \examples{
 data = rnorm(1000)
