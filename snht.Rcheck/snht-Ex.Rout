@@ -1,7 +1,7 @@
 
-R version 3.1.1 (2014-07-10) -- "Sock it to Me"
+R version 3.1.0 (2014-04-10) -- "Spring Dance"
 Copyright (C) 2014 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -20,23 +20,24 @@ Type 'q()' to quit R.
 > pkgname <- "snht"
 > source(file.path(R.home("share"), "R", "examples-header.R"))
 > options(warn = 1)
+> options(pager = "console")
 > library('snht')
 Loading required package: Rcpp
 Loading required package: RcppArmadillo
 Loading required package: inline
 
-Attaching package: ‘inline’
+Attaching package: 'inline'
 
-The following object is masked from ‘package:Rcpp’:
+The following object is masked from 'package:Rcpp':
 
     registerPlugin
 
 Loading required package: MASS
 Loading required package: zoo
 
-Attaching package: ‘zoo’
+Attaching package: 'zoo'
 
-The following objects are masked from ‘package:base’:
+The following objects are masked from 'package:base':
 
     as.Date, as.Date.numeric
 
@@ -59,7 +60,7 @@ Loading required package: plyr
 > data = rnorm(1000)
 > brk = sample(1000, size=1)
 > data[1:brk] = data[1:brk]-2
-> out = snht( data, period=50, robust=FALSE, useC=FALSE )
+> out = snht( data, period=50, robust=FALSE )
 > summary(out)
      score            rightMean          leftMean      
  Min.   : 0.00000   Min.   :-2.3839   Min.   :-2.3839  
@@ -73,7 +74,7 @@ Loading required package: plyr
 > time = 1:1000 + rnorm(1000)
 > brk = sample(1000, size=1)
 > data[1:brk] = data[1:brk]-2
-> out = snht( data, period=50, time=time, robust=FALSE, useC=FALSE )
+> out = snht( data, period=50, time=time, robust=FALSE )
 Warning in robustSNHTunequal(data = data, period = period, time = time,  :
   Only integer values of time are used!  Rounding down.
 > summary(out)
@@ -91,7 +92,7 @@ Warning in robustSNHTunequal(data = data, period = period, time = time,  :
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.376 0.012 1.425 0 0 
+Time elapsed:  1.39 0.1 6.75 NA NA 
 > grDevices::dev.off()
 null device 
           1 

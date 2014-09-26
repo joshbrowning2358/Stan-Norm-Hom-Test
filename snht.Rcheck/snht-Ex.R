@@ -1,6 +1,7 @@
 pkgname <- "snht"
 source(file.path(R.home("share"), "R", "examples-header.R"))
 options(warn = 1)
+options(pager = "console")
 library('snht')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
@@ -20,14 +21,14 @@ flush(stderr()); flush(stdout())
 data = rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, robust=FALSE, useC=FALSE )
+out = snht( data, period=50, robust=FALSE )
 summary(out)
 
 data = rnorm(1000)
 time = 1:1000 + rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, time=time, robust=FALSE, useC=FALSE )
+out = snht( data, period=50, time=time, robust=FALSE )
 summary(out)
 
 

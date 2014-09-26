@@ -9,7 +9,7 @@ Standard Normal Homogeneity Test
 This function performs a standard normal homogeneity test on the data supplied.  This test searches the data for potential changepoints.
 }
 \usage{
-snht(data, period, robust = F, useC = F, time = NULL, ...)
+snht(data, period, robust = F, time = NULL, ...)
 robustSNHT(data, period, estimator = function(x, minObs = 5) {
     x = x[!is.na(x)]
     if (length(x) < minObs) 
@@ -30,9 +30,6 @@ The SNHT works by calculating the mean of the data on the previous period observ
 }
   \item{robust}{
 Flag indicating whether or not robust estimators should be used.  If T, then Huber's robust estimator for the mean and variance will be used (see ?MASS::huber).
-}
-  \item{useC}{
-Should the C++ implementation of the SNHT be used?  This algorithm is much faster than the R equivalent, but is currently only implemented in cases where the data are equally spaced and the non-robust mean and sd are used.
 }
   \item{time}{
 Numeric vector specifying times for the observations.  If not supplied, it is assumed that each observation occurs on one time period.  If supplied, then the algorithm will create a new dataset with the same number of observations for each time unit by adding missing values.
@@ -70,14 +67,14 @@ Josh Browning (jbrownin@mines.edu)
 data = rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, robust=FALSE, useC=FALSE )
+out = snht( data, period=50, robust=FALSE )
 summary(out)
 
 data = rnorm(1000)
 time = 1:1000 + rnorm(1000)
 brk = sample(1000, size=1)
 data[1:brk] = data[1:brk]-2
-out = snht( data, period=50, time=time, robust=FALSE, useC=FALSE )
+out = snht( data, period=50, time=time, robust=FALSE )
 summary(out)
 }
 \keyword{ ~snht }
