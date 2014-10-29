@@ -60,7 +60,7 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=F, ...){
   #Compute snht statistics
   statistics = apply(diffs[,-1], 2, snht, period=period, time=diffs[,1], ...)
   avgDiff = do.call("cbind", lapply(statistics, function(x) x$rightMean-x$leftMean ) )
-  statistics = do.call("cbind", lapply(statistics, function(x) x$Statistic))
+  statistics = do.call("cbind", lapply(statistics, function(x) x$score))
   if(returnStat)
     return(statistics)
 

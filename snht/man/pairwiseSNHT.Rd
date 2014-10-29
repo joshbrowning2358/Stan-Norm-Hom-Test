@@ -7,7 +7,7 @@ Pairwise Standard Normal Homogeneity Test
 This function performs a pairwise standard normal homogeneity test on the data supplied, as described in Menne & Williams (2009).
 }
 \usage{
-pairwiseSNHT(data, dist, k, period, crit, returnStat, ...)
+pairwiseSNHT(data, dist, k, period, crit=100, returnStat=FALSE, ...)
 }
 \arguments{
   \item{data}{
