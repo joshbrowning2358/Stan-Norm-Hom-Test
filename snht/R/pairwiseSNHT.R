@@ -1,21 +1,3 @@
-library(snht)
-library(reshape)
-library(plyr)
-library(dplyr)
-
-setwd("~/Professional Files/Mines/SmartGeo/Queens/")
-load("Data/Cleaned_Data.RData")
-
-data = ground[ground$StationID %in% station$StationID[1:20],]
-data = data[,c("Value", "StationID")]
-colnames(data) = c("data", "location")
-data$location = factor(data$location, levels=unique(data$location) )
-dist = as.matrix(dist(station[,1:2]))[1:20,1:20]
-colnames(dist) = unique(data$location)
-rownames(dist) = unique(data$location)
-
-out = pairwiseSNHT(data, dist, k=5, period=60)
-
 pairwiseSNHT = function(data, dist, k, period, crit=100, returnStat=F, ...){
   #data quality checks
   stopifnot(is(data,"data.frame"))
