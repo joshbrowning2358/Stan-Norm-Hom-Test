@@ -49,7 +49,7 @@ Note: if there are not enough observations both before and after the current obs
 Large values of the test statistic suggests the presence of a changepoint.  Haimberger (see references) suggests values larger than 100 should be considered changepoints.
 }
 \value{
-Returns a data.frame, with columns Statistic, leftMean, and rightMean.  Statistic is the SNHT test statistic described above, and leftMean (rightMean) are the means to the left (right) of the current observation.
+Returns a data.frame, with columns score, leftMean, and rightMean.  Statistic is the SNHT test statistic described above, and leftMean (rightMean) are the means to the left (right) of the current observation.
 
 Additionally, if time is supplied, then time is returned on the output data.frame.  Note that new (missing) observations were introduced to the dataset to ensure the same number of observations occur per day.
 }

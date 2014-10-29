@@ -39,12 +39,12 @@ robustSNHT <- function(data, period
     #tukeyR also computes variances.  Variance of differences is sum of variances.
     #Original test stat has (N/2*(mu_L-mu)^2+N/2*(mu_R-mu)^2 )/sigma, but it assumes
     #N/2 observations on each side.  We must adjust for differing counts due to NA's:
-     Statistic= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
-          ((lN + rN)*sqrt((lN*lMeans[,2]^2+rN*rMeans[,2]^2/2)/(lN+rN)))
+     score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
+          sqrt((lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN))
     ,leftMean=lMeans[,1], rightMean=rMeans[,1])
   
   #Add zeros for rows skipped at beginning/end:
-  toBind = data.frame(Statistic=rep(0,period), leftMean=0, rightMean=0)
+  toBind = data.frame(score=rep(0,period), leftMean=0, rightMean=0)
   scores = rbind(toBind, scores, toBind)
   
   return(scores)

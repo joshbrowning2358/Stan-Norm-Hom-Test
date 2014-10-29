@@ -1,0 +1,62 @@
+\name{pairwiseSNHT}
+\title{
+Pairwise Standard Normal Homogeneity Test
+}
+\description{
+This function performs a pairwise standard normal homogeneity test on the data supplied, as described in Menne & Williams (2009).
+}
+\usage{
+pairwiseSNHT(data, dist, k, period, time=NULL, ...)
+}
+\arguments{
+  \item{data}{
+The data to be analyzed for changepoints.  It must be a data.frame and contain either two or three columns.  The mandatory columns are data and location, named as such.  The option column is time, and this argument will be passed to snht.
+}
+\item{dist}{
+  A distance matrix which provides the distance between location i and location j.  Rows and columns must be named with the locations in data.  Note that non-symmetric distances may be used.  In that case, neighbors for station i will be determined by the smallest values in the row of dist corresponding to i.
+}
+\item{k}{
+  How many of the nearest neighbors should be used to construct pairwise difference time series?  Note that more than k neighbors may be used if there are ties in the distances between locations.
+}
+  \item{period}{
+The SNHT works by calculating the mean of the data on the previous period observations and the following period observations.  Thus, this argument controls the window size for the test statistics.
+}
+  \item{time}{
+Numeric vector specifying times for the observations.  If not supplied, it is assumed that each observation occurs on one time period.  If supplied, then the algorithm will create a new dataset with the same number of observations for each time unit by adding missing values.
+}
+  \item{crit}{
+The critical value such that if the snht statistic is larger than crit, a changepoint is assumed to have occured.  Defaults to 100, as recommended in Haimberger (see references).
+}
+  \item{returnStat}{
+See return value.  If TRUE, the snht statistics for each time point and for each difference pair are returned.
+}
+  \item{\dots}{
+Additional arguments to pass to the snht function (such as robust or estimator).
+}
+}
+\details{
+The pairwise snht works with a set of time series.  For each time series, it's closest k neighbors are determined, and a time series of the difference between each of those time series is created.  The snht is then applied to each of these difference time series.  Changepoints in one time series can be detected by searching for large values of the test statistic across all difference time series for a particular location.
+
+The usefulness of the pairwise snht is that it removes any patterns in the data that could affect the basic snht.  For example, seasonal and linear trends that exist globally will be removed from the difference series, and thus changepoints are more easily detected.
+}
+\value{
+If returnStat is TRUE, the snht statistics for each time point and for each difference pair are returned.
+
+Otherwise, a named list is returned.  The first element, data, contains the homogenized data in the same format as the supplied data.  The second element, breaks, contains a data.frame where the first column is the location where a break occured, the second column is the time of the break, and the third column is the amount that data after the break was shifted by.
+}
+\references{
+L. Haimberger. Homogenization of radiosonde temperature time series using innovation
+statistics. Journal of Climate, 20(7): 1377-1403, 2007.
+
+Menne, M. J., & Williams Jr, C. N. (2009). Homogenization of temperature series via pairwise comparisons. Journal of Climate, 22(7), 1700-1717.
+}
+\author{
+Josh Browning (jbrownin@mines.edu)
+}
+\seealso{
+}
+\examples{
+}
+\keyword{ ~snht }
+\keyword{ ~homogeneity }
+\keyword{ ~pairwise }
