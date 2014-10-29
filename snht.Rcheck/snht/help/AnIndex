@@ -1,4 +1,5 @@
 snht-package	snht-package
+pairwiseSNHT	pairwiseSNHT
 robustSNHT	snht
 robustSNHTunequal	snht
 snht	snht

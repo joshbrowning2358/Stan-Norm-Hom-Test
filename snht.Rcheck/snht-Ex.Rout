@@ -1,7 +1,7 @@
 
-R version 3.1.0 (2014-04-10) -- "Spring Dance"
+R version 3.1.1 (2014-07-10) -- "Sock it to Me"
 Copyright (C) 2014 The R Foundation for Statistical Computing
-Platform: x86_64-w64-mingw32/x64 (64-bit)
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -20,24 +20,23 @@ Type 'q()' to quit R.
 > pkgname <- "snht"
 > source(file.path(R.home("share"), "R", "examples-header.R"))
 > options(warn = 1)
-> options(pager = "console")
 > library('snht')
 Loading required package: Rcpp
 Loading required package: RcppArmadillo
 Loading required package: inline
 
-Attaching package: 'inline'
+Attaching package: ‘inline’
 
-The following object is masked from 'package:Rcpp':
+The following object is masked from ‘package:Rcpp’:
 
     registerPlugin
 
 Loading required package: MASS
 Loading required package: zoo
 
-Attaching package: 'zoo'
+Attaching package: ‘zoo’
 
-The following objects are masked from 'package:base':
+The following objects are masked from ‘package:base’:
 
     as.Date, as.Date.numeric
 
@@ -78,13 +77,13 @@ Loading required package: plyr
 Warning in robustSNHTunequal(data = data, period = period, time = time,  :
   Only integer values of time are used!  Rounding down.
 > summary(out)
-   Statistic           leftMean          rightMean             time    
- Min.   :  0.0000   Min.   :-2.33220   Min.   :-2.33220   Min.   :  1  
- 1st Qu.:  0.3125   1st Qu.:-2.06781   1st Qu.:-2.03550   1st Qu.:250  
- Median :  1.8489   Median :-1.90967   Median :-1.88565   Median :500  
- Mean   : 14.3145   Mean   :-1.33500   Mean   :-1.23898   Mean   :500  
- 3rd Qu.:  5.4009   3rd Qu.:-0.01116   3rd Qu.:-0.01116   3rd Qu.:750  
- Max.   :371.3847   Max.   : 0.24944   Max.   : 0.24944   Max.   :999  
+     score             leftMean          rightMean             time    
+ Min.   : 0.00000   Min.   :-2.33220   Min.   :-2.33220   Min.   :  1  
+ 1st Qu.: 0.07899   1st Qu.:-2.06781   1st Qu.:-2.03550   1st Qu.:250  
+ Median : 0.46215   Median :-1.90967   Median :-1.88565   Median :500  
+ Mean   : 3.57023   Mean   :-1.33500   Mean   :-1.23898   Mean   :500  
+ 3rd Qu.: 1.35371   3rd Qu.:-0.01116   3rd Qu.:-0.01116   3rd Qu.:750  
+ Max.   :91.92529   Max.   : 0.24944   Max.   : 0.24944   Max.   :999  
 > 
 > 
 > 
@@ -92,7 +91,7 @@ Warning in robustSNHTunequal(data = data, period = period, time = time,  :
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.39 0.1 6.75 NA NA 
+Time elapsed:  0.844 0.02 0.902 0 0 
 > grDevices::dev.off()
 null device 
           1 

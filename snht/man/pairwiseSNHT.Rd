@@ -1,4 +1,5 @@
 \name{pairwiseSNHT}
+\alias{pairwiseSNHT}
 \title{
 Pairwise Standard Normal Homogeneity Test
 }
@@ -6,7 +7,7 @@ Pairwise Standard Normal Homogeneity Test
 This function performs a pairwise standard normal homogeneity test on the data supplied, as described in Menne & Williams (2009).
 }
 \usage{
-pairwiseSNHT(data, dist, k, period, time=NULL, ...)
+pairwiseSNHT(data, dist, k, period, crit, returnStat, ...)
 }
 \arguments{
   \item{data}{
@@ -21,9 +22,6 @@ The data to be analyzed for changepoints.  It must be a data.frame and contain e
   \item{period}{
 The SNHT works by calculating the mean of the data on the previous period observations and the following period observations.  Thus, this argument controls the window size for the test statistics.
 }
-  \item{time}{
-Numeric vector specifying times for the observations.  If not supplied, it is assumed that each observation occurs on one time period.  If supplied, then the algorithm will create a new dataset with the same number of observations for each time unit by adding missing values.
-}
   \item{crit}{
 The critical value such that if the snht statistic is larger than crit, a changepoint is assumed to have occured.  Defaults to 100, as recommended in Haimberger (see references).
 }
@@ -31,7 +29,7 @@ The critical value such that if the snht statistic is larger than crit, a change
 See return value.  If TRUE, the snht statistics for each time point and for each difference pair are returned.
 }
   \item{\dots}{
-Additional arguments to pass to the snht function (such as robust or estimator).
+Additional arguments to pass to the snht function (such as robust, time, or estimator).
 }
 }
 \details{
