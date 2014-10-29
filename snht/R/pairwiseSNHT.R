@@ -40,7 +40,7 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=F, ...){
       stop("All locations must have the same number of obs if time is not provided!
            May need to remove unused levels in data.")
     }
-    data$order = 1:nrow(data) #ensure original ordering is perserved
+    data$order = 1:nrow(data) #ensure original ordering is preserved
     data = ddply(data, "location", function(df){
       df = df[order(df$order),]
       df$time = 1:nrow(df)
