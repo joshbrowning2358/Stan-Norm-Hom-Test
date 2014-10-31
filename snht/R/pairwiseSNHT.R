@@ -1,4 +1,4 @@
-pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=F, ...){
+pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...){
   #data quality checks
   stopifnot(is(data,"data.frame"))
   if(ncol(data)==2)

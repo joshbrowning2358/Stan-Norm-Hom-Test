@@ -8,7 +8,7 @@
 * checking package namespace information ... OK
 * checking package dependencies ... NOTE
 Depends: includes the non-default packages:
-  ‘Rcpp’ ‘RcppArmadillo’ ‘inline’ ‘MASS’ ‘zoo’ ‘plyr’
+  ‘Rcpp’ ‘RcppArmadillo’ ‘inline’ ‘MASS’ ‘zoo’ ‘plyr’ ‘reshape’
 Adding so many packages to the search path is excessive and importing
 selectively is preferable.
 * checking if this is a source package ... OK
@@ -20,10 +20,7 @@ selectively is preferable.
 * checking whether package ‘snht’ can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
-* checking DESCRIPTION meta-information ... WARNING
-Non-standard license specification:
-  What license is it under?
-Standardizable: FALSE
+* checking DESCRIPTION meta-information ... OK
 * checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
@@ -38,7 +35,7 @@ Standardizable: FALSE
 * checking loading without being on the library search path ... OK
 * checking dependencies in R code ... NOTE
 Packages in Depends field not imported from:
-  ‘MASS’ ‘Rcpp’ ‘RcppArmadillo’ ‘inline’ ‘plyr’ ‘zoo’
+  ‘MASS’ ‘Rcpp’ ‘RcppArmadillo’ ‘inline’ ‘plyr’ ‘reshape’ ‘zoo’
   These packages need to be imported from (in the NAMESPACE file)
   for when this namespace is loaded but not attached.
 See the information on DESCRIPTION files in the chapter ‘Creating R
@@ -46,9 +43,7 @@ packages’ of the ‘Writing R Extensions’ manual.
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
-* checking R code for possible problems ... NOTE
-pairwiseSNHT: no visible global function definition for ‘cast’
-pairwiseSNHT: no visible global function definition for ‘melt’
+* checking R code for possible problems ... OK
 * checking Rd files ... NOTE
 prepare_Rd: pairwiseSNHT.Rd:54-55: Dropping empty section \seealso
 prepare_Rd: pairwiseSNHT.Rd:56-57: Dropping empty section \examples
@@ -61,5 +56,4 @@ prepare_Rd: pairwiseSNHT.Rd:56-57: Dropping empty section \examples
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
-WARNING: There was 1 warning.
-NOTE: There were 4 notes.
+NOTE: There were 3 notes.

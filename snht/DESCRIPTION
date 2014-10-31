@@ -7,4 +7,4 @@ Depends: Rcpp, RcppArmadillo, inline, MASS, zoo, plyr, reshape
 Author: Josh Browning
 Maintainer: Josh Browning <jbrownin@mines.edu>
 Description: Robust and non-robust SNHT tests for changepoint detection.
-License: What license is it under?
+License: GPL-3
