@@ -3,7 +3,7 @@ Type: Package
 Title: Standard Normal Homogeneity Test
 Version: 1.0
 Date: 2014-09-23
-Depends: Rcpp, RcppArmadillo, inline, MASS, zoo, plyr, reshape
+Depends: MASS, zoo, plyr, reshape
 Author: Josh Browning
 Maintainer: Josh Browning <jbrownin@mines.edu>
 Description: Robust and non-robust SNHT tests for changepoint detection.

@@ -51,10 +51,6 @@ Menne, M. J., & Williams Jr, C. N. (2009). Homogenization of temperature series 
 \author{
 Josh Browning (jbrownin@mines.edu)
 }
-\seealso{
-}
-\examples{
-}
 \keyword{ ~snht }
 \keyword{ ~homogeneity }
 \keyword{ ~pairwise }

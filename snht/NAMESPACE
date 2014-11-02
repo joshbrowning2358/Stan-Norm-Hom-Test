@@ -2,3 +2,7 @@ export(snht
 	,robustSNHTunequal
 	,robustSNHT
         ,pairwiseSNHT)
+importFrom(MASS, huber)
+importFrom(zoo, rollapply)
+importFrom(plyr, ddply)
+importFrom(reshape, cast)
