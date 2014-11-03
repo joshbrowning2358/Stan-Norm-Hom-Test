@@ -5,4 +5,5 @@ export(snht
 importFrom(MASS, huber)
 importFrom(zoo, rollapply)
 importFrom(plyr, ddply)
+importFrom(reshape, melt)
 importFrom(reshape, cast)

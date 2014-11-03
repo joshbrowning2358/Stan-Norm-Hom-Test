@@ -1,5 +1,5 @@
 * using log directory ‘/u/st/fl/jbrownin/Github/Stan-Norm-Hom-Test/snht.Rcheck’
-* using R version 3.1.1 (2014-07-10)
+* using R version 3.1.2 (2014-10-31)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
 * checking for file ‘snht/DESCRIPTION’ ... OK
@@ -44,3 +44,4 @@
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
+* DONE

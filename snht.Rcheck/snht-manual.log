@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  2 NOV 2014 05:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.7.19)  3 NOV 2014 10:47
 entering extended mode
  %&-line parsing enabled.
 **\catcode126=12 \def\normaltilde{~}\catcode126=13 \let~\normaltilde  \input ./
@@ -222,7 +222,6 @@ Package hyperref Info: Backreferencing OFF on input line 2995.
 
 Implicit mode ON; LaTeX internals redefined
 Package hyperref Info: Bookmarks ON on input line 3191.
-LaTeX Info: Redefining \href on input line 3409.
 LaTeX Info: Redefining \url on input line 3428.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
 Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
@@ -275,15 +274,15 @@ File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 )
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 361.
+(hyperref)                setting the option has no effect on input line 366.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 361.
+Package hyperref Info: Option `colorlinks' set `true' on input line 366.
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 361.
+(hyperref)                setting the option has no effect on input line 366.
 
-Package hyperref Info: Option `linktocpage' set `true' on input line 361.
-Package hyperref Info: Option `plainpages' set `false' on input line 361.
+Package hyperref Info: Option `linktocpage' set `true' on input line 366.
+Package hyperref Info: Option `plainpages' set `false' on input line 366.
 ) (/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
@@ -707,10 +706,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5495 strings out of 495046
- 76690 string characters out of 1181937
- 141872 words of memory out of 3000000
- 8513 multiletter control sequences out of 15000+50000
+ 5497 strings out of 495046
+ 76699 string characters out of 1181937
+ 141882 words of memory out of 3000000
+ 8514 multiletter control sequences out of 15000+50000
  40684 words of font info for 49 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,5n,27p,512b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -725,7 +724,7 @@ a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on Rd2.pdf (6 pages, 92651 bytes).
+Output written on Rd2.pdf (6 pages, 92664 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
