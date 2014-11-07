@@ -1,4 +1,4 @@
-robustSNHT <- function(data, period
+robustSNHT <- function(data, period, scaled=F
 #      #Tukey estimator:
 #      ,estimator=function(x){
 #          fit = rlm( x ~ 1, psi=psi.bisquare, c=1.5, maxit=100)
@@ -35,13 +35,25 @@ robustSNHT <- function(data, period
   lMeans = Means[1:nrow(rMeans),]
   lN = n[1:nrow(rMeans)]
   totMean = (lN*lMeans[,1]+rN*rMeans[,1])/(lN+rN)
-  scores = data.frame(
+  if(scaled)
+    scores = data.frame(
+      #tukeyR also computes variances.  Variance of differences is sum of variances.
+      #Original test stat has (N/2*(mu_L-mu)^2+N/2*(mu_R-mu)^2 )/sigma, but it assumes
+      #N/2 observations on each side.  We must adjust for differing counts due to NA's:
+      #Additional Note: Haimberger's test statistic divided by s but should have been s^2.
+      #If scaled=TRUE, the correct statistic is used:
+      score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
+              ( (lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN) )
+      ,leftMean=lMeans[,1], rightMean=rMeans[,1])
+  else
+    scores = data.frame(
     #tukeyR also computes variances.  Variance of differences is sum of variances.
     #Original test stat has (N/2*(mu_L-mu)^2+N/2*(mu_R-mu)^2 )/sigma, but it assumes
     #N/2 observations on each side.  We must adjust for differing counts due to NA's:
-     score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
-          sqrt((lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN))
+    score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
+            sqrt((lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN))
     ,leftMean=lMeans[,1], rightMean=rMeans[,1])
+
   
   #Add zeros for rows skipped at beginning/end:
   toBind = data.frame(score=rep(0,period), leftMean=0, rightMean=0)

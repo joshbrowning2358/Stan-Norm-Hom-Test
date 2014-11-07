@@ -1,5 +1,5 @@
 robustSNHTunequal <-
-function(data, period, time, estimator=NULL){
+function(data, period, time, estimator=NULL, scaled=F){
   #Data quality checks
   if(!is.numeric(data))
     stop("data must be numeric!")
@@ -33,9 +33,9 @@ function(data, period, time, estimator=NULL){
   d = d[order(d$time),]
   
   if(is.null(estimator))
-    out = robustSNHT(data=d[,1], period=period*maxObs)
+    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled)
   else
-    out = robustSNHT(data=d[,1], period=period*maxObs, estimator)
+    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled, estimator)
   out$time = d$time
   return(out)
 }

@@ -37,6 +37,9 @@ Numeric vector specifying times for the observations.  If not supplied, it is as
   \item{estimator}{
 A custom function may be supplied to this function which computes estimates for the mean and standard deviation.  The function should only take one argument (a numeric vector of data) and should return a vector of length two: the estimated center and spread.  The huber function from MASS is implemented for the robust SNHT by default (along with some data quality checks).
 }
+\item{scaled}{
+If TRUE, the statistic is divided by s^2 instead of s.  The denominator is s in Haimberger (2007) but s^2 seems more reasonable, as the numerator is proportional to x^2.
+}
   \item{\dots}{
 Additional arguments to pass to the robustSNHT function.
 }
