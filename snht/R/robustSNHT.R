@@ -53,7 +53,6 @@ robustSNHT <- function(data, period, scaled=F
     score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
             sqrt((lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN))
     ,leftMean=lMeans[,1], rightMean=rMeans[,1])
-
   
   #Add zeros for rows skipped at beginning/end:
   toBind = data.frame(score=rep(0,period), leftMean=0, rightMean=0)
