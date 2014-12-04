@@ -1,5 +1,5 @@
-robustSNHTunequal <-
-function(data, period, time, estimator=NULL, scaled=F){
+robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=F
+                      ,rmSeasonalPeriod, rmAC){
   #Data quality checks
   if(!is.numeric(data))
     stop("data must be numeric!")
@@ -33,9 +33,11 @@ function(data, period, time, estimator=NULL, scaled=F){
   d = d[order(d$time),]
   
   if(is.null(estimator))
-    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled)
+    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled
+              ,rmSeasonalPeriod = rmSeasonalPeriod * maxObs, rmAC = rmAC)
   else
-    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled, estimator)
+    out = robustSNHT(data=d[,1], period=period * maxObs, scaled=scaled, estimator
+              ,rmSeasonalPeriod = rmSeasonalPeriod * maxObs, rmAC = rmAC)
   out$time = d$time
   return(out)
 }

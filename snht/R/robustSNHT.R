@@ -1,4 +1,4 @@
-robustSNHT <- function(data, period, scaled=F
+robustSNHT <- function(data, period, scaled=F, rmSeasonalPeriod, rmAC
 #      #Tukey estimator:
 #      ,estimator=function(x){
 #          fit = rlm( x ~ 1, psi=psi.bisquare, c=1.5, maxit=100)
@@ -22,7 +22,28 @@ robustSNHT <- function(data, period, scaled=F
     stop("data must be numeric!")
   if(2*period>length(data))
     stop("period is too large to compute statistics!")
-    
+  
+  if(rmSeasonalPeriod < Inf ){
+    d$timeOfPeriod = (d$time - d$time[1]) %% rmSeasonalPeriod
+    mod = gam( data ~ s(timeOfPeriod), data=d )
+    d$data = d$data - predict(mod, newdata=d)
+  }
+  
+#   #Difficult to implement appropriately, as NA's cause different number of values to occur
+#   if(rmAC){
+#     ACF = acf(d$data, na.action=na.pass, plot = F, lag.max = 2*period+1)$acf[-1]
+#     corrAdj = 2*period + 
+#       #N-1 elements with a lag of 1, N-2 elements with a lag of 2, etc.
+#       4 * sum(ACF[1:(period-1)]*((period-1):1) ) -
+#       #top row has lags N+1, ..., 2*N
+#       #bottom row has lags 2, ..., N+1
+#       #=> 1 lag of 2, 2 lags of 3, ..., N lags of N+1, N-1 lags of N+2, ..., 1 lag of 2*N
+#       2*sum(ACF[2:(period+1)]*(1:period)) -
+#       2*sum(ACF[(period+2):(2*period)]*((period-1):1))
+#   } else {
+#     corrAdj = 2*period
+#   }
+  
   #Compute rolling means for 1:period, 2:(period+1), etc.
   #by=2 calculates the stat for every day, i.e. every two obs.  Could speed up by increasing this value
   Means = rollapply(data, width=period, by=1, FUN=estimator)
