@@ -39,5 +39,5 @@ robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=F
     out = robustSNHT(data=d[,1], period=period * maxObs, scaled=scaled, estimator
               ,rmSeasonalPeriod = rmSeasonalPeriod * maxObs, rmAC = rmAC)
   out$time = d$time
-  return(out)
+  return(out[d$realObs==1,])
 }

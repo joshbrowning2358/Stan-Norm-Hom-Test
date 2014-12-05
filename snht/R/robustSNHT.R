@@ -24,9 +24,10 @@ robustSNHT <- function(data, period, scaled=F, rmSeasonalPeriod, rmAC
     stop("period is too large to compute statistics!")
   
   if(rmSeasonalPeriod < Inf ){
-    d$timeOfPeriod = (d$time - d$time[1]) %% rmSeasonalPeriod
-    mod = gam( data ~ s(timeOfPeriod), data=d )
-    d$data = d$data - predict(mod, newdata=d)
+    time = 1:length(data)
+    timeOfPeriod = (time - time[1]) %% rmSeasonalPeriod
+    mod = gam( data ~ s(timeOfPeriod) )
+    data = data - predict(mod, newdata=data.frame(timeOfPeriod=timeOfPeriod))
   }
   
 #   #Difficult to implement appropriately, as NA's cause different number of values to occur
