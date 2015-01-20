@@ -1,4 +1,69 @@
-pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...){
+##' Pairwise Standard Normal Homogeneity Test
+##' 
+##' This function performs a pairwise standard normal homogeneity test on the
+##' data supplied, as described in Menne & Williams (2009).
+##' 
+##' @usage pairwiseSNHT(data, dist, k, period, crit=100, returnStat=FALSE, ...)
+##' @param data The data to be analyzed for changepoints.  It must be a
+##' data.frame and contain either two or three columns.  The mandatory columns
+##' are data and location, named as such.  The option column is time, and this
+##' argument will be passed to snht.
+##' @param dist A distance matrix which provides the distance between location
+##' i and location j.  Rows and columns must be named with the locations in
+##' data.  Note that non-symmetric distances may be used.  In that case,
+##' neighbors for station i will be determined by the smallest values in the
+##' row of dist corresponding to i.
+##' @param k How many of the nearest neighbors should be used to construct
+##' pairwise difference time series?  Note that more than k neighbors may be
+##' used if there are ties in the distances between locations.
+##' @param period The SNHT works by calculating the mean of the data on the
+##' previous period observations and the following period observations.  Thus,
+##' this argument controls the window size for the test statistics.
+##' @param crit The critical value such that if the snht statistic is larger
+##' than crit, a changepoint is assumed to have occured.  Defaults to 100, as
+##' recommended in Haimberger (see references).
+##' @param returnStat See return value.  If TRUE, the snht statistics for each
+##' time point and for each difference pair are returned.
+##' @param ... Additional arguments to pass to the snht function (such as
+##' robust, time, or estimator).
+##' 
+##' @details The pairwise snht works with a set of time series.  For each time
+##' series, it's closest k neighbors are determined, and a time series of the
+##' difference between each of those time series is created.  The snht is then
+##' applied to each of these difference time series.  Changepoints in one time
+##' series can be detected by searching for large values of the test statistic
+##' across all difference time series for a particular location.
+##' 
+##' The usefulness of the pairwise snht is that it removes any patterns in the
+##' data that could affect the basic snht.  For example, seasonal and linear
+##' trends that exist globally will be removed from the difference series, and
+##' thus changepoints are more easily detected.
+##' 
+##' @return If returnStat is TRUE, the snht statistics for each time point and
+##' for each difference pair are returned.
+##' 
+##' Otherwise, a named list is returned.  The first element, data, contains the
+##' homogenized data in the same format as the supplied data.  The second
+##' element, breaks, contains a data.frame where the first column is the
+##' location where a break occured, the second column is the time of the break,
+##' and the third column is the amount that data after the break was shifted
+##' by.
+##' 
+##' @references L. Haimberger. Homogenization of radiosonde temperature time
+##' series using innovation statistics. Journal of Climate, 20(7): 1377-1403,
+##' 2007.
+##' 
+##' Menne, M. J., & Williams Jr, C. N. (2009). Homogenization of temperature
+##' series via pairwise comparisons. Journal of Climate, 22(7), 1700-1717.
+##' 
+##' @author Josh Browning (jbrownin@@mines.edu)
+##' keyword ~snht ~homogeneity ~pairwise
+##' 
+##' @export
+##' 
+
+pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
+    ...){
   #data quality checks
   stopifnot(is(data,"data.frame"))
   if(ncol(data)==2)
@@ -17,22 +82,8 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...)
   if(any(dist[row(dist)!=col(dist)]<=0))
     stop("Off diagonal elements of dist must be >0")
   
-  #A column of the pairs object defines the neighbors for that location
-  pairs = lapply(1:nrow(dist), function(i){
-    x = dist[i,]
-    filt = rank(x)>1 & rank(x)<=k+1.5
-    colnames(dist)[filt]
-  })
-  names(pairs) = colnames(dist)
-  #Change pairsDf to uniquePairs, postprocess pairs so it's always the same object type
-  uniquePairs = data.frame(loc1 = rep(colnames(dist), lapply(pairs,length))
-                          ,loc2 = do.call("c", pairs), stringsAsFactors=F )
-  #Remove non-unique pairs.  Start at nrow(pairsDf) and work down.  Otherwise, the
-  #iterator would break when you delete a row, as the nrow(pairsDf) would reduce but
-  #the iterator would still run to the original nrow(pairsDf)
-  for(i in nrow(uniquePairs):1)
-    if(any(uniquePairs[,1]==uniquePairs[i,2] & uniquePairs[,2]==uniquePairs[i,1]))
-      uniquePairs = uniquePairs[-i,]
+  pairs = getPairs(dist, k=k)
+  uniquePairs = getUniquePairs(pairs)
   
   #Add times if they don't already exist (just 1:nrow()).
   if(!"time" %in% colnames(data)){
@@ -41,7 +92,7 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...)
            May need to remove unused levels in data.")
     }
     data$order = 1:nrow(data) #ensure original ordering is preserved
-    data = ddply(data, "location", function(df){
+    data = plyr::ddply(data, "location", function(df){
       df = df[order(df$order),]
       df$time = 1:nrow(df)
       return(df)
@@ -50,7 +101,7 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...)
   }
   
   #Restructure data
-  data = cast(data, formula = time ~ location, value="data")
+  data = reshape::cast(data, formula = time ~ location, value="data")
   diffs = data.frame(time=data$time)
   for(i in 1:nrow(uniquePairs)){
     diffs = cbind(diffs, data[,uniquePairs[i,1]] - data[,uniquePairs[i,2]])
@@ -63,115 +114,14 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE, ...)
   statistics = do.call("cbind", lapply(statistics, function(x) x$score))
   if(returnStat)
     return(statistics)
-
-  #Create candidate, a matrix where the (i,j)th entry corresponds to the number
-  #of changepoints in difference series for location j that occured at time i.
-  #For example, suppose location i_1 was paired with i_2, i_3, and i_4.  If the
-  #statistic for i_1-i_2 and i_1-i_4 exceeded the threshold at time j, then
-  #candidate_{i,j} = 2.
-  candidate = matrix(0, nrow=nrow(data), ncol=length(locs))
-  colnames(candidate) = locs
-  for( j in 1:ncol(statistics) ){
-    name = colnames(statistics)[j]
-    name = strsplit(name, "-")[[1]]
-    delta = as.numeric(statistics[,j]>crit)
-    delta[is.na(delta)] = 0
-    if(name[2] %in% pairs[name[1]][[1]])
-      candidate[,name[2]] = candidate[,name[2]] + delta
-    if(name[1] %in% pairs[name[2]][[1]])
-      candidate[,name[1]] = candidate[,name[1]] + delta
-  }
   
-  #"Unconfound" the candidate matrix by assigning a changepoint to the location of
-  #largest count.
-  #Algorithm:
-  #maxCols = locations which all attain the max count
-  #If (|maxCols|>1)
-  #  Examine all difference series for all elements of maxCols but restricted to rows
-  #  where the max count occurs.  Find the statistic with the largest value.  Call the
-  #  two locations forming this series col_A, col_B.  Set the break time to the
-  #  time of this statistic, call it brkT.
-  #    brkCol = col_B or col_A, respectively
-  #  else
-  #    At time brkT, examine the other difference statistics for col_A and col_B.  Assign
-  #    a break to whichever pair has the second largest statistic at time brkT
-  #else
-  #  brkCol = column with largest count
-  #  Amongst all points with max count, find the time where the largest statistic
-  #  occurs.  Call this time brkT
-  #
-  #Update candidate: Set t_window=brkT + -period:period.
-  #candidate[t_window, brkCol] = 0
-  #brkCol_pairs = set of all time series that use maxCol in their difference series.
-  #candidate[t_window, brkCol_pairs] = pmax( candidate[t_window, brkCol_pairs]-1, 0)
-  #Note: statistics must also be updated, to ensure that times from other stations are
-  #not choosen when the difference is due to the homogenized station.
-  #The assumption is that the changepoint in the maxCol series was the issue in the 
-  #other difference series.  This seems pretty reasonable.
+  candidate = createCandidateMatrix(data, statistics = statistics, pairs = pairs)
+  out = unconfoundCandidateMatrix(candidate = candidate, pairs = pairs,
+    statistics = statistics, data = data)
   
-  breaks = matrix(nrow=0, ncol=3)
-  while(any(candidate>0)){
-    colMax = apply(candidate, 2, max)
-    maxVal = max(colMax)
-    maxCols = colMax==maxVal
-    
-    #Determine which difference series we'll need to examine
-    pairsMax = pairs[maxCols]
-    pairsMax = data.frame(loc1 = rep(names(pairsMax), lapply(pairsMax,length))
-                         ,loc2 = do.call("c", pairsMax) )
-    #Could occur in either order, create both possibilities
-    pairsMax$diff = paste0(pairsMax[,1], "-", pairsMax[,2])
-    pairsMax$diff = ifelse(!pairsMax$diff %in% colnames(statistics)
-                          ,paste0(pairsMax[,2], "-", pairsMax[,1])
-                          ,pairsMax$diff )
-    
-    #Determine brkT, the time at which the current break is detected, and brkCol.
-    #Note: if columns A and B have the same value in candidate and the maximum is
-    #between A and B, then the first column will be used.  Tie-breaking in this case
-    #is non-trivial (what if each only have candidate=1?  how can we pull other values?)
-    brkTimes = lapply(names(maxCols), function(location){
-      if(!maxCols[location])
-        return(NULL)
-      rows = which(candidate[,location]==maxVal)
-      cols = pairsMax$diff[pairsMax$loc1==location]
-      currCol = which.max(apply(statistics[rows,cols,drop=F], 2, max))
-      currColTime = rows[which.max(statistics[rows,currCol])]
-      return(data.frame(time=currColTime, stat=max(statistics[currColTime,]) ) )
-    } )
-    brkTimes = do.call("rbind", brkTimes)
-    brkT = brkTimes$time[which.max(brkTimes$stat)]
-    brkCol = names(maxCols)[maxCols][which.max(brkTimes$stat)]
-    
-    #Update candidate matrix
-    tWindow = brkT + -period:period #No changepoints within period observations
-    candidate[tWindow, brkCol] = 0
-    adjCandCols = lapply(pairs, function(x){brkCol %in% x})
-    adjCandCols = names(pairs)[do.call("c",adjCandCols)]
-    candidate[tWindow, adjCandCols] = pmax( candidate[tWindow, adjCandCols]-1, 0)
-    
-    #Update statistics matrix
-    adjStatCols = c(paste0(brkCol,"-",adjCandCols), paste0(adjCandCols,"-",brkCol))
-    adjStatCols = adjStatCols[adjStatCols %in% colnames(statistics)]
-    #Set to zero as we're assuming large values are caused by brkCol
-    statistics[tWindow, adjStatCols] = 0
-    
-    #Update data
-    adjMeanCols = c(paste0(brkCol,"-",pairs[[brkCol]]), paste0(pairs[[brkCol]],"-",brkCol))
-    adjMeanCols = adjMeanCols[adjMeanCols %in% colnames(statistics)]
-    shift = mean(avgDiff[brkT,adjMeanCols], na.rm=T)
-    data[brkT:nrow(data),brkCol] = data[brkT:nrow(data),brkCol] - shift
-    
-    #Append detected break to breaks
-    breaks = rbind(breaks, c(brkT, brkCol, shift) )
-  }
-  breaks = data.frame(breaks)
-  colnames(breaks) = c("time", "location", "shift")
-  breaks$time = as.numeric(breaks$time)
-  breaks$shift = as.numeric(breaks$shift)
-  
-  data = melt(data, id.vars=c("time"))
-  rownames(data) = NULL
-  colnames(data)[colnames(data)=="value"] = "data"
-  data = data[,c("data", "location", "time")]
-  return(list(data=data, breaks=breaks))
+  out$data = reshape::melt(out$data, id.vars=c("time"))
+  rownames(out$data) = NULL
+  colnames(out$data)[colnames(out$data)=="value"] = "data"
+  out$data = out$data[,c("data", "location", "time")]
+  return(out)
 }

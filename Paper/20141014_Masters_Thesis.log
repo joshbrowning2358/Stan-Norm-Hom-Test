@@ -1,0 +1,1180 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  28 OCT 2014 10:59
+entering extended mode
+**20141014_Masters_Thesis.tex
+
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\20141014_Masters_Thesis.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\epsf\epsf.sty"
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen107
+\epsfframethickness=\dimen108
+\epsfrsize=\dimen109
+\epsftmp=\dimen110
+\epsftsize=\dimen111
+\epsfxsize=\dimen112
+\epsfysize=\dimen113
+\pspoints=\dimen114
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+\XKV@depth=\count88
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex"
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count89
+\pstFP@xia=\count90
+\pstFP@xib=\count91
+\pstFP@xfa=\count92
+\pstFP@xfb=\count93
+\pstFP@rega=\count94
+\pstFP@regb=\count95
+\pstFP@regs=\count96
+\pstFP@times=\count97
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen115
+\pgfutil@tempdimb=\dimen116
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks20
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex"
+\pgf@x=\dimen117
+\pgf@xa=\dimen118
+\pgf@xb=\dimen119
+\pgf@xc=\dimen120
+\pgf@y=\dimen121
+\pgf@ya=\dimen122
+\pgf@yb=\dimen123
+\pgf@yc=\dimen124
+\c@pgf@counta=\count98
+\c@pgf@countb=\count99
+\c@pgf@countc=\count100
+\c@pgf@countd=\count101
+\pgfutil@tempcnta=\count102
+\pgfutil@tempcntb=\count103
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen125
+\pgfmath@count=\count104
+\pgfmath@box=\box26
+\pgfmath@toks=\toks21
+\pgfmath@stack@operand=\toks22
+\pgfmath@stack@operation=\toks23
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count105
+))
+\pgffor@iter=\dimen126
+\pgffor@skip=\dimen127
+\pgffor@stack=\toks24
+\pgffor@toks=\toks25
+)
+\psLoopIndex=\count106
+
+`PSTricks' v2.49b  <2013/12/21> (tvz)
+\pst@dima=\dimen128
+\pst@dimb=\dimen129
+\pst@dimc=\dimen130
+\pst@dimd=\dimen131
+\pst@dimg=\dimen132
+\pst@dimh=\dimen133
+\pst@dimm=\dimen134
+\pst@dimn=\dimen135
+\pst@dimo=\dimen136
+\pst@dimp=\dimen137
+\pst@hbox=\box27
+\pst@ibox=\box28
+\pst@boxg=\box29
+\pst@cnta=\count107
+\pst@cntb=\count108
+\pst@cntc=\count109
+\pst@cntd=\count110
+\pst@cntg=\count111
+\pst@cnth=\count112
+\pst@cntm=\count113
+\pst@cntn=\count114
+\pst@cnto=\count115
+\pst@cntp=\count116
+\@zero=\count117
+\pst@toks=\toks26
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.con")
+\psunit=\dimen138
+\psxunit=\dimen139
+\psyunit=\dimen140
+\pst@C@@rType=\count118
+\pslinewidth=\dimen141
+\psk@startLW=\dimen142
+\psk@endLW=\dimen143
+\pst@customdefs=\toks27
+\pslinearc=\dimen144
+\pst@symbolStep=\dimen145
+\pst@symbolWidth=\dimen146
+\pst@symbolLinewidth=\dimen147
+\everypsbox=\toks28
+\psframesep=\dimen148
+\pslabelsep=\dimen149
+\sh@wgridXunit=\dimen150
+\sh@wgridYunit=\dimen151
+\pst@shift=\dimen152
+)
+File: pstricks.tex 2013/12/21 v2.49b `PSTricks' (tvz,hv)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex")
+File: pst-fp.tex 2013/12/21 v2.49b `PST-fp' (hv)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pst-node\pst-node.sty"
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\pst-node\pst-node.tex"
+ v1.33, 2014/03/25
+\psrow=\count119
+\pscol=\count120
+\psmatrixcnt=\count121
+\psrowsep=\skip43
+\pscolsep=\skip44
+\pst@args=\count122
+\num@pts=\count123
+\pst@argcnt=\count124
+)
+File: pst-node.tex 2014/03/25 1.33 `pst-node' (tvz,hv)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\psfrag\psfrag.sty"
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count125
+\pfg@scount=\count126
+\pfg@temp=\write3
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks30
+\ex@=\dimen153
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen154
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count127
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count128
+\leftroot@=\count129
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count130
+\DOTSCASE@=\count131
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count132
+\c@MaxMatrixCols=\count133
+\dotsspace@=\muskip10
+\c@parentequation=\count134
+\dspbrk@lvl=\count135
+\tag@help=\toks31
+\row@=\count136
+\column@=\count137
+\maxfields@=\count138
+\andhelp@=\toks32
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks33
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read2
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks37
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count139
+\rotFPtop=\skip48
+\rotFPbot=\skip49
+\rot@float@box=\box32
+\rot@mess@toks=\toks38
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen162
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count140
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis.sty"
+Package: csm-thesis 2011/11/12 v1.0 .dtx csm-thesis file
+
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-sanity.sty")
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-environments.sty"
+\c@csm@abstract@words=\count141
+\c@csm@longtable@pages=\count142
+\c@csm@longtable@startpage=\count143
+\c@csm@last@longtable@count=\count144
+\temp@output@box=\box33
+\csm@temp@header=\box34
+\c@csm@sideways@depth=\count145
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-title.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\textcase\textcase.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+\temp@box=\box35
+\temp@trapezoid@box=\box36
+\best@trapezoid@box=\box37
+\last@trapezoid@box=\box38
+\c@trap@push@temp=\count146
+\temp@trapezoid@text=\toks39
+\@tempwidth=\dimen163
+\trapezoid@width@value=\dimen164
+\trapezoid@new@width=\dimen165
+\temp@line@width=\dimen166
+\temp@line@height=\dimen167
+\test@line@width=\dimen168
+\c@trap@push@lineone=\count147
+\c@titlewidth@lines=\count148
+\c@titlewidth@cnt=\count149
+\@titlewidth@max=\skip52
+\@titlewidth@diff=\skip53
+\@titlewidth@flex=\skip54
+\@titlewidth=\skip55
+\temp@pdftitle@text=\toks40
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-lists.sty"
+\c@csm@list@i=\count150
+\c@csm@list@j=\count151
+\c@csm@list@k=\count152
+\c@csm@list@length=\count153
+\c@csm@list@strlen=\count154
+\c@csm@list@strlenA=\count155
+\c@csm@list@strlenB=\count156
+\c@csm@list@findchar=\count157
+\c@csm@list@findchar@i=\count158
+\c@csm@list@char@A=\count159
+\c@csm@list@char@B=\count160
+\c@csm@list@char@temp=\count161
+\c@csm@list@tempA=\count162
+\c@csm@list@tempB=\count163
+\temp@stripspace@text=\toks41
+\c@csm@tocentry@count=\count164
+\c@csm@num@tables=\count165
+\c@csm@num@figures=\count166
+\csm@temp@list@boxA=\box39
+\csm@temp@list@boxB=\box40
+\l@chapter@indent=\skip56
+\l@appendix@indent=\skip57
+\csm@contentsline@findkeylength@boxA=\box41
+\csm@contentsline@findkeylength@boxB=\box42
+\csm@contentsline@findkeylength@length=\skip58
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-sections.sty"
+\c@csmsectionline=\count167
+\csm@temp@box=\box43
+\c@appendix=\count168
+\c@csm@redefined@appendix=\count169
+\csm@redefined@appendix@saved=\count170
+)
+\c@csmpage=\count171
+\c@truepage=\count172
+\c@emptypage=\count173
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count174
+\Gm@cntv=\count175
+\c@Gm@tempcnt=\count176
+\Gm@bindingoffset=\dimen169
+\Gm@wd@mp=\dimen170
+\Gm@odd@mp=\dimen171
+\Gm@even@mp=\dimen172
+\Gm@layoutwidth=\dimen173
+\Gm@layoutheight=\dimen174
+\Gm@layouthoffset=\dimen175
+\Gm@layoutvoffset=\dimen176
+\Gm@dimlist=\toks42
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+\csm@titletext=\box44
+\csm@saved@contents=\toks43
+\c@csm@figure@heredefinitely=\count177
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count178
+\float@exts=\toks44
+\float@box=\box45
+\@float@everytoks=\toks45
+\@floatcapt=\box46
+)
+\csm@table@indent=\skip59
+\c@csm@label@j=\count179
+\c@csm@label@k=\count180
+\c@csm@label@count=\count181
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks46
+\footnotemargin=\dimen177
+\c@pp@next@reset=\count182
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+\c@csm@symbol@symbolnote=\count183
+\c@csm@symbol@numberednote=\count184
+
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-compat.sty"
+\c@csm@multibib@job=\count185
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\csm-thesis-encoding.sty"
+\c@csm@encoding@count=\count186
+))
+\c@Th=\count187
+\c@Proof=\count188
+\c@Mth=\count189
+\c@Def=\count190
+\c@Rem=\count191
+\c@Qes=\count192
+\c@proposition=\count193
+\c@Lem=\count194
+\c@Cor=\count195
+\c@Exa=\count196
+\c@Eq=\count197
+\c@lemm=\count198
+\c@thm=\count199
+\c@cor=\count200
+\c@defi=\count201
+\c@prop=\count202
+\c@example=\count203
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen178
+\captionmargin@=\dimen179
+\captionwidth=\dimen180
+\caption@tempdima=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+)
+\c@ContinuedFloat=\count204
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
+)
+\c@KVtest=\count205
+\sf@farskip=\skip60
+\sf@captopadj=\dimen185
+\sf@capskip=\skip61
+\sf@nearskip=\skip62
+\c@subfigure=\count206
+\c@subfigure@save=\count207
+\c@lofdepth=\count208
+\c@subtable=\count209
+\c@subtable@save=\count210
+\c@lotdepth=\count211
+\sf@top=\skip63
+\sf@bottom=\skip64
+)
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\20141014_Masters_Thesis.aux"
+\csm@redefined@appendix@saved=\count212
+\csm@appendicies=\count213
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 293.
+LaTeX Font Info:    ... okay on input line 293.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count214
+\scratchdimen=\dimen186
+\scratchbox=\box47
+\nofMPsegments=\count215
+\nofMParguments=\count216
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count217
+\MPscratchDim=\dimen187
+\MPnumerator=\count218
+\makeMPintoPDFobject=\count219
+\everyMPtoPDFconversion=\toks48
+)
+No file 20141014_Masters_Thesis.lot.
+No file 20141014_Masters_Thesis.lof.
+
+LaTeX Warning: There are no tables or figures..
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=491.43622pt
+* \textheight=679.33755pt
+* \oddsidemargin=-6.0pt
+* \evensidemargin=-6.0pt
+* \topmargin=-56.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=12.0pt
+* \footskip=36.135pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 306.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 306.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 308.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
+ [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2
+
+
+] [3] [4] [5
+
+] [6] [7] [8] [9
+
+] [10] [11] [12]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 489.
+ [13] [14] [15
+
+] [16] [17]
+[18
+
+] [19
+
+]
+
+LaTeX Warning: The bibliography style is already defined by the template on inp
+ut line 566.
+
+
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\20141014_Masters_Thesis.bbl" [20
+
+
+])
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 571.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.571 	\begin{tabular}
+                      {cc}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<70219_Data_Unhomogenized_no_vlines.png, id=81, 578.16pt x 252.945pt>
+File: 70219_Data_Unhomogenized_no_vlines.png Graphic file (type png)
+
+<use 70219_Data_Unhomogenized_no_vlines.png>
+Package pdftex.def Info: 70219_Data_Unhomogenized_no_vlines.png used on input l
+ine 572.
+(pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
+
+<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=82, 578.16pt x 252.945pt>
+File: 70219_Data_Unhomogenized_zoomed_no_vlines.png Graphic file (type png)
+
+<use 70219_Data_Unhomogenized_zoomed_no_vlines.png>
+Package pdftex.def Info: 70219_Data_Unhomogenized_zoomed_no_vlines.png used on 
+input line 573.
+(pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 571--575
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 581.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 	\begin{tabular}
+                      {lcc}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 595.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.595 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<35121_time_series.png, id=83, 505.89pt x 216.81pt>
+File: 35121_time_series.png Graphic file (type png)
+
+<use 35121_time_series.png>
+Package pdftex.def Info: 35121_time_series.png used on input line 599.
+(pdftex.def)             Requested size: 442.2896pt x 189.55609pt.
+
+<35121_simulated_1.png, id=84, 505.89pt x 216.81pt>
+File: 35121_simulated_1.png Graphic file (type png)
+
+<use 35121_simulated_1.png>
+Package pdftex.def Info: 35121_simulated_1.png used on input line 600.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<35121_contaminated_1.png, id=85, 505.89pt x 216.81pt>
+File: 35121_contaminated_1.png Graphic file (type png)
+
+<use 35121_contaminated_1.png>
+Package pdftex.def Info: 35121_contaminated_1.png used on input line 601.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<35121_simulated_2.png, id=86, 505.89pt x 216.81pt>
+File: 35121_simulated_2.png Graphic file (type png)
+
+<use 35121_simulated_2.png>
+Package pdftex.def Info: 35121_simulated_2.png used on input line 602.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<35121_contaminated_2.png, id=87, 505.89pt x 216.81pt>
+File: 35121_contaminated_2.png Graphic file (type png)
+
+<use 35121_contaminated_2.png>
+Package pdftex.def Info: 35121_contaminated_2.png used on input line 603.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<35121_simulated_3.png, id=88, 505.89pt x 216.81pt>
+File: 35121_simulated_3.png Graphic file (type png)
+
+<use 35121_simulated_3.png>
+Package pdftex.def Info: 35121_simulated_3.png used on input line 604.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<35121_contaminated_3.png, id=89, 505.89pt x 216.81pt>
+File: 35121_contaminated_3.png Graphic file (type png)
+
+<use 35121_contaminated_3.png>
+Package pdftex.def Info: 35121_contaminated_3.png used on input line 605.
+(pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
+
+<homogenization_efficiency_boxplots.png, id=90, 722.7pt x 578.16pt>
+File: homogenization_efficiency_boxplots.png Graphic file (type png)
+
+<use homogenization_efficiency_boxplots.png>
+Package pdftex.def Info: homogenization_efficiency_boxplots.png used on input l
+ine 612.
+(pdftex.def)             Requested size: 491.43622pt x 393.15242pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Efficiency_Model_Plot_BW.png, id=91, 867.24pt x 433.62pt>
+File: Efficiency_Model_Plot_BW.png Graphic file (type png)
+
+<use Efficiency_Model_Plot_BW.png>
+Package pdftex.def Info: Efficiency_Model_Plot_BW.png used on input line 619.
+(pdftex.def)             Requested size: 491.43622pt x 245.71695pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] [22 <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind Q
+C/Documents/Paper/70219_Data_Unhomogenized_no_vlines.png> <C:/Users/rockc_000/D
+ocuments/Professional Files/Mines/Research/Wind QC/Documents/Paper/70219_Data_U
+nhomogenized_zoomed_no_vlines.png>] [23 <C:/Users/rockc_000/Documents/Professio
+nal Files/Mines/Research/Wind QC/Documents/Paper/35121_time_series.png> <C:/Use
+rs/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Documents/Pape
+r/35121_simulated_1.png> <C:/Users/rockc_000/Documents/Professional Files/Mines
+/Research/Wind QC/Documents/Paper/35121_contaminated_1.png> <C:/Users/rockc_000
+/Documents/Professional Files/Mines/Research/Wind QC/Documents/Paper/35121_simu
+lated_2.png> <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wi
+nd QC/Documents/Paper/35121_contaminated_2.png> <C:/Users/rockc_000/Documents/P
+rofessional Files/Mines/Research/Wind QC/Documents/Paper/35121_simulated_3.png>
+ <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Docume
+nts/Paper/35121_contaminated_3.png>] [24 <C:/Users/rockc_000/Documents/Professi
+onal Files/Mines/Research/Wind QC/Documents/Paper/homogenization_efficiency_box
+plots.png>] [25 <C:/Users/rockc_000/Documents/Professional Files/Mines/Research
+/Wind QC/Documents/Paper/Efficiency_Model_Plot_BW.png>]
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 627.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.627 \begin{tabular}
+                     {cc|llllll}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 653.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.653 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26
+
+]
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 658.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.658 \begin{tabular}
+                     {l|cc|cc|cc}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (27.68016pt too wide) in paragraph at lines 658--671
+ [][] 
+ []
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 673.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.673 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<TPR_Order_Plot_BW.png, id=122, 867.24pt x 216.81pt>
+File: TPR_Order_Plot_BW.png Graphic file (type png)
+
+<use TPR_Order_Plot_BW.png>
+Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 677.
+(pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
+ [27
+
+ <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Docume
+nts/Paper/TPR_Order_Plot_BW.png>]
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 685.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.685 	\begin{tabular}
+                      {cc|llll}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 711.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.711 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[28
+
+] <FPR_Order_Plot_BW.png, id=130, 867.24pt x 216.81pt>
+File: FPR_Order_Plot_BW.png Graphic file (type png)
+
+<use FPR_Order_Plot_BW.png>
+Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 716.
+(pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
+ [29
+
+ <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Docume
+nts/Paper/FPR_Order_Plot_BW.png>]
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 724.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.724 	\begin{tabular}
+                      {cc|llll}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 750.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.750 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[30
+
+] <Efficiency_Order_Plot_BW.png, id=138, 867.24pt x 216.81pt>
+File: Efficiency_Order_Plot_BW.png Graphic file (type png)
+
+<use Efficiency_Order_Plot_BW.png>
+Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 755.
+(pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
+ [31
+
+ <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Docume
+nts/Paper/Efficiency_Order_Plot_BW.png>]
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [1]  on in
+put line 763.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.763 	\begin{tabular}
+                      {cc|llll}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: OGS Incompliant Document: Caption must be above table [2]  on in
+put line 789.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.789 \end{table}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32
+
+] <"70219_Data_Unhomogenized_zoomed".png, id=147, 578.16pt x 252.945pt>
+File: "70219_Data_Unhomogenized_zoomed".png Graphic file (type png)
+
+<use "70219_Data_Unhomogenized_zoomed".png>
+Package pdftex.def Info: "70219_Data_Unhomogenized_zoomed".png used on input li
+ne 794.
+(pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
+
+<"70219_Data_Homogenized_zoomed".png, id=148, 578.16pt x 252.945pt>
+File: "70219_Data_Homogenized_zoomed".png Graphic file (type png)
+
+<use "70219_Data_Homogenized_zoomed".png>
+Package pdftex.def Info: "70219_Data_Homogenized_zoomed".png used on input line
+ 795.
+(pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
+
+<"70219_Data_Homogenized".png, id=149, 578.16pt x 252.945pt>
+File: "70219_Data_Homogenized".png Graphic file (type png)
+
+<use "70219_Data_Homogenized".png>
+Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 796.
+(pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
+
+
+! LaTeX Error: Required section (environment) missing: \frontmatter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Required section (environment) missing: \maketitle.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Required section (environment) missing: \makesubmittal.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Required section (environment) missing: \tableofcontents.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Required section (environment) missing: \bodymatter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Required section (environment) missing: abstract.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.801 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: It is recommended that you include the 'acknowledgments' section
+ (environment).
+
+[33 <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC/Doc
+uments/Paper/70219_Data_Unhomogenized_zoomed.png> <C:/Users/rockc_000/Documents
+/Professional Files/Mines/Research/Wind QC/Documents/Paper/70219_Data_Homogeniz
+ed_zoomed.png> <C:/Users/rockc_000/Documents/Professional Files/Mines/Research/
+Wind QC/Documents/Paper/70219_Data_Homogenized.png>]
+("C:\Users\rockc_000\Documents\Professional Files\Mines\Research\Wind QC\Docume
+nts\Paper\20141014_Masters_Thesis.aux"
+\csm@redefined@appendix@saved=\count220
+\csm@appendicies=\count221
+) ) 
+Here is how much of TeX's memory you used:
+ 13504 strings out of 493921
+ 225063 string characters out of 3147270
+ 306912 words of memory out of 3000000
+ 16564 multiletter control sequences out of 15000+200000
+ 13886 words of font info for 54 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 65i,12n,112p,1690b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb>
+Output written on 20141014_Masters_Thesis.pdf (33 pages, 777179 bytes).
+PDF statistics:
+ 206 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+

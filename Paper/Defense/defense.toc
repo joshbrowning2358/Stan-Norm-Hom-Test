@@ -1,0 +1,23 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Problem}{3}{1}{1}
+\beamer@subsectionintoc {1}{1}{Random Errors}{4}{1}{1}
+\beamer@subsectionintoc {1}{2}{Systematic Errors}{5}{1}{1}
+\beamer@sectionintoc {2}{Methods}{7}{1}{2}
+\beamer@subsectionintoc {2}{1}{Random Error Detection}{7}{1}{2}
+\beamer@subsectionintoc {2}{2}{Systematic Error Correction (Homogenization)}{8}{1}{2}
+\beamer@subsectionintoc {2}{3}{Sequencing}{11}{1}{2}
+\beamer@sectionintoc {3}{Simulation Study}{12}{1}{3}
+\beamer@subsectionintoc {3}{1}{Simulation Design}{12}{1}{3}
+\beamer@subsectionintoc {3}{2}{Performance Metrics}{14}{1}{3}
+\beamer@sectionintoc {4}{Results}{15}{1}{4}
+\beamer@subsectionintoc {4}{1}{Homogenization Algorithms}{15}{1}{4}
+\beamer@subsectionintoc {4}{2}{Sequencings}{23}{1}{4}
+\beamer@subsectionintoc {4}{3}{Conclusion}{27}{1}{4}
+\beamer@sectionintoc {5}{Case Study}{28}{1}{5}
+\beamer@sectionintoc {6}{References}{32}{1}{6}
+\beamer@sectionintoc {8}{Appendix}{33}{1}{7}
+\beamer@sectionintoc {9}{Radiosonde Data}{34}{2}{8}
+\beamer@sectionintoc {10}{Robust Mean and Standard Deviation}{35}{2}{9}
+\beamer@sectionintoc {11}{Homogenization Methods}{36}{2}{10}
+\beamer@sectionintoc {12}{Modeling Radiosonde Data}{40}{2}{11}
+\beamer@sectionintoc {13}{Variance of the SNHT Statistic}{44}{2}{12}

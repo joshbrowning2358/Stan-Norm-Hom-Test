@@ -1,10 +1,10 @@
-* using log directory ‘/u/st/fl/jbrownin/Github/Stan-Norm-Hom-Test/snht.Rcheck’
-* using R version 3.1.2 (2014-10-31)
-* using platform: x86_64-pc-linux-gnu (64-bit)
-* using session charset: UTF-8
-* checking for file ‘snht/DESCRIPTION’ ... OK
+* using log directory 'C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/snht.Rcheck'
+* using R version 3.1.0 (2014-04-10)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* checking for file 'snht/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package ‘snht’ version ‘1.0’
+* this is package 'snht' version '1.0'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -12,8 +12,7 @@
 * checking for executable files ... OK
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
-* checking for sufficient/correct file permissions ... OK
-* checking whether package ‘snht’ can be installed ... OK
+* checking whether package 'snht' can be installed ... OK
 * checking installed package size ... OK
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
@@ -28,7 +27,6 @@
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
@@ -44,4 +42,3 @@
 * checking for unstated dependencies in examples ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
-* DONE

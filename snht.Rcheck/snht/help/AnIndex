@@ -1,5 +1,6 @@
 snht-package	snht-package
 pairwiseSNHT	pairwiseSNHT
-robustSNHT	snht
-robustSNHTunequal	snht
+removeSeasonalPeriod	removeSeasonalPeriod
+robustSNHT	robustSNHT
+robustSNHTunequal	robustSNHTunequal
 snht	snht

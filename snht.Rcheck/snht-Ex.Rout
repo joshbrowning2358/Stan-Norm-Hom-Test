@@ -1,7 +1,7 @@
 
-R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
+R version 3.1.0 (2014-04-10) -- "Spring Dance"
 Copyright (C) 2014 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
@@ -20,6 +20,7 @@ Type 'q()' to quit R.
 > pkgname <- "snht"
 > source(file.path(R.home("share"), "R", "examples-header.R"))
 > options(warn = 1)
+> options(pager = "console")
 > library('snht')
 > 
 > base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
@@ -31,8 +32,8 @@ Type 'q()' to quit R.
 > 
 > ### Name: snht
 > ### Title: Standard Normal Homogeneity Test
-> ### Aliases: snht robustSNHT robustSNHTunequal
-> ### Keywords: ~snht ~homogeneity
+> ### Aliases: snht
+> ### Keywords: ~homogeneity ~snht
 > 
 > ### ** Examples
 > 
@@ -41,13 +42,13 @@ Type 'q()' to quit R.
 > data[1:brk] = data[1:brk]-2
 > out = snht( data, period=50, robust=FALSE )
 > summary(out)
-     score            rightMean          leftMean      
+     score             leftMean         rightMean      
  Min.   : 0.00000   Min.   :-2.3839   Min.   :-2.3839  
- 1st Qu.: 0.05759   1st Qu.:-2.0660   1st Qu.:-2.0660  
- Median : 0.38826   Median :-1.9823   Median :-1.9823  
- Mean   : 3.74989   Mean   :-1.7089   Mean   :-1.6102  
- 3rd Qu.: 1.53400   3rd Qu.:-1.8634   3rd Qu.:-1.8162  
- Max.   :98.94641   Max.   : 0.1137   Max.   : 0.2296  
+ 1st Qu.: 0.05463   1st Qu.:-2.0660   1st Qu.:-2.0660  
+ Median : 0.37707   Median :-1.9823   Median :-1.9823  
+ Mean   : 3.28884   Mean   :-1.7089   Mean   :-1.6102  
+ 3rd Qu.: 1.49881   3rd Qu.:-1.8634   3rd Qu.:-1.8162  
+ Max.   :93.18451   Max.   : 0.1137   Max.   : 0.2296  
 > 
 > data = rnorm(1000)
 > time = 1:1000 + rnorm(1000)
@@ -57,13 +58,13 @@ Type 'q()' to quit R.
 Warning in robustSNHTunequal(data = data, period = period, time = time,  :
   Only integer values of time are used!  Rounding down.
 > summary(out)
-     score             leftMean          rightMean             time    
- Min.   : 0.00000   Min.   :-2.33220   Min.   :-2.33220   Min.   :  1  
- 1st Qu.: 0.07899   1st Qu.:-2.06781   1st Qu.:-2.03550   1st Qu.:250  
- Median : 0.46215   Median :-1.90967   Median :-1.88565   Median :500  
- Mean   : 3.57023   Mean   :-1.33500   Mean   :-1.23898   Mean   :500  
- 3rd Qu.: 1.35371   3rd Qu.:-0.01116   3rd Qu.:-0.01116   3rd Qu.:750  
- Max.   :91.92529   Max.   : 0.24944   Max.   : 0.24944   Max.   :999  
+     score            leftMean           rightMean              time      
+ Min.   : 0.0000   Min.   :-2.332201   Min.   :-2.324189   Min.   :  1.0  
+ 1st Qu.: 0.0861   1st Qu.:-2.066295   1st Qu.:-2.032347   1st Qu.:250.0  
+ Median : 0.4746   Median :-1.909674   Median :-1.887036   Median :499.5  
+ Mean   : 3.0527   Mean   :-1.335292   Mean   :-1.238111   Mean   :500.1  
+ 3rd Qu.: 1.3055   3rd Qu.:-0.008237   3rd Qu.:-0.008546   3rd Qu.:751.0  
+ Max.   :83.5057   Max.   : 0.249439   Max.   : 0.249439   Max.   :999.0  
 > 
 > 
 > 
@@ -71,7 +72,7 @@ Warning in robustSNHTunequal(data = data, period = period, time = time,  :
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.784 0.024 0.833 0 0 
+Time elapsed:  1.27 0.1 1.36 NA NA 
 > grDevices::dev.off()
 null device 
           1 

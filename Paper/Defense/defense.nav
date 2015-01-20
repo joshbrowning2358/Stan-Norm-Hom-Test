@@ -1,0 +1,153 @@
+\beamer@endinputifotherversion {3.33pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\partentry {1}{1}}
+\headcommand {\beamer@partpages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{1}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Problem}{3}{Problem}{1}}
+\headcommand {\beamer@sectionpages {2}{2}}
+\headcommand {\beamer@subsectionpages {2}{2}}
+\headcommand {\slideentry {1}{0}{3}{3/3}{}{1}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {1}{1}{1}{4}{Random Errors}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Random Errors}{1}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionentry {1}{1}{2}{5}{Systematic Errors}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{Systematic Errors}{1}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{2}{2}{6/6}{Systematic Errors}{1}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\sectionentry {2}{Methods}{7}{Methods}{1}}
+\headcommand {\beamer@sectionpages {3}{6}}
+\headcommand {\beamer@subsectionpages {5}{6}}
+\headcommand {\beamer@subsectionentry {1}{2}{1}{7}{Random Error Detection}}\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\slideentry {2}{1}{1}{7/7}{Random Error Detection}{1}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionentry {1}{2}{2}{8}{Systematic Error Correction (Homogenization)}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{2}{1}{8/8}{Systematic Error Correction (Homogenization)}{1}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {2}{2}{2}{9/9}{Systematic Error Correction (Homogenization)}{1}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{2}{3}{10/10}{Systematic Error Correction (Homogenization)}{1}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionentry {1}{2}{3}{11}{Sequencing}}\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\slideentry {2}{3}{1}{11/11}{Sequencing}{1}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\sectionentry {3}{Simulation Study}{12}{Simulation Study}{1}}
+\headcommand {\beamer@sectionpages {7}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {1}{3}{1}{12}{Simulation Design}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {3}{1}{1}{12/12}{Simulation Design}{1}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {3}{1}{2}{13/13}{Simulation Design}{1}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionentry {1}{3}{2}{14}{Performance Metrics}}\headcommand {\beamer@subsectionpages {12}{13}}
+\headcommand {\slideentry {3}{2}{1}{14/14}{Performance Metrics}{1}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\sectionentry {4}{Results}{15}{Results}{1}}
+\headcommand {\beamer@sectionpages {12}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {1}{4}{1}{15}{Homogenization Algorithms}}\headcommand {\beamer@subsectionpages {15}{14}}
+\headcommand {\slideentry {4}{1}{1}{15/15}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {4}{1}{2}{16/16}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\slideentry {4}{1}{3}{17/17}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {4}{1}{4}{18/18}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {4}{1}{5}{19/19}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{1}{6}{20/20}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {4}{1}{7}{21/21}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{1}{8}{22/22}{Homogenization Algorithms}{1}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionentry {1}{4}{2}{23}{Sequencings}}\headcommand {\beamer@subsectionpages {15}{22}}
+\headcommand {\slideentry {4}{2}{1}{23/23}{Sequencings}{1}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {4}{2}{2}{24/24}{Sequencings}{1}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {4}{2}{3}{25/25}{Sequencings}{1}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {4}{2}{4}{26/26}{Sequencings}{1}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@subsectionentry {1}{4}{3}{27}{Conclusion}}\headcommand {\beamer@subsectionpages {23}{26}}
+\headcommand {\slideentry {4}{3}{1}{27/27}{Conclusion}{1}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\sectionentry {5}{Case Study}{28}{Case Study}{1}}
+\headcommand {\beamer@sectionpages {15}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\slideentry {5}{0}{2}{28/28}{}{1}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\slideentry {5}{0}{3}{29/29}{}{1}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {5}{0}{4}{30/30}{}{1}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {5}{0}{5}{31/31}{}{1}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\sectionentry {6}{References}{32}{References}{1}}
+\headcommand {\beamer@sectionpages {28}{31}}
+\headcommand {\beamer@subsectionpages {28}{31}}
+\headcommand {\sectionentry {7}{\translate {References}}{32}{\translate {References}}{1}}
+\headcommand {\beamer@sectionpages {32}{31}}
+\headcommand {\beamer@subsectionpages {32}{31}}
+\headcommand {\slideentry {7}{0}{6}{32/32}{}{1}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\sectionentry {8}{Appendix}{33}{Appendix}{1}}
+\headcommand {\beamer@sectionpages {32}{32}}
+\headcommand {\beamer@subsectionpages {32}{32}}
+\headcommand {\partentry {2}{2}}
+\headcommand {\beamer@partpages {2}{32}}
+\headcommand {\beamer@sectionpages {33}{32}}
+\headcommand {\beamer@subsectionpages {33}{32}}
+\headcommand {\slideentry {8}{0}{7}{33/33}{}{2}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\sectionentry {9}{Radiosonde Data}{34}{Radiosonde Data}{2}}
+\headcommand {\beamer@sectionpages {33}{33}}
+\headcommand {\beamer@subsectionpages {33}{33}}
+\headcommand {\slideentry {9}{0}{8}{34/34}{}{2}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\sectionentry {10}{Robust Mean and Standard Deviation}{35}{Robust Mean and Standard Deviation}{2}}
+\headcommand {\beamer@sectionpages {34}{34}}
+\headcommand {\beamer@subsectionpages {34}{34}}
+\headcommand {\slideentry {10}{0}{9}{35/35}{}{2}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\sectionentry {11}{Homogenization Methods}{36}{Homogenization Methods}{2}}
+\headcommand {\beamer@sectionpages {35}{35}}
+\headcommand {\beamer@subsectionpages {35}{35}}
+\headcommand {\slideentry {11}{0}{10}{36/36}{}{2}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {11}{0}{11}{37/37}{}{2}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {11}{0}{12}{38/38}{}{2}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {11}{0}{13}{39/39}{}{2}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\sectionentry {12}{Modeling Radiosonde Data}{40}{Modeling Radiosonde Data}{2}}
+\headcommand {\beamer@sectionpages {36}{39}}
+\headcommand {\beamer@subsectionpages {36}{39}}
+\headcommand {\slideentry {12}{0}{14}{40/40}{}{2}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {12}{0}{15}{41/41}{}{2}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {12}{0}{16}{42/42}{}{2}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {12}{0}{17}{43/43}{}{2}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\sectionentry {13}{Variance of the SNHT Statistic}{44}{Variance of the SNHT Statistic}{2}}
+\headcommand {\beamer@sectionpages {40}{43}}
+\headcommand {\beamer@subsectionpages {40}{43}}
+\headcommand {\slideentry {13}{0}{18}{44/44}{}{2}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {13}{0}{19}{45/45}{}{2}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\beamer@partpages {33}{45}}
+\headcommand {\beamer@subsectionpages {44}{45}}
+\headcommand {\beamer@sectionpages {44}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\def \inserttotalframenumber {45}}

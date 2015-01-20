@@ -1,0 +1,17 @@
+\contentsline {section}{\texorpdfupper {Abstract}}{iii}{section*.1}
+\contentsline {section}{\texorpdfupper {List of Figures}}{v}{section*.2}
+\contentsline {section}{\texorpdfupper {List of Tables}}{vii}{section*.3}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 1}Introduction}}{1}{section*.4}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 2}Simulation Method}}{4}{section*.5}
+\contentsline {subsection}{\numberline {2.1}Modeling Radiosonde Data}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Data Simulation}{5}{subsection.2.2}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 3}Homogenization Algorithms}}{8}{section*.6}
+\contentsline {subsection}{\numberline {3.1}Methodology}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Results}{12}{subsection.3.2}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 4}Sequencing Study}}{15}{section*.7}
+\contentsline {subsection}{\numberline {4.1}Random Error Detection}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Sequencing Simulation}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Sequencing Results}{16}{subsection.4.3}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 5}Case Study}}{18}{section*.8}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 6}Conclusion}}{19}{section*.9}
+\contentsline {section}{\texorpdfupper {References Cited}}{20}{section*.10}

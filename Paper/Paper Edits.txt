@@ -1,0 +1,37 @@
+Come up with a title
+Use Mandy's format
+Authors: My name first
+Short Title?
+Keywords
+Double space paper
+Figures and Tables all at end
+Do not use contractions
+Present tense
+Linetypes instead of color
+Labels: first author's last name and then two digit year, then a,b,c etc. for tie-breaking
+Include note: Alot of the methods developed are not tested on simulated data.  Reference the ones we've found so far
+While the intuition may be to homogenize prior to random error detection, that hypothesis has never been tested formally
+h for lag days, estimated on residuals and not temps themselves
+List out steps for algorithm 
+
+
+Use 12 hours apart observations for ACF computation.  Does this differ from 24 hour much?
+
+Bibtex?
+Figures appropriately sized?
+Appropriate level of detail
+
+Schedule for this week
+- 10:30 tomorrow through 19:30??
+Wednesday: 8:30 thru lunch
+Friday: Homogeneity talk
+Nothing next Monday/Tuesday
+1:20 minutes to get there: NCAR Mesa Lab
+Past eagle on carved tree, up steps, ask lady at front desk
+
+
+Send over lit review
+
+GLM for latent variables
+
+Reference for quantile estimator of kurtosis

@@ -1,0 +1,340 @@
+\documentclass[12pt]{article}
+\usepackage{epsfig, epsf, graphicx, subfigure}
+\usepackage{graphicx}
+\usepackage{pstricks, pst-node, psfrag}
+\usepackage{amssymb,amsmath}
+\usepackage{verbatim,enumerate}
+\usepackage{rotating, lscape}
+\usepackage{multirow}
+\usepackage{setspace}
+
+\usepackage{hyperref}
+\usepackage[square,sort,comma,numbers]{natbib}
+%\usepackage{hyperref}
+
+\usepackage[hang, flushmargin]{footmisc}
+
+\setlength{\oddsidemargin}{-0.125in}
+\setlength{\topmargin}{-0.5in} \setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-40pt} \setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+  
+\setlength{\textheight}{9.4in} \setlength{\textwidth}{6.8in}
+\setlength{\topmargin}{-71pt} \setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{-6pt} \tolerance=500
+%\input psfig.tex
+\setlength{\topmargin}{-56pt} \setlength{\oddsidemargin}{-6pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\wt{\widetilde}
+\def\diag{\hbox{diag}}
+\def\wh{\widehat}
+\def\AIC{\hbox{AIC}}
+\def\BIC{\hbox{BIC}}
+\def\sm{\footnotesize}
+%- Makes the section title start with Appendix in the appendix environment
+\newcommand{\Appendix}
+{%\appendix
+\def\thesection{Appendix~\Alph{section}}
+%\def\thesubsection{\Alph{section}.\arabic{subsection}}
+\def\thesubsection{A.\arabic{subsection}}
+}
+\def\diag{\hbox{diag}}
+\def\log{\hbox{log}}
+\def\bias{\hbox{bias}}
+\def\Siuu{\boldSigma_{i,uu}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\BIOK{{\it Biometrika}}
+\def\whT{\widehat{\Theta}}
+\def\STATMED{{\it Statistics in Medicine}}
+\def\STATSCI{{\it Statistical Science}}
+\def\JSPI{{\it Journal of Statistical Planning \&amp; Inference}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Theory \& Methods}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\TECH{{\it Technometrics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\CDA{{\it Computational Statistics \& Data Analysis}}
+\def\JCGS{{\it Journal of Computational and Graphical Statistics}}
+\def\JCB{{\it Journal of Computational Biology}}
+\def\BIOINF{{\it Bioinformatics}}
+\def\JAMA{{\it Journal of the American Medical Association}}
+\def\JNUTR{{\it Journal of Nutrition}}
+\def\JCGS{{\it Journal of Computational and Graphical Statistics}}
+\def\LETTERS{{\it Letters in Probability and Statistics}}
+\def\JABES{{\it Journal of Agricultural and
+                      Environmental Statistics}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\JSPI{{\it Journal of Statistical Planning \& Inference}}
+\def\TECH{{\it Technometrics}}
+\def\BIOK{{\it Bio\-me\-tri\-ka}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Series A}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\SCAN{{\it Scandinavian Journal of Statistics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\whT{\widehat{\Theta}}
+\def\STATMED{{\it Statistics in Medicine}}
+\def\STATSCI{{\it Statistical Science}}
+\def\JSPI{{\it Journal of Statistical Planning \& Inference}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Theory \& Methods}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\TECH{{\it Technometrics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\CDA{{\it Computational Statistics \& Data Analysis}}
+\def\dfrac#1#2{{\displaystyle{#1\over#2}}}
+\def\VS{{\vskip 3mm\noindent}}
+\def\boxit#1{\vbox{\hrule\hbox{\vrule\kern6pt
+          \vbox{\kern6pt#1\kern6pt}\kern6pt\vrule}\hrule}}
+\def\refhg{\hangindent=20pt\hangafter=1}
+\def\refmark{\par\vskip 2mm\noindent\refhg}
+\def\naive{\hbox{naive}}
+\def\itemitem{\par\indent \hangindent2\pahttprindent \textindent}
+\def\var{\hbox{var}}
+\def\cov{\hbox{cov}}
+\def\corr{\hbox{corr}}
+\def\trace{\hbox{trace}}
+\def\refhg{\hangindent=20pt\hangafter=1}
+\def\refmark{\par\vskip 2mm\noindent\refhg}
+\def\Normal{\hbox{Normal}}
+\def\povr{\buildrel p\over\longrightarrow}
+\def\ccdot{{\bullet}}
+\def\bse{\begin{eqnarray*}}
+\def\ese{\end{eqnarray*}}
+\def\be{\begin{eqnarray}}
+\def\ee{\end{eqnarray}}
+\def\bq{\begin{equation}}
+\def\eq{\end{equation}}
+\def\bse{\begin{eqnarray*}}
+\def\ese{\end{eqnarray*}}
+\def\pr{\hbox{pr}}
+\def\wh{\widehat}
+\def\trans{^{\rm T}}
+\def\myalpha{{\cal A}}
+\def\th{^{th}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marc Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.2} % Change this 1.5 or whatever
+\newcommand{\qed}{\hfill\hfill\vbox{\hrule\hbox{\vrule\squarebox
+   {.667em}\vrule}\hrule}\smallskip}
+\newtheorem{Th}{Theorem}
+\newtheorem{Proof}{Proof}
+\newtheorem{Mth}{Main Theorem}
+\newtheorem{Def}{Definition}
+\newtheorem{Rem}{Remark}
+\newtheorem{Qes}{Question}
+\newtheorem{proposition}{Proposition}
+\newtheorem{Lem}{Lemma}
+\newtheorem{Cor}{Corollary}
+\newtheorem{Exa}{Example}
+\newtheorem{Eq}{Equation}
+%\renewcommand{\baselinestretch}{1.5}
+\def\btheta{{\boldsymbol \theta}}
+\def\balpha{{\boldsymbol \alpha}}
+\def\bmu{{\boldsymbol \mu}}
+\def\bpi{{\boldsymbol \pi}}
+\def\x{{\bf x}}
+\def\a{{\bf a}}
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mC{\mathcal{C}}
+\def\mH{\mathcal{H}}
+\def\mR{\mathcal{R}}
+\def\mD{\mathcal{D}}
+
+\newtheorem{lemm}{Lemma}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[thm]
+\newtheorem{defi}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{example}{Example}
+
+\def\bX{{\bf X}}
+\def\bY{{\bf Y}}
+\def\bZ{{\bf Z}}
+\def\bU{{\bf U}}
+\def\bT{{\bf T}}
+\def\bV{{\bf V}}
+\def\bx{{\bf x}}
+\def\by{{\bf y}}
+\def\bz{{\bf z}}
+\def\bu{{\bf u}}
+\def\bv{{\bf v}}
+\def\bs{{\bf s}}
+\def\ba{{\bf a}}
+\def\bb{{\bf b}}
+\def\bmu{{\boldsymbol \mu}}
+\def\bbeta{{\boldsymbol \beta}}
+\def\balpha{{\boldsymbol \alpha}}
+\def\bxi{{\boldsymbol \xi}}
+\def\bdelta{{\boldsymbol \delta}}
+\def\blambda{{\boldsymbol \lambda}}
+\def\btheta{{\boldsymbol \theta}}
+\def\beeta{{\boldsymbol \eta}}
+\def\bupsilon{{\boldsymbol \upsilon}}
+\def\R{\mathbb R}
+
+
+%\newcommand{\pr}{\mbox{Pr}}
+%\newcommand{\var}{\mbox{var}}
+%\newcommand{\cov}{\mbox{cov}}
+%\newcommand{\logit}{\mbox{logit }}
+\newcommand{\cp}{\stackrel{\mathcal{P}}{\rightarrow}}
+\newcommand{\cl}{\stackrel{\mathcal{D}}{\rightarrow}}
+\newcommand{\mystrut}{\vphantom{\int_0^1}}
+\newcommand{\p}{\stackrel{p}{\rightarrow}}
+\renewcommand{\d}{\stackrel{d}{\rightarrow}}
+\newcommand{\condind}{\perp\hspace{-1em}\perp}
+\newcommand{\sumi}{\ensuremath{\sum_{i=1}^{n}}}
+\newcommand{\sumj}{\ensuremath{\sum_{j=1}^{n}}}
+\newcommand{\eff}{\mbox{\scriptsize eff}}
+\def\my{\mathcal Y}
+
+
+
+
+\def\nh{\noindent\hangindent=1.5truecm\hangafter=1}
+\def\cl{\centerline}
+\def\ms{\medskip}
+\def\ni{\noindent}
+\def\ve{\vfill\eject}
+
+\def\A{{\rm A}}
+\def\ab{\allowbreak}
+\def\bigmi{\,\big|\,}
+\def\cI{{\cal I}}
+\def\cT{{\cal T}}
+\def\dt{{\dot t}}
+\def\da{{\dot a}}
+\def\dar{\downarrow}
+\def\ddt{{\ddot t}}
+\def\de{\delta}
+\def\De{\Delta}
+\def\ep{\epsilon}
+\def\gz{g_0}
+\def\ha{{\hat a}}
+\def\half{^{1/2}}
+\def\hg{{\hat g}}
+\def\hth{{\hat\th}}
+\def\hatt{{\hat t}}
+\def\hom{{\widehat\om}}
+\def\hOm{{\widehat\Om}}
+\def\lan{\langle}
+\def\ran{\rangle}
+\def\lfl{\lfloor}
+\def\rfl{\rfloor}
+\def\mhf{^{-1/2}}
+\def\mi{\,|\,}
+\def\mo{^{-1}}
+\def\mt{^{-2}}
+\def\mth{^{-3}}
+\def\mtht{^{-3/2}}
+\def\om{\omega}
+\def\Om{\Omega}
+\def\one{^{(1)}}
+\def\oqr{{\textstyle{1\over4}}}
+\def\otd{{\textstyle{1\over3}}}
+\def\ots{{\textstyle{1\over36}}}
+\def\part{\partial}
+\def\ra{\to}
+\def\rai{\ra\infty}
+\def\si{\sigma}
+\def\Si{\Sigma}
+\def\sumi{\sum_i\,}
+\def\sumion{\sum_{i=1}^n\,}
+\def\sumionu{\sum_{i=1}^\nu\,}
+\def\sumj{\sum_j\,}
+\def\sumjon{\sum_{j=1}^n\,}
+\def\sumjonu{\sum_{j=1}^\nu\,}
+\def\sumjonm{\sum_{j=1}^{n-1}\,}
+\def\sz{^0}
+\def\T{^{{\rm T}}}
+\def\th{\theta}
+\def\Th{\Theta}
+\def\thf{{\textstyle{1\over2}}}
+\def\two{^{(2)}}
+\def\var{{\rm var}}
+\def\z{_0}
+\def\R{\mathbb{R}}
+\def\bX{\mathbb{X}}
+\def\y{\mathbf{y}}
+\def\z{\mathbf{z}}
+\def\p{\mathbf{p}}
+\def\t{\mathbf{t}}
+\def\A{\mbox{A}}
+\def\v{\mathbf{v}}
+\def\u{\mathbf{u}}
+\def\s{\mathbf{s}}
+\def\w{\mathbf{w}}
+\def\eps{{\ensuremath\boldsymbol{\epsilon}}}
+\def\sig{{\ensuremath\boldsymbol{\sigma}}}
+\def\thet{{\ensuremath\boldsymbol{\theta}}}
+\def\bnu{{\ensuremath\boldsymbol{\nu}}}
+
+
+\def\hsp{{\hspace{.25cm}}}
+
+
+\pagenumbering{arabic}
+
+\begin{document}
+\thispagestyle{empty}
+\baselineskip=28pt
+\vskip 5mm
+\begin{center} {\Large{\bf   Simultaneous Treatment of Random and Systematic Errors in the Historical Radiosonde Temperature Archive}}
+\end{center}
+
+
+
+\baselineskip=12pt
+\vskip 5mm
+
+\begin{center}\large
+Joshua M. Browning\footnote{ \baselineskip=10pt
+Department of Applied Mathematics and Statistics, Colorado School of Mines, Golden, CO 80401,
+USA. 303.384.2462, \\E-mail: \{jbrownin, ahering\}@mines.edu} and Amanda S. Hering$^1$
+
+
+
+
+\end{center}
+
+\baselineskip=17pt
+\vskip 5mm
+\centerline{\today}
+\vskip 5mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\large{\bf Abstract}}
+\end{center}
+
+\baselineskip=14pt
+
+\ni  The historical radiosonde temperature archive, and indeed any large and lengthy observational dataset, must be quality controlled before it can be used properly.   Most research on quality control for such data focuses on the identification and removal of either systematic errors (homogenization) or random errors without considering an optimal process for treatment of both.  Additionally, little has been done to evaluate  homogenization methods applied to sub-daily data, and no research exists on using robust estimators in homogenization procedures.  In this paper, we simulate realistic radiosonde temperature data and contaminate it with both systematic and random errors.  We then evaluate (1) the performance of several homogenization algorithms and (2) the sequence in which the random and systematic errors are identified and corrected.  In our simulations we find that the robust Standard Normal Homogeneity Test (SNHT) that we introduce performs better than the traditional SNHT, and it is better than several other modern alternatives.  Moreover, we find that systematic errors present in the data lead to poorer performance of random error removal algorithms, but the presence of random errors in the data is not as detrimental to homogenization algorithms.
+
+%the effects of homogenizing data, via several homogenization algorithms, prior to or after removing errors and compare the resulting dataset with the ground truth. 
+
+\begin{singlespacing}
+\par\vfill\noindent
+{\bf Some keywords:} Change Point Detection; Homogenization; Outlier Detection; Radiosonde Temperature Data
+
+\par\medskip\noindent
+{\bf Short title}:  Simultaneous Random and Systematic Error Detection
+
+\end{singlespacing}
+\end{document}
