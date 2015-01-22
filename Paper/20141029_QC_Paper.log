@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  21 JAN 2015 05:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  22 JAN 2015 04:28
 entering extended mode
 **20141029_QC_Paper.tex
 
@@ -653,7 +653,7 @@ Overfull \hbox (27.68016pt too wide) in paragraph at lines 637--650
 
 
 ]
-<70219_Data_Unhomogenized_no_vlines.png, id=316, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_no_vlines.png, id=320, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_no_vlines.png>
@@ -661,7 +661,7 @@ Package pdftex.def Info: 70219_Data_Unhomogenized_no_vlines.png used on input l
 ine 759.
 (pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
 
-<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=317, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=321, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_zoomed_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_zoomed_no_vlines.png>
@@ -673,56 +673,56 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 758--762
  [][] 
  []
 
-<35121_time_series.png, id=318, 505.89pt x 216.81pt>
+<35121_time_series.png, id=322, 505.89pt x 216.81pt>
 File: 35121_time_series.png Graphic file (type png)
 
 <use 35121_time_series.png>
 Package pdftex.def Info: 35121_time_series.png used on input line 769.
 (pdftex.def)             Requested size: 442.2896pt x 189.55609pt.
 
-<35121_simulated_1.png, id=319, 505.89pt x 216.81pt>
+<35121_simulated_1.png, id=323, 505.89pt x 216.81pt>
 File: 35121_simulated_1.png Graphic file (type png)
 
 <use 35121_simulated_1.png>
 Package pdftex.def Info: 35121_simulated_1.png used on input line 770.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_1.png, id=320, 505.89pt x 216.81pt>
+<35121_contaminated_1.png, id=324, 505.89pt x 216.81pt>
 File: 35121_contaminated_1.png Graphic file (type png)
 
 <use 35121_contaminated_1.png>
 Package pdftex.def Info: 35121_contaminated_1.png used on input line 771.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_simulated_2.png, id=321, 505.89pt x 216.81pt>
+<35121_simulated_2.png, id=325, 505.89pt x 216.81pt>
 File: 35121_simulated_2.png Graphic file (type png)
 
 <use 35121_simulated_2.png>
 Package pdftex.def Info: 35121_simulated_2.png used on input line 772.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_2.png, id=322, 505.89pt x 216.81pt>
+<35121_contaminated_2.png, id=326, 505.89pt x 216.81pt>
 File: 35121_contaminated_2.png Graphic file (type png)
 
 <use 35121_contaminated_2.png>
 Package pdftex.def Info: 35121_contaminated_2.png used on input line 773.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_simulated_3.png, id=323, 505.89pt x 216.81pt>
+<35121_simulated_3.png, id=327, 505.89pt x 216.81pt>
 File: 35121_simulated_3.png Graphic file (type png)
 
 <use 35121_simulated_3.png>
 Package pdftex.def Info: 35121_simulated_3.png used on input line 774.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_3.png, id=324, 505.89pt x 216.81pt>
+<35121_contaminated_3.png, id=328, 505.89pt x 216.81pt>
 File: 35121_contaminated_3.png Graphic file (type png)
 
 <use 35121_contaminated_3.png>
 Package pdftex.def Info: 35121_contaminated_3.png used on input line 775.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<homogenization_efficiency_boxplots.png, id=325, 722.7pt x 578.16pt>
+<homogenization_efficiency_boxplots.png, id=329, 722.7pt x 578.16pt>
 File: homogenization_efficiency_boxplots.png Graphic file (type png)
 
 <use homogenization_efficiency_boxplots.png>
@@ -733,7 +733,7 @@ ine 782.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Model_Plot_BW.png, id=326, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW.png, id=330, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW.png>
@@ -743,7 +743,7 @@ Package pdftex.def Info: Efficiency_Model_Plot_BW.png used on input line 789.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<TPR_Order_Plot_BW.png, id=327, 867.24pt x 216.81pt>
+<TPR_Order_Plot_BW.png, id=331, 867.24pt x 216.81pt>
 File: TPR_Order_Plot_BW.png Graphic file (type png)
 
 <use TPR_Order_Plot_BW.png>
@@ -753,7 +753,7 @@ Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 796.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<FPR_Order_Plot_BW.png, id=328, 867.24pt x 216.81pt>
+<FPR_Order_Plot_BW.png, id=332, 867.24pt x 216.81pt>
 File: FPR_Order_Plot_BW.png Graphic file (type png)
 
 <use FPR_Order_Plot_BW.png>
@@ -763,7 +763,7 @@ Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 803.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Order_Plot_BW.png, id=329, 867.24pt x 216.81pt>
+<Efficiency_Order_Plot_BW.png, id=333, 867.24pt x 216.81pt>
 File: Efficiency_Order_Plot_BW.png Graphic file (type png)
 
 <use Efficiency_Order_Plot_BW.png>
@@ -773,7 +773,7 @@ Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 811.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"70219_Data_Unhomogenized_zoomed".png, id=330, 578.16pt x 252.945pt>
+<"70219_Data_Unhomogenized_zoomed".png, id=334, 578.16pt x 252.945pt>
 File: "70219_Data_Unhomogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Unhomogenized_zoomed".png>
@@ -781,7 +781,7 @@ Package pdftex.def Info: "70219_Data_Unhomogenized_zoomed".png used on input li
 ne 819.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized_zoomed".png, id=331, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized_zoomed".png, id=335, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Homogenized_zoomed".png>
@@ -789,7 +789,7 @@ Package pdftex.def Info: "70219_Data_Homogenized_zoomed".png used on input line
  820.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized".png, id=332, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized".png, id=336, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized".png Graphic file (type png)
 
 <use "70219_Data_Homogenized".png>
@@ -856,9 +856,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on 20141029_QC_Paper.pdf (31 pages, 827388 bytes).
+Output written on 20141029_QC_Paper.pdf (31 pages, 829051 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
+ 453 PDF objects out of 1000 (max. 8388607)
  107 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

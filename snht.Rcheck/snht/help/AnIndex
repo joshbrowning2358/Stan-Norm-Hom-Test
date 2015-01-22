@@ -1,6 +1,10 @@
 snht-package	snht-package
+createCandidateMatrix	createCandidateMatrix
+getPairs	getPairs
+getUniquePairs	getUniquePairs
 pairwiseSNHT	pairwiseSNHT
 removeSeasonalPeriod	removeSeasonalPeriod
 robustSNHT	robustSNHT
 robustSNHTunequal	robustSNHTunequal
 snht	snht
+unconfoundCandidateMatrix	unconfoundCandidateMatrix

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  21 DEC 2014 06:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  22 JAN 2015 04:41
 entering extended mode
-**C:/Users/ROCKC_?1/AppData/Local/Temp/RtmpqY7R44/Rd2pdf1e40138b22e8/Rd2.tex
-(C:/Users/ROCKC_~1/AppData/Local/Temp/RtmpqY7R44/Rd2pdf1e40138b22e8/Rd2.tex
+**C:/Users/ROCKC_?1/AppData/Local/Temp/Rtmp8cBGk2/Rd2pdf1e0421a858ba/Rd2.tex
+(C:/Users/ROCKC_~1/AppData/Local/Temp/Rtmp8cBGk2/Rd2pdf1e0421a858ba/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -624,7 +624,7 @@ File: latin1.def 2008/03/30 v1.1d Input encoding file
 \@indexfile=\write3
 
 Writing index file Rd2.idx
-(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.aux)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -683,8 +683,8 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.out)
-(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.out)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.out)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
@@ -704,7 +704,7 @@ LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
-(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.toc
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -720,56 +720,68 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [2]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [3]
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [3] [4]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 171.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [5]
+LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 289.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd"
 File: ts1zi4.fd 2014/06/22 Fontinst v1.933 font definitions for TS1/zi4.
-) [4]
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [5]
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [6]
-Overfull \hbox (5.16762pt too wide) in paragraph at lines 346--349
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [7]
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Overfull \hbox (5.16762pt too wide) in paragraph at lines 464--467
 \T1/ptm/m/n/10 ber's ro-bust es-ti-ma-tor for the mean and vari-ance will be us
 ed (see ?MASS::huber). 
  []
 
-[7] (C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.ind
-[8]
+[8] [9] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [10]
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.ind
+[11]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
- [9
+ [12
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
 
-(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpqY7R44\Rd2pdf1e40138b22e8\Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp8cBGk2\Rd2pdf1e0421a858ba\Rd2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: FD0ADEBF0E5FA536B082BBD5BC898C65;393.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 432.
+(rerunfilecheck)             Checksum: 10AB0A659FA8CA42F23B5A2A362D90B6;663.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 6411 strings out of 493921
- 92244 string characters out of 3147270
- 167297 words of memory out of 3000000
- 9524 multiletter control sequences out of 15000+200000
+ 6450 strings out of 493921
+ 93125 string characters out of 3147270
+ 166297 words of memory out of 3000000
+ 9528 multiletter control sequences out of 15000+200000
  40963 words of font info for 50 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 38i,5n,27p,503b,527s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,5n,34p,300b,516s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Rfn.huber} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -782,9 +794,9 @@ helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (9 pages, 116590 bytes).
+Output written on Rd2.pdf (12 pages, 129774 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

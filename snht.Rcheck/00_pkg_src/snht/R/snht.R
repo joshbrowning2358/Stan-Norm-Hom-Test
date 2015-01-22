@@ -85,10 +85,6 @@
 
 snht = function(data, period, robust = F, time = NULL, scaled = TRUE
       ,rmSeasonalPeriod = Inf, ...){
-  if(period != round(period)){
-    warning("period should be an integer!  Rounding to continue...")
-    period = round(period)
-  }
   if(!is.numeric(data))
     stop("data must be numeric!")
   if(2*period>length(data))

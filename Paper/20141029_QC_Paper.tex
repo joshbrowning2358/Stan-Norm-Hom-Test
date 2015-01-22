@@ -429,13 +429,13 @@ PELT is another algorithm for optimizing Equation (\ref{eq:cost}), but it comput
 
 The SNHT test works as follows.  For each observation, two means are computed: one for the $N$ days prior to observation $i$, $\bar{X}_{L,i}$, and one for the $N$ days following, $\bar{X}_{R,i}$.  Then, the test statistic
 \begin{equation}
-	T_i = \frac{N}{s_i}\left( (\bar{X}_{L,i}-\bar{X}_i)^2 + (\bar{X}_{R,i}-\bar{X}_i)^2\right),
+	T_i = \frac{N}{s_i^2}\left( (\bar{X}_{L,i}-\bar{X}_i)^2 + (\bar{X}_{R,i}-\bar{X}_i)^2\right),
 	\label{eq:Hom}
 \end{equation}
 
-\textbf{[Correct equation, discuss Haimberger reference (and paper he references)]}
+\textbf{[Corrected equation, discussed Haimberger reference (and paper he references) in the following paragraph]}
 
-\ni is computed where $\bar{X}_i$ is the mean of $\bar{X}_{L,i}$ and $\bar{X}_{R,i}$, and $s_i$ is the estimated standard deviation over the $N$ days prior and $N$ days following observation $i$.  If there are not $N$ observations both before and after the current observation, no test is performed.  If the largest $T_i$ exceeds some threshold at time $i=i^*$, we conclude that a change point occurred at time $i^*$, and we adjust all observations after time $i^*$ by $\bar{X}_{L,i^*}-\bar{X}_{R,i^*}$.  Homogenization now proceeds iteratively.  $T_i$ is recomputed for all $i$ that are sufficiently far away from the current change points, $i\in\{1,\ldots,n\} \setminus \{i^*-k, \ldots, i^*+k\}$, and the test is performed again until no $T_i$ exceed the threshold, and we use $k=N$.  In \cite{haimberger07}, a threshold of 100 is recommended, and we find this value to work well in our simulations.  Note that in practice, it is generally preferable to homogenize to the most recent data, as that data is considered to be more reliable, and some follow this convention \cite{domonkos13}. %Section 2.3
+\ni is computed where $\bar{X}_i$ is the mean of $\bar{X}_{L,i}$ and $\bar{X}_{R,i}$, and $s_i$ is the estimated standard deviation over the $N$ days prior and $N$ days following observation $i$.  If there are not $N$ observations both before and after the current observation, no test is performed.  If the largest $T_i$ exceeds some threshold at time $i=i^*$, we conclude that a change point occurred at time $i^*$, and we adjust all observations after time $i^*$ by $\bar{X}_{L,i^*}-\bar{X}_{R,i^*}$.  Homogenization now proceeds iteratively.  $T_i$ is recomputed for all $i$ that are sufficiently far away from the current change points, $i\in\{1,\ldots,n\} \setminus \{i^*-k, \ldots, i^*+k\}$, and the test is performed again until no $T_i$ exceed the threshold, and we use $k=N$.  In \cite{haimberger07}, a threshold of 100 is recommended, and we find this value to work well in our simulations.  The test statistic in \cite{haimberger07} differs from the one here in that a denominator of $s_i$ is used in place of $s_i^2$.  However, we believe that to be a typographical error, as the statistic in \cite{haimberger07} is derived from \cite{alexandersson86}.  In \cite{alexandersson86}, $\bar{X}_{L,i}, \bar{X}_{R,i}$ and $\bar{X}_{i}$ are first standardized, and thus this is equivalent to our formulation.  \textbf{[Should I discuss the distribution of X here?]} Note that in practice, it is generally preferable to homogenize to the most recent data, as that data is considered to be more reliable, and some follow this convention \cite{domonkos13}. %Section 2.3
 
 We propose an alternative estimator that replaces the means and standard deviation in Equation~(\ref{eq:Hom}) with the Huber M-estimator of the mean and standard deviation \cite{huber11}.  These robust estimators of center and spread are computed as follows:
 \begin{enumerate}
@@ -461,11 +461,9 @@ We propose an alternative estimator that replaces the means and standard deviati
 	\item Steps 2 and 3 are repeated until $\hat{\mu}$ changes by less than $10^{-6} \hat{\sigma}$.
 \end{enumerate}
 
-\ni This definition forces unusually large observations to have little to no influence on the estimators of the mean and standard deviation, and they are robust against random errors, which may be present during homogenization.  BinSeg and PELT are not robust against random errors when $\mathcal{C}$ is chosen to be twice the negative Gaussian log likelihood.  An \texttt{R} package implementing this method is available at \url{http://inside.mines.edu/~jbrownin/snht_1.0.tar.gz}.
+\ni This definition forces unusually large observations to have little to no influence on the estimators of the mean and standard deviation, and they are robust against random errors, which may be present during homogenization.  BinSeg and PELT are not robust against random errors when $\mathcal{C}$ is chosen to be twice the negative Gaussian log likelihood.  An \texttt{R} package implementing this method is available on CRAN at \url{http://cran.r-project.org/web/packages/snht/index.html}.
 
 \textbf{[Add paragraph about removing seasonal trends here.]}
-
-%http://inside.mines.edu/$\sim$jbrownin/snht\_1.0.tar.gz.
 
 Evaluation of homogenization algorithms can be done by computing the number of simulated change points in the data that were accurately detected.  However, it is unlikely that a homogenization algorithm will detect the exact time of the change point, and thus hit rate is not a very useful metric.  Instead, we use efficiency as defined in \cite{domonkos13}.  Let $\mathbf{x}$, $\mathbf{c}$, and $\mathbf{h}$ be the original, contaminated, and contaminated and homogenized time series, respectively and let the $i$-th observation be denoted by $x_i, c_i$, and $h_i$ respectively.  The Root Mean Square Error (RMSE) of $\mathbf{h}$ is then defined as follows:
 \begin{equation*}

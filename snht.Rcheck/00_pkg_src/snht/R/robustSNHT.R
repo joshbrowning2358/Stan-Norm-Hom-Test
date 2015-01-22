@@ -81,10 +81,6 @@ robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
       )  
 {
   #Data quality checks
-  if(period != round(period)){
-    warning("period should be an integer!  Rounding to continue...")
-    period = round(period)
-  }
   if(!is.numeric(data))
     stop("data must be numeric!")
   if(2*period>length(data))

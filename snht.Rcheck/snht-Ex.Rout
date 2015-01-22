@@ -43,12 +43,13 @@ Type 'q()' to quit R.
 > out = snht( data, period=50, robust=FALSE )
 > summary(out)
      score             leftMean         rightMean      
- Min.   : 0.00000   Min.   :-2.3839   Min.   :-2.3839  
- 1st Qu.: 0.05463   1st Qu.:-2.0660   1st Qu.:-2.0660  
- Median : 0.37707   Median :-1.9823   Median :-1.9823  
- Mean   : 3.28884   Mean   :-1.7089   Mean   :-1.6102  
- 3rd Qu.: 1.49881   3rd Qu.:-1.8634   3rd Qu.:-1.8162  
+ Min.   : 0.00001   Min.   :-2.3839   Min.   :-2.3839  
+ 1st Qu.: 0.10213   1st Qu.:-2.0803   1st Qu.:-2.0803  
+ Median : 0.48087   Median :-2.0024   Median :-2.0024  
+ Mean   : 3.65427   Mean   :-1.8988   Mean   :-1.7891  
+ 3rd Qu.: 1.68664   3rd Qu.:-1.9035   3rd Qu.:-1.8996  
  Max.   :93.18451   Max.   : 0.1137   Max.   : 0.2296  
+ NA's   :100        NA's   :100       NA's   :100      
 > 
 > data = rnorm(1000)
 > time = 1:1000 + rnorm(1000)
@@ -58,13 +59,14 @@ Type 'q()' to quit R.
 Warning in robustSNHTunequal(data = data, period = period, time = time,  :
   Only integer values of time are used!  Rounding down.
 > summary(out)
-     score            leftMean           rightMean              time      
- Min.   : 0.0000   Min.   :-2.332201   Min.   :-2.324189   Min.   :  1.0  
- 1st Qu.: 0.0861   1st Qu.:-2.066295   1st Qu.:-2.032347   1st Qu.:250.0  
- Median : 0.4746   Median :-1.909674   Median :-1.887036   Median :499.5  
- Mean   : 3.0527   Mean   :-1.335292   Mean   :-1.238111   Mean   :500.1  
- 3rd Qu.: 1.3055   3rd Qu.:-0.008237   3rd Qu.:-0.008546   3rd Qu.:751.0  
- Max.   :83.5057   Max.   : 0.249439   Max.   : 0.249439   Max.   :999.0  
+     score            leftMean         rightMean            time      
+ Min.   : 0.0000   Min.   :-2.3322   Min.   :-2.3242   Min.   :  1.0  
+ 1st Qu.: 0.1748   1st Qu.:-2.0852   1st Qu.:-2.0572   1st Qu.:250.0  
+ Median : 0.6004   Median :-1.9405   Median :-1.9100   Median :499.5  
+ Mean   : 3.3956   Mean   :-1.4853   Mean   :-1.3772   Mean   :500.1  
+ 3rd Qu.: 1.4542   3rd Qu.:-0.6258   3rd Qu.:-0.1293   3rd Qu.:751.0  
+ Max.   :83.5057   Max.   : 0.2494   Max.   : 0.2494   Max.   :999.0  
+ NA's   :101       NA's   :101       NA's   :101                      
 > 
 > 
 > 
@@ -72,7 +74,7 @@ Warning in robustSNHTunequal(data = data, period = period, time = time,  :
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.27 0.1 1.36 NA NA 
+Time elapsed:  1.83 0.16 2.25 NA NA 
 > grDevices::dev.off()
 null device 
           1 
