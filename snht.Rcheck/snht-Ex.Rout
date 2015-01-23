@@ -74,7 +74,7 @@ Warning in robustSNHTunequal(data = data, period = period, time = time,  :
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  1.83 0.16 2.25 NA NA 
+Time elapsed:  1.26 0.08 1.35 NA NA 
 > grDevices::dev.off()
 null device 
           1 

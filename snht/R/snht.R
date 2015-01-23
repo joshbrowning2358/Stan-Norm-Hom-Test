@@ -91,13 +91,15 @@ snht = function(data, period, robust = F, time = NULL, scaled = TRUE
   }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2*period>length(data))
+  if(2 * period >= length(data) - 1)
     stop("period is too large to compute statistics!")
   if(!is.null(time))
-    if(length(time)!=length(data))
+    if(length(time) != length(data))
       stop("If time is not NULL, it must be the same length as data!")
   if(rmSeasonalPeriod < Inf & rmSeasonalPeriod > length(data)/2)
     stop("Seasonal period must be <= half of the number of observations")
+  if(length(data) < 5)
+    stop("snht requires at least 5 observations!")
   
   if(!is.null(time)){
     if(robust)

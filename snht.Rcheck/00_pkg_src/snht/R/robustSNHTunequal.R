@@ -55,19 +55,25 @@
 robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=TRUE
                       ,rmSeasonalPeriod = Inf){
   #Data quality checks
+  if(period != round(period)){
+    warning("period should be an integer!  Rounding to continue...")
+    period = round(period)
+  }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2*period>length(data))
+  if(2*period >= length(data))
     stop("period is too large to compute statistics!")
   if(!is.numeric(time))
     stop("time must be numeric!")
   if(!is.null(estimator) & !is(estimator,"function"))
     stop("estimator must be a function or must be NULL!")
-  if(length(data)!=length(time))
+  if(length(data) != length(time))
     stop("data and time must be of the same length!")
   if(any(is.na(time)))
     stop("time cannot have missing values!")
-  if(any(time!=floor(time))){
+  if(length(data) < 5)
+    stop("snht requires at least 5 observations!")
+  if(any(time != floor(time))){
     warning("Only integer values of time are used!  Rounding down.")
     time = floor(time)
   }
@@ -87,11 +93,11 @@ robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=TRUE
   d = d[order(d$time),]
   
   if(is.null(estimator)){
-    out = robustSNHT(data=d[,1], period=period*maxObs, scaled=scaled
+    out = robustSNHT(data = d[, 1], period = period * maxObs, scaled = scaled
               ,rmSeasonalPeriod = rmSeasonalPeriod * maxObs)
   } else {
-    out = robustSNHT(data=d[,1], period=period * maxObs, scaled=scaled, estimator
-              ,rmSeasonalPeriod = rmSeasonalPeriod * maxObs)
+    out = robustSNHT(data = d[, 1], period = period * maxObs, scaled = scaled,
+                     estimator, rmSeasonalPeriod = rmSeasonalPeriod * maxObs)
   }
   out$time = d$time
   return(out[d$realObs==1,])

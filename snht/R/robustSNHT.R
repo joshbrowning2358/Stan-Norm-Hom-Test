@@ -61,20 +61,20 @@
 ##' @export
 ##' 
 
-robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
+robustSNHT <- function(data, period, scaled = TRUE, rmSeasonalPeriod = Inf
 #      #Tukey estimator:
 #      ,estimator=function(x){
 #          fit = rlm( x ~ 1, psi=psi.bisquare, c=1.5, maxit=100)
 #          return(c(fit$coeff, fit$s))        
 #        }
       #Huber estimator:
-      ,estimator=function(x, minObs=5){
+      ,estimator = function(x, minObs = 5){
           #minObs arbitrarilty set to 5, want to ensure a decent number of values
           x = x[!is.na(x)]
-          if(length(x)<minObs) #Too many NA values, don't return a result
-            return(c(NA,NA))
-          if(max(table(x))>length(x)/2) #Too many duplicate values, MAD will be 0
-            return(c(NA,NA))
+          if(length(x) < minObs) #Too many NA values, don't return a result
+            return(c(NA, NA))
+          if(max(table(x)) > length(x) / 2) #Too many duplicate values, MAD will be 0
+            return(c(NA, NA))
           fit = MASS::huber(x)
           return(c(fit[[1]], fit[[2]]))        
         }
@@ -87,10 +87,12 @@ robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
   }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2*period>length(data))
+  if(2 * period >= length(data) - 1)
     stop("period is too large to compute statistics!")
+  if(length(data) < 5)
+    stop("snht requires at least 5 observations!")
   
-  if(rmSeasonalPeriod < Inf )
+  if(rmSeasonalPeriod < Inf)
     data = removeSeasonalPeriod(data, period = rmSeasonalPeriod)
   
 #   #Difficult to implement appropriately, as NA's cause different number of values to occur
@@ -114,12 +116,12 @@ robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
   n = zoo::rollapply(data, width=period, by=1, FUN=function(x) sum(!is.na(x)) )
   #Right means start at observation period+2 (first obs to use is at period+1
   # and then means are to the right)
-  rMeans = Means[(period+2):nrow(Means),]
-  rN = n[(period+2):nrow(Means)]
+  rMeans = Means[(period + 2):nrow(Means), ]
+  rN = n[(period + 2):nrow(Means)]
   #Left means are same length as right means but are at the beginning instead of end
-  lMeans = Means[1:nrow(rMeans),]
+  lMeans = Means[1:NROW(rMeans), ]
   lN = n[1:nrow(rMeans)]
-  totMean = (lN*lMeans[,1]+rN*rMeans[,1])/(lN+rN)
+  totMean = (lN*lMeans[, 1] + rN * rMeans[, 1]) / (lN + rN)
   if(scaled){
     scores = data.frame(
       #tukeyR also computes variances.  Variance of differences is sum of variances.
@@ -127,9 +129,9 @@ robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
       #N/2 observations on each side.  We must adjust for differing counts due to NA's:
       #Additional Note: Haimberger's test statistic divided by s but should have been s^2.
       #If scaled=TRUE, the correct statistic is used:
-      score= (lN*(lMeans[,1]-totMean)^2 + rN*(rMeans[,1]-totMean)^2 ) /
-        ( (lN*lMeans[,2]^2+rN*rMeans[,2]^2)/(lN+rN) )
-      ,leftMean=lMeans[,1], rightMean=rMeans[,1])
+      score= (lN * (lMeans[, 1] - totMean)^2 + rN * (rMeans[, 1] - totMean)^2 ) /
+        ( (lN * lMeans[, 2]^2 + rN * rMeans[, 2]^2) / (lN + rN) )
+      ,leftMean = lMeans[, 1], rightMean = rMeans[, 1])
   } else {
     scores = data.frame(
     #tukeyR also computes variances.  Variance of differences is sum of variances.

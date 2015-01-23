@@ -17,7 +17,16 @@
 
 removeSeasonalPeriod = function(x, period, time = 1:length(x)){
     timeOfPeriod = (time - time[1]) %% period
-    mod = mgcv::gam( x ~ s(timeOfPeriod) )
+    validObservations = sum(!is.na(x))
+    if(validObservations < 3){
+        stop("Can't remove seasonal period with so few observations!")
+    } else if(validObservations < 15){
+        warning("Very few observations available; seasonal trend removed via ",
+            "glm model.")
+        mod = glm(x ~ timeOfPeriod)
+    } else {
+        mod = mgcv::gam( x ~ s(timeOfPeriod) )
+    }
     x = x - predict(mod, newdata=data.frame(timeOfPeriod=timeOfPeriod))
     return(x)
 }

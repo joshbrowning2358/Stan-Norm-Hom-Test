@@ -4,7 +4,7 @@
 * using session charset: ISO8859-1
 * checking for file 'snht/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package 'snht' version '1.0'
+* this is package 'snht' version '1.0.1'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK

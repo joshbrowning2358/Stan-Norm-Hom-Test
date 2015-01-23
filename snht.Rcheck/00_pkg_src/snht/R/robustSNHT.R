@@ -68,25 +68,31 @@ robustSNHT <- function(data, period, scaled=TRUE, rmSeasonalPeriod=Inf
 #          return(c(fit$coeff, fit$s))        
 #        }
       #Huber estimator:
-      ,estimator=function(x, minObs=5){
+      ,estimator = function(x, minObs = 5){
           #minObs arbitrarilty set to 5, want to ensure a decent number of values
           x = x[!is.na(x)]
-          if(length(x)<minObs) #Too many NA values, don't return a result
-            return(c(NA,NA))
-          if(max(table(x))>length(x)/2) #Too many duplicate values, MAD will be 0
-            return(c(NA,NA))
+          if(length(x) < minObs) #Too many NA values, don't return a result
+            return(c(NA, NA))
+          if(max(table(x)) > length(x) / 2) #Too many duplicate values, MAD will be 0
+            return(c(NA, NA))
           fit = MASS::huber(x)
           return(c(fit[[1]], fit[[2]]))        
         }
       )  
 {
   #Data quality checks
+  if(period != round(period)){
+    warning("period should be an integer!  Rounding to continue...")
+    period = round(period)
+  }
   if(!is.numeric(data))
     stop("data must be numeric!")
   if(2*period>length(data))
     stop("period is too large to compute statistics!")
+  if(length(data) < 5)
+    stop("snht requires at least 5 observations!")
   
-  if(rmSeasonalPeriod < Inf )
+  if(rmSeasonalPeriod < Inf)
     data = removeSeasonalPeriod(data, period = rmSeasonalPeriod)
   
 #   #Difficult to implement appropriately, as NA's cause different number of values to occur

@@ -1,12 +1,12 @@
 Package: snht
 Type: Package
 Title: Standard Normal Homogeneity Test
-Version: 1.0
-Date: 2014-09-23
+Version: 1.0.1
+Date: 2015-01-22
 Imports: mgcv, zoo, plyr, reshape
 Author: Josh Browning
 Maintainer: Josh Browning <jbrownin@mines.edu>
 Description: Robust and non-robust SNHT tests for changepoint detection.
 License: GPL-3
-Packaged: 2015-01-22 03:39:26 UTC; rockc_000
-Built: R 3.1.0; ; 2015-01-22 03:41:05 UTC; windows
+Packaged: 2015-01-23 05:13:25 UTC; rockc_000
+Built: R 3.1.0; ; 2015-01-23 05:13:33 UTC; windows
