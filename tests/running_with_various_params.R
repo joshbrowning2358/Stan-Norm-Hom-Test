@@ -29,7 +29,7 @@ while(TRUE){
     } else {
         rmSeasonalPeriod = runif(1, min = 1, max = n/2)
     }
-    snht(data, period, robust, time, scaled, rmSeasonalPeriod)
+    stat = snht(data, period, robust, time, scaled, rmSeasonalPeriod)
     i = i + 1
     cat("Run number", i, "completed.\n")
 }

@@ -91,7 +91,7 @@ snht = function(data, period, robust = F, time = NULL, scaled = TRUE
   }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2*period >= length(data))
+  if(2 * period >= length(data) - 1)
     stop("period is too large to compute statistics!")
   if(!is.null(time))
     if(length(time) != length(data))

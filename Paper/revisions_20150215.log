@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  20 FEB 2015 05:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  15 FEB 2015 06:37
 entering extended mode
-**20150125_QC_Paper.tex
+**revisions_20150215.tex
 
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.tex
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -542,72 +542,84 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 \c@prop=\count171
 \c@example=\count172
 
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 294.
-LaTeX Font Info:    ... okay on input line 294.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box33
+\UL@hyphenbox=\box34
+\UL@skip=\skip59
+\UL@hook=\toks40
+\UL@height=\dimen170
+\UL@pe=\count173
+\UL@pixel=\dimen171
+\ULC@box=\box35
+Package: ulem 2012/05/18
+\ULdepth=\dimen172
+)
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
-\scratchdimen=\dimen170
-\scratchbox=\box33
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count176
-\MPscratchDim=\dimen171
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count174
+\scratchdimen=\dimen173
+\scratchbox=\box36
+\nofMPsegments=\count175
+\nofMParguments=\count176
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count177
+\MPscratchDim=\dimen174
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
+\everyMPtoPDFconversion=\toks42
 )
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 294.
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring OFF on input line 321.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 294.
-LaTeX Info: Redefining \pageref on input line 294.
-LaTeX Info: Redefining \nameref on input line 294.
+LaTeX Info: Redefining \ref on input line 321.
+LaTeX Info: Redefining \pageref on input line 321.
+LaTeX Info: Redefining \nameref on input line 321.
 
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.out)
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.out)
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.out)
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.out)
 \@outlinefile=\write4
-LaTeX Font Info:    Try loading font information for U+msa on input line 307.
+LaTeX Font Info:    Try loading font information for U+msa on input line 334.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 307.
+LaTeX Font Info:    Try loading font information for U+msb on input line 334.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 309.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 336.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 336.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -625,21 +637,26 @@ fTeX warning (ext4): destination with the same identifier (name{page.1}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.354 
+l.381 
        [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+] [2] [3] [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 481.
- [11] [12] [13] [14] [15]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 522.
+ [10] [11] [12] [13] [14] [15]
 [16]
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.bbl [17]) [18] [19
-
-] [20
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.bbl [17]) [18] [19
 
 ]
-Overfull \hbox (27.68016pt too wide) in paragraph at lines 630--643
+Overfull \hbox (290.53828pt too wide) in paragraph at lines 645--683
+ [][] 
+ []
+
+[20
+
+]
+Overfull \hbox (27.68016pt too wide) in paragraph at lines 690--703
  [][] 
  []
 
@@ -654,150 +671,150 @@ Overfull \hbox (27.68016pt too wide) in paragraph at lines 630--643
 
 
 ]
-<70219_Data_Unhomogenized_no_vlines.png, id=319, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_no_vlines.png, id=321, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_no_vlines.png>
 Package pdftex.def Info: 70219_Data_Unhomogenized_no_vlines.png used on input l
-ine 752.
+ine 812.
 (pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
 
-<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=320, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=322, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_zoomed_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_zoomed_no_vlines.png>
 Package pdftex.def Info: 70219_Data_Unhomogenized_zoomed_no_vlines.png used on 
-input line 753.
+input line 813.
 (pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 751--755
+Overfull \hbox (24.0pt too wide) in paragraph at lines 811--815
  [][] 
  []
 
-<35121_time_series.png, id=321, 505.89pt x 216.81pt>
+<35121_time_series.png, id=323, 505.89pt x 216.81pt>
 File: 35121_time_series.png Graphic file (type png)
 
 <use 35121_time_series.png>
-Package pdftex.def Info: 35121_time_series.png used on input line 762.
+Package pdftex.def Info: 35121_time_series.png used on input line 822.
 (pdftex.def)             Requested size: 442.2896pt x 189.55609pt.
 
-<35121_simulated_1.png, id=322, 505.89pt x 216.81pt>
+<35121_simulated_1.png, id=324, 505.89pt x 216.81pt>
 File: 35121_simulated_1.png Graphic file (type png)
 
 <use 35121_simulated_1.png>
-Package pdftex.def Info: 35121_simulated_1.png used on input line 763.
+Package pdftex.def Info: 35121_simulated_1.png used on input line 823.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_1.png, id=323, 505.89pt x 216.81pt>
+<35121_contaminated_1.png, id=325, 505.89pt x 216.81pt>
 File: 35121_contaminated_1.png Graphic file (type png)
 
 <use 35121_contaminated_1.png>
-Package pdftex.def Info: 35121_contaminated_1.png used on input line 764.
+Package pdftex.def Info: 35121_contaminated_1.png used on input line 824.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_simulated_2.png, id=324, 505.89pt x 216.81pt>
+<35121_simulated_2.png, id=326, 505.89pt x 216.81pt>
 File: 35121_simulated_2.png Graphic file (type png)
 
 <use 35121_simulated_2.png>
-Package pdftex.def Info: 35121_simulated_2.png used on input line 765.
+Package pdftex.def Info: 35121_simulated_2.png used on input line 825.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_2.png, id=325, 505.89pt x 216.81pt>
+<35121_contaminated_2.png, id=327, 505.89pt x 216.81pt>
 File: 35121_contaminated_2.png Graphic file (type png)
 
 <use 35121_contaminated_2.png>
-Package pdftex.def Info: 35121_contaminated_2.png used on input line 766.
+Package pdftex.def Info: 35121_contaminated_2.png used on input line 826.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_simulated_3.png, id=326, 505.89pt x 216.81pt>
+<35121_simulated_3.png, id=328, 505.89pt x 216.81pt>
 File: 35121_simulated_3.png Graphic file (type png)
 
 <use 35121_simulated_3.png>
-Package pdftex.def Info: 35121_simulated_3.png used on input line 767.
+Package pdftex.def Info: 35121_simulated_3.png used on input line 827.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_3.png, id=327, 505.89pt x 216.81pt>
+<35121_contaminated_3.png, id=329, 505.89pt x 216.81pt>
 File: 35121_contaminated_3.png Graphic file (type png)
 
 <use 35121_contaminated_3.png>
-Package pdftex.def Info: 35121_contaminated_3.png used on input line 768.
+Package pdftex.def Info: 35121_contaminated_3.png used on input line 828.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<Efficiency_Model_Plot_BW_seas_adj.png, id=328, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW_seas_adj.png, id=330, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seas_adj.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seas_adj.png>
 Package pdftex.def Info: Efficiency_Model_Plot_BW_seas_adj.png used on input li
-ne 775.
+ne 837.
 (pdftex.def)             Requested size: 491.43622pt x 245.71695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Model_Plot_BW_seasonal.png, id=329, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW_seasonal.png, id=331, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seasonal.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seasonal.png>
 Package pdftex.def Info: Efficiency_Model_Plot_BW_seasonal.png used on input li
-ne 782.
+ne 846.
 (pdftex.def)             Requested size: 491.43622pt x 245.71695pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<TPR_Order_Plot_BW.png, id=330, 867.24pt x 216.81pt>
+<TPR_Order_Plot_BW.png, id=332, 867.24pt x 216.81pt>
 File: TPR_Order_Plot_BW.png Graphic file (type png)
 
 <use TPR_Order_Plot_BW.png>
-Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 789.
+Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 853.
 (pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<FPR_Order_Plot_BW.png, id=331, 867.24pt x 216.81pt>
+<FPR_Order_Plot_BW.png, id=333, 867.24pt x 216.81pt>
 File: FPR_Order_Plot_BW.png Graphic file (type png)
 
 <use FPR_Order_Plot_BW.png>
-Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 796.
+Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 860.
 (pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Order_Plot_BW.png, id=332, 867.24pt x 216.81pt>
+<Efficiency_Order_Plot_BW.png, id=334, 867.24pt x 216.81pt>
 File: Efficiency_Order_Plot_BW.png Graphic file (type png)
 
 <use Efficiency_Order_Plot_BW.png>
-Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 804.
+Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 868.
 (pdftex.def)             Requested size: 491.43622pt x 122.85847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"70219_Data_Unhomogenized_zoomed".png, id=333, 578.16pt x 252.945pt>
+<"70219_Data_Unhomogenized_zoomed".png, id=335, 578.16pt x 252.945pt>
 File: "70219_Data_Unhomogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Unhomogenized_zoomed".png>
 Package pdftex.def Info: "70219_Data_Unhomogenized_zoomed".png used on input li
-ne 812.
+ne 876.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized_zoomed".png, id=334, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized_zoomed".png, id=336, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Homogenized_zoomed".png>
 Package pdftex.def Info: "70219_Data_Homogenized_zoomed".png used on input line
- 813.
+ 877.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized".png, id=335, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized".png, id=337, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized".png Graphic file (type png)
 
 <use "70219_Data_Homogenized".png>
-Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 814.
+Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 878.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 820.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 884.
  [25
 
 
@@ -811,38 +828,35 @@ s/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_contaminated_1.png>
 2.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_cont
 aminated_2.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/3
 5121_simulated_3.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/P
-aper/35121_contaminated_3.png>]
-
-LaTeX Warning: Text page 27 contains only floats.
-
-[27 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Mo
-del_Plot_BW_seas_adj.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Te
-st/Paper/Efficiency_Model_Plot_BW_seasonal.png>] [28 <C:/Users/rockc_000/Docume
-nts/GitHub/Stan-Norm-Hom-Test/Paper/TPR_Order_Plot_BW.png> <C:/Users/rockc_000/
-Documents/GitHub/Stan-Norm-Hom-Test/Paper/FPR_Order_Plot_BW.png> <C:/Users/rock
-c_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Order_Plot_BW.png>]
-[29 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_Un
+aper/35121_contaminated_3.png>] [27 <C:/Users/rockc_000/Documents/GitHub/Stan-N
+orm-Hom-Test/Paper/Efficiency_Model_Plot_BW_seas_adj.png>] [28 <C:/Users/rockc_
+000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Model_Plot_BW_seasonal
+.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/TPR_Order_P
+lot_BW.png>] [29 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/
+FPR_Order_Plot_BW.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/
+Paper/Efficiency_Order_Plot_BW.png>]
+[30 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_Un
 homogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test
 /Paper/70219_Data_Homogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHub/
 Stan-Norm-Hom-Test/Paper/70219_Data_Homogenized.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 820.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 884.
 
-(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150125_QC_Paper
-.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 820.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 820.
-Package rerunfilecheck Info: File `20150125_QC_Paper.out' has not changed.
+(C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\revisions_2015021
+5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 884.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 884.
+Package rerunfilecheck Info: File `revisions_20150215.out' has not changed.
 (rerunfilecheck)             Checksum: BDB3D1BA59CD4001FBE70C7E69C07980;778.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 820.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 884.
  ) 
 Here is how much of TeX's memory you used:
- 14824 strings out of 493921
- 238500 string characters out of 3147270
- 334479 words of memory out of 3000000
- 17791 multiletter control sequences out of 15000+200000
- 13886 words of font info for 54 fonts, out of 3000000 for 9000
+ 14924 strings out of 493921
+ 239478 string characters out of 3147270
+ 368995 words of memory out of 3000000
+ 17885 multiletter control sequences out of 15000+200000
+ 13992 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,12n,40p,1684b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,40p,1685b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -860,10 +874,11 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb>
-Output written on 20150125_QC_Paper.pdf (30 pages, 879207 bytes).
+msfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+latxfont/lasy6.pfb>
+Output written on revisions_20150215.pdf (31 pages, 896735 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
