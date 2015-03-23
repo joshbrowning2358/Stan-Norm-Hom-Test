@@ -1,0 +1,23 @@
+\begin{thebibliography}{2}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Domonkos(2013)}]{domonkos13}
+Domonkos P (2013).
+\newblock \enquote{Measuring performances of homogenization methods.}
+\newblock \emph{Quarterly Journal of the Hungarian Meteorological Service},
+  \textbf{117}(1), 91--112.
+
+\bibitem[{Huber(2011)}]{huber11}
+Huber PJ (2011).
+\newblock \emph{Robust Statistics}.
+\newblock Springer.
+
+\end{thebibliography}
