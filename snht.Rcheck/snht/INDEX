@@ -2,6 +2,7 @@ createCandidateMatrix   Create candidate matrix
 getPairs                Gets Pairs from Distances
 getUniquePairs          Get Unique Pairs
 pairwiseSNHT            Pairwise Standard Normal Homogeneity Test
+plotSNHT                Plot SNHT
 removeSeasonalPeriod    Remove Seasonal Period
 robustSNHT              Robust SNHT
 robustSNHTunequal       Robust SNHT with Unequal Times

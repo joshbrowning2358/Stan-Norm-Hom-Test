@@ -4,9 +4,7 @@
 * using session charset: ISO8859-1
 * checking for file 'snht/DESCRIPTION' ... OK
 * checking extension type ... Package
-* this is package 'snht' version '1.0.1'
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Josh Browning <jbrownin@mines.edu>'
+* this is package 'snht' version '1.0.2'
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -36,13 +34,12 @@ Maintainer: 'Josh Browning <jbrownin@mines.edu>'
 * checking R code for possible problems ... OK
 * checking Rd files ... OK
 * checking Rd metadata ... OK
-* checking Rd line widths ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
+* checking files in 'vignettes' ... OK
 * checking examples ... OK
 * checking PDF version of manual ... OK
-NOTE: There was 1 note.
