@@ -4,7 +4,7 @@ Title: Standard Normal Homogeneity Test
 Version: 1.0.2
 Date: 2015-03-25
 Imports: mgcv, zoo, plyr, reshape, ggplot2, gridExtra
-Author: Josh Browning
+Author: Josh Browning <jbrownin@mines.edu>, Amanda Hering <ahering@mines.edu>
 Maintainer: Josh Browning <jbrownin@mines.edu>
 Description: Robust and non-robust SNHT tests for changepoint detection.
 License: GPL-3
