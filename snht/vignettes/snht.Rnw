@@ -22,9 +22,9 @@
 
 \title{\bf Robust and non-robust SNHT tests for changepoint detection.}
 
-\author{Joshua M. Browning, Amanda S. Hering}
+\author{Joshua M. Browning}
 
-\Plainauthor{Joshua M. Browning, Amanda S. Hering}
+\Plainauthor{Joshua M. Browning}
 
 \Shorttitle{Robust SNHT}
 
@@ -34,10 +34,10 @@ package for changepoint detection.}
 \Keywords{SNHT, robust, time series, climate data, temperature data}
 
 \Address{
-Joshua M. Browning, Amanda S. Hering\\
+Joshua M. Browning\\
 Department of Applied Mathematics and Statistics, Colorado School of Mines\\
 Golden, CO 80401, USA.\\
-E-mail: jbrownin@mines.edu, ahering@mines.edu
+E-mail: jbrownin@mines.edu
 %URL: \url{https://github.com/rockclimber112358/Stan-Norm-Hom-Test}
 }
 
@@ -63,7 +63,7 @@ The SNHT test works as follows.  For each observation, two means are computed: o
 
 is computed where $\bar{X}_i$ is the mean of $\bar{X}_{L,i}$ and $\bar{X}_{R,i}$, and $s_i$ is the estimated standard deviation over the $N$ days prior and $N$ days following observation $i$.  If there are not $N$ observations both before and after the current observation, no test is performed.  If the largest $T_i$ exceeds some threshold at time $i=i^*$, we conclude that a change point occurred at time $i^*$, and we adjust all observations after time $i^*$ by $\bar{X}_{L,i^*}-\bar{X}_{R,i^*}$.  Homogenization now proceeds iteratively.  $T_i$ is recomputed for all $i$ that are sufficiently far away from the current change points, $i\in\{1,\ldots,n\} \setminus \{i^*-k, \ldots, i^*+k\}$, and the test is performed again until no $T_i$ exceed the threshold, and we use $k=N$.  Note that in practice, it is generally preferable to homogenize to the most recent data, as that data is considered to be more reliable, and some follow this convention \cite{domonkos13}.
 
-This statistic can be problematic in the presence of outliers, as it is well known that means and standard deviation estimates can be very poor in this case.  Thus, we introduce a robust variant of the SNHT statistic that replaces the above estimates of means and standard deviations are replaced with the Huber M-estimator of the mean and standard deviation \cite{huber11}.
+This statistic can be problematic in the presence of outliers, as it is well known that means and standard deviation estimates can be very poor in this case.  Thus, in \cite{browning15} we introduce a robust variant of the SNHT statistic that replaces the above estimates of means and standard deviations with the Huber M-estimator of the mean and standard deviation \cite{huber11}.
 
 \section{Usage of the SNHT}
 
