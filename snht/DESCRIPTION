@@ -7,7 +7,7 @@ Depends: ggplot2, gridExtra
 Imports: mgcv, zoo, plyr, reshape
 Author: Josh Browning <jbrownin@mines.edu>
 Maintainer: Josh Browning <jbrownin@mines.edu>
-Description: This package implements robust and non-robust SNHT tests for changepoint detection.
+Description: This package implements robust and non-robust Standard Normal Homogeneity Test (SNHT) for changepoint detection.
 License: GPL-3
 VignetteBuilder: knitr
 Suggests: knitr
