@@ -1,7 +1,6 @@
 pkgname <- "snht"
 source(file.path(R.home("share"), "R", "examples-header.R"))
 options(warn = 1)
-options(pager = "console")
 library('snht')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')

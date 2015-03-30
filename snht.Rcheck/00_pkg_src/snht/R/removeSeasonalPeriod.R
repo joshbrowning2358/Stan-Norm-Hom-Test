@@ -25,7 +25,7 @@ removeSeasonalPeriod = function(x, period, time = 1:length(x)){
             "glm model.")
         mod = glm(x ~ timeOfPeriod)
     } else {
-        mod = mgcv::gam( x ~ s(timeOfPeriod) )
+        mod = mgcv::gam(x ~ s(timeOfPeriod))
     }
     x = x - predict(mod, newdata=data.frame(timeOfPeriod=timeOfPeriod))
     return(x)
