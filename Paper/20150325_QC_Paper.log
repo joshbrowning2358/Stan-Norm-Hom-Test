@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  27 MAR 2015 06:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  29 MAR 2015 16:59
 entering extended mode
 **20150325_QC_Paper.tex
 
@@ -629,42 +629,32 @@ l.352 M
        any methods have been developed to homogenize radiosonde data, but mo...
 [1
 
-]
-
-Package natbib Warning: Citation `durre08' on page 2 undefined on input line 35
-6.
-
-
-Package natbib Warning: Citation `durre08' on page 2 undefined on input line 35
-6.
-
-[2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 489.
  [12] [13] [14] [15] [16] [17]
-[18]
 (C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150325_QC_Paper
-.bbl [19]) [20] [21] [22
+.bbl [18] [19]) [20] [21
 
-] [23
+] [22
 
 ]
 Overfull \hbox (27.68016pt too wide) in paragraph at lines 642--655
  [][] 
  []
 
-[24
+[23
+
+] [24
 
 ] [25
+
 
 ] [26
 
 
-] [27
-
-
 ]
-<70219_Data_Unhomogenized_no_vlines.png, id=347, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_no_vlines.png, id=346, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_no_vlines.png>
@@ -672,7 +662,7 @@ Package pdftex.def Info: 70219_Data_Unhomogenized_no_vlines.png used on input l
 ine 764.
 (pdftex.def)             Requested size: 245.71811pt x 107.49826pt.
 
-<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=348, 578.16pt x 252.945pt>
+<70219_Data_Unhomogenized_zoomed_no_vlines.png, id=347, 578.16pt x 252.945pt>
 File: 70219_Data_Unhomogenized_zoomed_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_zoomed_no_vlines.png>
@@ -684,42 +674,42 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 763--767
  [][] 
  []
 
-<35121_time_series.png, id=349, 505.89pt x 216.81pt>
+<35121_time_series.png, id=348, 505.89pt x 216.81pt>
 File: 35121_time_series.png Graphic file (type png)
 
 <use 35121_time_series.png>
 Package pdftex.def Info: 35121_time_series.png used on input line 774.
 (pdftex.def)             Requested size: 442.2896pt x 189.55609pt.
 
-<35121_simulated_1.png, id=350, 505.89pt x 216.81pt>
+<35121_simulated_1.png, id=349, 505.89pt x 216.81pt>
 File: 35121_simulated_1.png Graphic file (type png)
 
 <use 35121_simulated_1.png>
 Package pdftex.def Info: 35121_simulated_1.png used on input line 775.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_1.png, id=351, 505.89pt x 216.81pt>
+<35121_contaminated_1.png, id=350, 505.89pt x 216.81pt>
 File: 35121_contaminated_1.png Graphic file (type png)
 
 <use 35121_contaminated_1.png>
 Package pdftex.def Info: 35121_contaminated_1.png used on input line 776.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_simulated_2.png, id=352, 505.89pt x 216.81pt>
+<35121_simulated_2.png, id=351, 505.89pt x 216.81pt>
 File: 35121_simulated_2.png Graphic file (type png)
 
 <use 35121_simulated_2.png>
 Package pdftex.def Info: 35121_simulated_2.png used on input line 777.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<35121_contaminated_2.png, id=353, 505.89pt x 216.81pt>
+<35121_contaminated_2.png, id=352, 505.89pt x 216.81pt>
 File: 35121_contaminated_2.png Graphic file (type png)
 
 <use 35121_contaminated_2.png>
 Package pdftex.def Info: 35121_contaminated_2.png used on input line 778.
 (pdftex.def)             Requested size: 221.14479pt x 94.77805pt.
 
-<Efficiency_Model_Plot_BW_seas_adj.png, id=354, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW_seas_adj.png, id=353, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seas_adj.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seas_adj.png>
@@ -730,7 +720,7 @@ ne 787.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Model_Plot_BW_seasonal.png, id=355, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW_seasonal.png, id=354, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seasonal.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seasonal.png>
@@ -741,7 +731,7 @@ ne 794.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<TPR_Order_Plot_BW.png, id=356, 867.24pt x 216.81pt>
+<TPR_Order_Plot_BW.png, id=355, 867.24pt x 216.81pt>
 File: TPR_Order_Plot_BW.png Graphic file (type png)
 
 <use TPR_Order_Plot_BW.png>
@@ -751,7 +741,7 @@ Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 801.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<FPR_Order_Plot_BW.png, id=357, 867.24pt x 216.81pt>
+<FPR_Order_Plot_BW.png, id=356, 867.24pt x 216.81pt>
 File: FPR_Order_Plot_BW.png Graphic file (type png)
 
 <use FPR_Order_Plot_BW.png>
@@ -761,7 +751,7 @@ Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 808.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Efficiency_Order_Plot_BW.png, id=358, 867.24pt x 216.81pt>
+<Efficiency_Order_Plot_BW.png, id=357, 867.24pt x 216.81pt>
 File: Efficiency_Order_Plot_BW.png Graphic file (type png)
 
 <use Efficiency_Order_Plot_BW.png>
@@ -771,7 +761,7 @@ Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 816.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<"70219_Data_Unhomogenized_zoomed".png, id=359, 578.16pt x 252.945pt>
+<"70219_Data_Unhomogenized_zoomed".png, id=358, 578.16pt x 252.945pt>
 File: "70219_Data_Unhomogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Unhomogenized_zoomed".png>
@@ -779,7 +769,7 @@ Package pdftex.def Info: "70219_Data_Unhomogenized_zoomed".png used on input li
 ne 824.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized_zoomed".png, id=360, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized_zoomed".png, id=359, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Homogenized_zoomed".png>
@@ -787,23 +777,19 @@ Package pdftex.def Info: "70219_Data_Homogenized_zoomed".png used on input line
  825.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
 
-<"70219_Data_Homogenized".png, id=361, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized".png, id=360, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized".png Graphic file (type png)
 
 <use "70219_Data_Homogenized".png>
 Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 826.
 (pdftex.def)             Requested size: 442.2896pt x 193.50229pt.
-
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 832.
-[28
+ [27
 
 
  <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_Unhom
 ogenized_no_vlines.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test
-/Paper/70219_Data_Unhomogenized_zoomed_no_vlines.png>] [29 <C:/Users/rockc_000/
+/Paper/70219_Data_Unhomogenized_zoomed_no_vlines.png>] [28 <C:/Users/rockc_000/
 Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_time_series.png> <C:/Users/rock
 c_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_simulated_1.png> <C:/User
 s/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_contaminated_1.png>
@@ -811,15 +797,15 @@ s/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_contaminated_1.png>
 2.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_cont
 aminated_2.png>]
 
-LaTeX Warning: Text page 30 contains only floats.
+LaTeX Warning: Text page 29 contains only floats.
 
-[30 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Mo
+[29 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Mo
 del_Plot_BW_seas_adj.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Te
-st/Paper/Efficiency_Model_Plot_BW_seasonal.png>] [31 <C:/Users/rockc_000/Docume
+st/Paper/Efficiency_Model_Plot_BW_seasonal.png>] [30 <C:/Users/rockc_000/Docume
 nts/GitHub/Stan-Norm-Hom-Test/Paper/TPR_Order_Plot_BW.png> <C:/Users/rockc_000/
 Documents/GitHub/Stan-Norm-Hom-Test/Paper/FPR_Order_Plot_BW.png> <C:/Users/rock
 c_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Order_Plot_BW.png>]
-[32 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_Un
+[31 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_Un
 homogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test
 /Paper/70219_Data_Homogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHub/
 Stan-Norm-Hom-Test/Paper/70219_Data_Homogenized.png>]
@@ -834,10 +820,10 @@ Package rerunfilecheck Info: File `20150325_QC_Paper.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 832.
  ) 
 Here is how much of TeX's memory you used:
- 14843 strings out of 493921
- 238644 string characters out of 3147270
- 335882 words of memory out of 3000000
- 17801 multiletter control sequences out of 15000+200000
+ 14845 strings out of 493921
+ 238685 string characters out of 3147270
+ 335937 words of memory out of 3000000
+ 17803 multiletter control sequences out of 15000+200000
  14813 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,12n,40p,1885b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -859,9 +845,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmtt12.pfb>
-Output written on 20150325_QC_Paper.pdf (33 pages, 844289 bytes).
+Output written on 20150325_QC_Paper.pdf (32 pages, 843856 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
+ 473 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

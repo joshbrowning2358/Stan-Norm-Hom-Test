@@ -5,3 +5,6 @@ export(plotSNHT)
 export(robustSNHT)
 export(robustSNHTunequal)
 export(snht)
+
+import(ggplot2)
+importFrom(gridExtra, arrangeGrob)

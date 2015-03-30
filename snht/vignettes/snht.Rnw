@@ -1,4 +1,4 @@
-%\VignetteIndexEntry{faoswsSeed: A package for the imputation of the seed domain for the Statistical Working System}
+%\VignetteIndexEntry{snht: Robust and non-robust SNHT tests for changepoint detection.}
 %\VignetteEngine{knitr::knitr}
 \documentclass[nojss]{jss}
 \usepackage{url}
@@ -11,7 +11,6 @@
 \usepackage{hyperref}
 \usepackage[ruled, vlined]{algorithm2e}
 \usepackage{mathtools}
-\usepackage{draftwatermark}
 \usepackage{float}
 \usepackage{placeins}
 \usepackage{mathrsfs}
@@ -47,9 +46,9 @@ E-mail: jbrownin@mines.edu
 library(knitr)
 opts_chunk$set(fig.path = 'figure/', fig.align = 'center', fig.show = 'hold',
                warning = FALSE, message = FALSE, error = FALSE, tidy = FALSE,
-               results = 'markup', eval = TRUE, echo = TRUE, cache = FALSE)
+               results = 'markup', eval = TRUE, echo = TRUE, cache = FALSE,
+               fig.height = 4)
 options(replace.assign = TRUE, width = 80)
-assign("depthtrigger", 80, data.table:::.global)
 @ 
 
 \section{Methodology}
@@ -122,7 +121,7 @@ snhtStatistic60[largestStatTime, ]
 
 So, the observations to the left of 494 should be shifted by \Sexpr{round(snhtStatistic60[largestStatTime, "rightMean"], 3)} - \Sexpr{round(snhtStatistic60[largestStatTime, "leftMean"], 3)} = \Sexpr{round(snhtStatistic60[largestStatTime, "rightMean"], 3) - round(snhtStatistic60[largestStatTime, "leftMean"], 3)}.  Then, the SNHT statistic would be recomputed on this new dataset, and the process would repeat until no new statistic exceeds the threshold.  Note that we managed to find the largest break exactly, and our correction is close to the simulated error.
 
-Under the null hypothesis of no changepoints and normal random errors, the test statistic follows a chi-squared distribution with one degree of freedom.  However, caution should be used if applying that threshold to all computed statistics simultaneously, as you then have the problem of multiple testing (and non-independent tests).  The blue dashed line in the plot above gives this threshold, but should be used with care.
+Under the null hypothesis of no changepoints and normal random errors, the test statistic approximately follows a chi-squared distribution with one degree of freedom (the approximation is that we divide by an estimate of the variance rather than the variance, and so actually have the square of a Student's-$t$ distribution).  However, caution should be used if applying that threshold to all computed statistics simultaneously, as you then have the problem of multiple testing (and non-independent tests).  The blue dashed line in the plot above gives this threshold, but should be used with care.
 
 We may also wish to compare the performance of the test with a longer period:
 

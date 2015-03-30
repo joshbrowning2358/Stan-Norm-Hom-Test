@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  25 MAR 2015 06:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  29 MAR 2015 09:10
 entering extended mode
-**C:/Users/ROCKC_?1/AppData/Local/Temp/Rtmp4akI2g/Rd2pdf3cb04a7f5d26/Rd2.tex
-(C:/Users/ROCKC_~1/AppData/Local/Temp/Rtmp4akI2g/Rd2pdf3cb04a7f5d26/Rd2.tex
+**C:/Users/ROCKC_?1/AppData/Local/Temp/RtmpMlR8mg/Rd2pdf31c64ce43d8/Rd2.tex
+(C:/Users/ROCKC_~1/AppData/Local/Temp/RtmpMlR8mg/Rd2pdf31c64ce43d8/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,7 +32,7 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:/PROGRA~4/R/R-31~1.0/share/texmf/tex/latex\Rd.sty
+(C:/PROGRA~4/R/R-31~1.3/share/texmf/tex/latex\Rd.sty
 Package: Rd 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -170,8 +170,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\inconsolata.sty"
-Package: inconsolata 2014/06/22 v1.05
+("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\zi4.sty"
+Package: zi4 2014/06/22 v1.05
 
 `inconsolata-zi4' v1.05, 2014/06/22 Text macros for Inconsolata (msharpe)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -275,7 +275,6 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-LaTeX Info: Redefining \href on input line 4952.
 \c@Hy@tempcnt=\count98
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen105
@@ -312,15 +311,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 361.
+(hyperref)                setting the option has no effect on input line 366.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 361.
+Package hyperref Info: Option `colorlinks' set `true' on input line 366.
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 361.
+(hyperref)                setting the option has no effect on input line 366.
 
-Package hyperref Info: Option `linktocpage' set `true' on input line 361.
-Package hyperref Info: Option `plainpages' set `false' on input line 361.
+Package hyperref Info: Option `linktocpage' set `true' on input line 366.
+Package hyperref Info: Option `plainpages' set `false' on input line 366.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
@@ -624,7 +623,7 @@ File: latin1.def 2008/03/30 v1.1d Input encoding file
 \@indexfile=\write3
 
 Writing index file Rd2.idx
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.aux)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
@@ -650,10 +649,6 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 8.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -683,8 +678,8 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.out)
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.out)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.out)
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
@@ -698,13 +693,13 @@ LaTeX Font Info:    Try loading font information for T1+zi4 on input line 22.
 File: t1zi4.fd 2014/06/22 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 26.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.toc
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -739,7 +734,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [6]
-LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 322.
+LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 325.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\inconsolata\ts1zi4.fd"
@@ -751,7 +746,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Overfull \hbox (5.16762pt too wide) in paragraph at lines 497--500
+Overfull \hbox (5.16762pt too wide) in paragraph at lines 500--503
 \T1/ptm/m/n/10 ber's ro-bust es-ti-ma-tor for the mean and vari-ance will be us
 ed (see ?MASS::huber). 
  []
@@ -759,7 +754,7 @@ ed (see ?MASS::huber).
 [9] [10] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [11]
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.ind
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.ind
 [12]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
@@ -767,24 +762,24 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 635.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 635.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 638.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 638.
 
-(C:\Users\ROCKC_~1\AppData\Local\Temp\Rtmp4akI2g\Rd2pdf3cb04a7f5d26\Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 635.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 635.
+(C:\Users\ROCKC_~1\AppData\Local\Temp\RtmpMlR8mg\Rd2pdf31c64ce43d8\Rd2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 638.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 638.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
 (rerunfilecheck)             Checksum: 00E7A77F3D86F86B5B11DEEC1F2F97FB;713.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 635.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 638.
  ) 
 Here is how much of TeX's memory you used:
- 6460 strings out of 493921
- 93320 string characters out of 3147270
- 167297 words of memory out of 3000000
- 9529 multiletter control sequences out of 15000+200000
+ 6452 strings out of 493921
+ 93025 string characters out of 3147270
+ 167176 words of memory out of 3000000
+ 9525 multiletter control sequences out of 15000+200000
  40963 words of font info for 50 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 38i,5n,34p,300b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,5n,34p,299b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Rfn.huber} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -797,7 +792,7 @@ helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (13 pages, 132882 bytes).
+Output written on Rd2.pdf (13 pages, 133225 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)

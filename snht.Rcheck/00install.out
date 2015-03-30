@@ -1,11 +1,10 @@
 * installing *source* package 'snht' ...
 ** R
+** inst
 ** preparing package for lazy loading
 ** help
 *** installing help indices
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded
-*** arch - i386
-*** arch - x64
 * DONE (snht)
