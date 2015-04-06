@@ -6,6 +6,7 @@
 \citation{durre06}
 \citation{elliott91,eskridge95}
 \citation{kalnay96,kanamitsu02}
+\citation{haimberger07,haimberger12}
 \citation{eskridge95,haimberger07,haimberger12,lanzante96,lanzante03,venema12}
 \citation{venema12}
 \citation{titchner09,thorne11}
@@ -18,53 +19,83 @@
 \citation{ignaccolo14}
 \citation{durre08}
 \citation{bell14}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 1}.1}{\ignorespaces Temperature for Station 70219 plotted over time. The top image is the same as the bottom but zoomed in to the last ten years to show more detail.\relax }}{3}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:BasicTS}{{\relax Figure\nobreakspace  {\relax 1}.1}{3}}
 \citation{hastie90}
 \citation{bell14}
 \citation{azzalini03}
-\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 2}Simulation Method}}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Modeling Radiosonde Data}{3}}
-\newlabel{ssec:model}{{2.1}{3}}
-\newlabel{eq:GAM}{{{\relax 2}.1}{3}}
-\newlabel{eq:ACF}{{{\relax 2}.2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Data Simulation}{4}}
-\newlabel{ssec:sim}{{2.2}{4}}
+\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 2}Simulation Method}}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Modeling Radiosonde Data}{4}}
+\newlabel{ssec:model}{{2.1}{4}}
+\newlabel{eq:GAM}{{{\relax 2}.1}{4}}
+\newlabel{eq:ACF}{{{\relax 2}.2}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Data Simulation}{5}}
+\newlabel{ssec:sim}{{2.2}{5}}
 \citation{bell14}
 \citation{bell14}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 2}.1}{\ignorespaces Time series plots of radiosonde temperature data from station 35121. The top plot shows the observed time series, and the following two pairs show realizations of simulated datasets. The plots on the left show the simulated data prior to contamination, and the right plots show the data after contamination with a combination of random and systematic errors.\relax }}{7}}
+\newlabel{fig:simExample}{{\relax Figure\nobreakspace  {\relax 2}.1}{7}}
 \citation{alexandersson86,domonkos13,gruber08,haimberger07,lanzante03,li14,lu10,venema12}
-\citation{haimberger07}
+\citation{haimberger07,haimberger12}
 \citation{scott74}
 \citation{killick12}
 \citation{killick12}
-\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 3}Homogenization Algorithms}}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Methodology}{6}}
-\newlabel{ssec:methodology}{{3.1}{6}}
-\newlabel{eq:cost}{{{\relax 3}.1}{6}}
+\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 3}Homogenization Algorithms}}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Methodology}{8}}
+\newlabel{ssec:methodology}{{3.1}{8}}
+\newlabel{eq:cost}{{{\relax 3}.1}{8}}
 \citation{killick14}
 \citation{domonkos13}
 \citation{haimberger07}
 \citation{haimberger07}
 \citation{alexandersson86}
 \citation{alexandersson86}
-\newlabel{eq:Hom}{{{\relax 3}.2}{7}}
+\citation{haimberger07,alexandersson86,khaliq07}
+\newlabel{eq:Hom}{{{\relax 3}.2}{9}}
 \citation{benjamini01}
 \citation{huber11}
-\newlabel{eq:season}{{{\relax 3}.3}{8}}
+\newlabel{eq:season}{{{\relax 3}.3}{10}}
 \citation{domonkos13}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Results}{10}}
-\newlabel{sec:HomResults}{{3.2}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Homogenization Results}{12}}
+\newlabel{sec:HomResults}{{3.2}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 3}.1}{\ignorespaces Deviance for the efficiency logistic regression models.\relax }}{13}}
+\newlabel{tab:homOrdDev}{{\relax Table\nobreakspace  {\relax 3}.1}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 3}.2}{\ignorespaces The first set of columns show the fitted efficiency averaged over all station and pressure level combinations when the seasonality is not removed. Numbers in parentheses indicate the percent of station and pressure level combinations where the given model obtained the highest fitted efficiency. The second set of columns show the change in efficiency when the seasonality is fit and removed first. Bolded numbers are the best within each row. For brevity, only those models with the best efficiencies are included here. \relax }}{14}}
+\newlabel{tab:homOrd}{{\relax Table\nobreakspace  {\relax 3}.2}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 3}.1}{\ignorespaces Boxplot of efficiency scores for the various homogenization algorithms. Note that this graph is constrained to the efficiency range of $(-2,1)$ in order to show more detail. The SNHT and the robust SNHT perform substantially better than their alternatives.\relax }}{15}}
+\newlabel{fig:homEfficiency}{{\relax Figure\nobreakspace  {\relax 3}.1}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 3}.2}{\ignorespaces This graph depicts the estimated probability that the efficiency exceeds one from the efficiency logistic regression model. Each line represents a different simulation configuration (number of years simulated and outlier contamination rates). There is substantial variability among the different simulations, but the SNHT and robust SNHT models perform better than the alternatives in all simulated configurations, and the efficiency improves with sample size.\relax }}{16}}
+\newlabel{fig:homFitEff}{{\relax Figure\nobreakspace  {\relax 3}.2}{16}}
 \citation{bell14}
 \citation{huber11}
 \citation{bell14}
-\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 4}Sequencing Study}}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Random Error Detection}{12}}
-\newlabel{sec:ranErr}{{4.1}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Sequencing Simulation}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Sequencing Results}{13}}
+\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 4}Sequencing Study}}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Random Error Detection}{17}}
+\newlabel{sec:ranErr}{{4.1}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Sequencing Simulation}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Sequencing Results}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 4}.1}{\ignorespaces Deviance for the sequencing logistic regression models.\relax }}{19}}
+\newlabel{tab:devSeq}{{\relax Table\nobreakspace  {\relax 4}.1}{19}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 4}.2}{\ignorespaces Fitted TPR averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted TPR. Bolded numbers are the best within each row.\relax }}{20}}
+\newlabel{tab:fitTPR}{{\relax Table\nobreakspace  {\relax 4}.2}{20}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 4}.3}{\ignorespaces Fitted FPR averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the lowest fitted FPR. Bolded numbers are the best within each row.\relax }}{21}}
+\newlabel{tab:fitFPR}{{\relax Table\nobreakspace  {\relax 4}.3}{21}}
+\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 4}.4}{\ignorespaces Fitted efficiency averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted efficiency. Bolded numbers are the highest within each row.\relax }}{22}}
+\newlabel{tab:fitEff}{{\relax Table\nobreakspace  {\relax 4}.4}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 4}.1}{\ignorespaces This graph depicts the estimated TPR from the logistic regression model. The dot in each error bar is the estimated TPR averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) TPR obtained across all station and pressure level combinations.\relax }}{23}}
+\newlabel{fig:fitTPR}{{\relax Figure\nobreakspace  {\relax 4}.1}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 4}.2}{\ignorespaces This graph depicts the estimated FPR from the logistic regression model. The dot in each error bar is the estimated FPR averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) FPR obtained across all station and pressure level combinations. \relax }}{23}}
+\newlabel{fig:fitFPR}{{\relax Figure\nobreakspace  {\relax 4}.2}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 4}.3}{\ignorespaces This graph depicts the estimated efficiency from the logistic regression model. The middle of each error bar is the estimated efficiency averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) efficiency obtained across all station and pressure level combinations.\relax }}{24}}
+\newlabel{fig:fitEffOrd}{{\relax Figure\nobreakspace  {\relax 4}.3}{24}}
 \citation{haimberger07}
 \citation{haimberger07}
-\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 5}Case Study}}{15}}
+\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 5}Case Study}}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 5}.1}{\ignorespaces Time series plot of the radiosonde temperature data at station 70219 (Bethel, Alaska, USA). The top plot shows the data prior to the quality control algorithm, and the other two show the data after for a subset (middle) and the entire record (bottom). Dashed vertical lines indicate detected change points, numbers in the top panel indicate the magnitude of the corresponding change point, and dots indicate detected random errors.\relax }}{26}}
+\newlabel{fig:caseStudy}{{\relax Figure\nobreakspace  {\relax 5}.1}{26}}
 \citation{ignaccolo14}
-\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 6}Conclusion}}{16}}
+\@writefile{toc}{\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 6}Conclusion}}{27}}
 \bibdata{mybib}
 \bibcite{alexandersson86}{{1}{1986}{{Alexandersson}}{{}}}
 \bibcite{bell14}{{2}{2015}{{Anderson et~al.}}{{Anderson, Browning, Comeaux, Hering, and Nychka}}}
@@ -80,51 +111,23 @@
 \bibcite{haimberger12}{{12}{2012}{{Haimberger et~al.}}{{Haimberger, Tavolato, and Sperka}}}
 \bibcite{hastie90}{{13}{1990}{{Hastie and Tibshirani}}{{}}}
 \bibcite{huber11}{{14}{2011}{{Huber}}{{}}}
-\@writefile{toc}{\contentsline {section}{\texorpdfupper {References Cited}}{17}}
+\@writefile{toc}{\contentsline {section}{\texorpdfupper {References Cited}}{28}}
 \bibcite{ignaccolo14}{{15}{2014}{{Ignaccolo et~al.}}{{Ignaccolo, Franco-Villoria, and Fass\`{o}}}}
 \bibcite{kalnay96}{{16}{1996}{{Kalnay et~al.}}{{Kalnay, Kanamitsu, Kistler, Collins, Deaven, Gandin, Iredell, Saha, White, Woollen, et~al.}}}
 \bibcite{kanamitsu02}{{17}{2002}{{Kanamitsu et~al.}}{{Kanamitsu, Ebisuzaki, Woollen, Yang, Hnilo, Fiorino, and Potter}}}
-\bibcite{killick14}{{18}{2014}{{Killick and Eckley}}{{}}}
-\bibcite{killick12}{{19}{2012}{{Killick et~al.}}{{Killick, Fearnhead, and Eckley}}}
-\bibcite{lanzante96}{{20}{1996}{{Lanzante}}{{}}}
-\bibcite{lanzante03}{{21}{2003}{{Lanzante et~al.}}{{Lanzante, Klein, and Seidel}}}
-\bibcite{li14}{{22}{2014}{{Li and Lund}}{{}}}
-\bibcite{lu10}{{23}{2010}{{Lu et~al.}}{{Lu, Lund, and Lee}}}
-\bibcite{rennie14}{{24}{2014}{{Rennie et~al.}}{{Rennie, Lawrimore, Gleason, Thorne, Morice, Menne, Williams, Almeida, Christy, Flannery, et~al.}}}
-\bibcite{scott74}{{25}{1974}{{Scott and Knott}}{{}}}
-\bibcite{thorne11}{{26}{2011}{{Thorne et~al.}}{{}}}
-\bibcite{titchner09}{{27}{2009}{{Titchner et~al.}}{{Titchner, Thorne, McCarthy, Tett, Haimberger, and Parker}}}
-\bibcite{venema12}{{28}{2012}{{Venema et~al.}}{{}}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.1}{\ignorespaces Deviance for the efficiency logistic regression models.\relax }}{20}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:homOrdDev}{{\relax Table\nobreakspace  {\relax 6}.1}{20}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.2}{\ignorespaces The first set of columns show the fitted efficiency averaged over all station and pressure level combinations when the seasonality is not removed. Numbers in parentheses indicate the percent of station and pressure level combinations where the given model obtained the highest fitted efficiency. The second set of columns show the change in efficiency when the seasonality is fit and removed first. Bolded numbers are the best within each row. For brevity, only those models with the best efficiencies are included here. \relax }}{21}}
-\newlabel{tab:homOrd}{{\relax Table\nobreakspace  {\relax 6}.2}{21}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.3}{\ignorespaces Deviance for the sequencing logistic regression models.\relax }}{22}}
-\newlabel{tab:devSeq}{{\relax Table\nobreakspace  {\relax 6}.3}{22}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.4}{\ignorespaces Fitted TPR averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted TPR. Bolded numbers are the best within each row.\relax }}{23}}
-\newlabel{tab:fitTPR}{{\relax Table\nobreakspace  {\relax 6}.4}{23}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.5}{\ignorespaces Fitted FPR averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the lowest fitted FPR. Bolded numbers are the best within each row.\relax }}{24}}
-\newlabel{tab:fitFPR}{{\relax Table\nobreakspace  {\relax 6}.5}{24}}
-\@writefile{lot}{\contentsline {table}{\numberline {\relax Table\nobreakspace  {\relax 6}.6}{\ignorespaces Fitted efficiency averaged over all station and pressure level combinations. Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted efficiency. Bolded numbers are the highest within each row.\relax }}{25}}
-\newlabel{tab:fitEff}{{\relax Table\nobreakspace  {\relax 6}.6}{25}}
+\bibcite{khaliq07}{{18}{2007}{{Khaliq and Ouarda}}{{}}}
+\bibcite{killick14}{{19}{2014}{{Killick and Eckley}}{{}}}
+\bibcite{killick12}{{20}{2012}{{Killick et~al.}}{{Killick, Fearnhead, and Eckley}}}
+\bibcite{lanzante96}{{21}{1996}{{Lanzante}}{{}}}
+\bibcite{lanzante03}{{22}{2003}{{Lanzante et~al.}}{{Lanzante, Klein, and Seidel}}}
+\bibcite{li14}{{23}{2014}{{Li and Lund}}{{}}}
+\bibcite{lu10}{{24}{2010}{{Lu et~al.}}{{Lu, Lund, and Lee}}}
+\bibcite{rennie14}{{25}{2014}{{Rennie et~al.}}{{Rennie, Lawrimore, Gleason, Thorne, Morice, Menne, Williams, Almeida, Christy, Flannery, et~al.}}}
+\bibcite{scott74}{{26}{1974}{{Scott and Knott}}{{}}}
+\bibcite{thorne11}{{27}{2011}{{Thorne et~al.}}{{}}}
+\bibcite{titchner09}{{28}{2009}{{Titchner et~al.}}{{Titchner, Thorne, McCarthy, Tett, Haimberger, and Parker}}}
+\bibcite{venema12}{{29}{2012}{{Venema et~al.}}{{}}}
 \global\l@chapter@indent 76.3742pt\global\l@appendix@indent 76.3742pt
 \global\newcount\csm@redefined@appendix@saved\global\csm@redefined@appendix@saved=0 
 \global\newcount\csm@appendicies\global\csm@appendicies=0 
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.1}{\ignorespaces Temperature for Station 70219 plotted over time. The bottom image is the same as the top but zoomed in to the last ten years to show more detail.\relax }}{26}}
-\newlabel{fig:BasicTS}{{\relax Figure\nobreakspace  {\relax 6}.1}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.2}{\ignorespaces Time series plots of radiosonde temperature data from station 35121. The top plot shows the observed time series, and the following two pairs show realizations of simulated datasets. The plots on the left show the simulated data prior to contamination, and the right plots show the data after contamination with a combination of random and systematic errors.\relax }}{27}}
-\newlabel{fig:simExample}{{\relax Figure\nobreakspace  {\relax 6}.2}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.3}{\ignorespaces Boxplot of efficiency scores for the various homogenization algorithms. Note that this graph is constrained to the efficiency range of $(-2,1)$ in order to show more detail. The SNHT and the robust SNHT perform substantially better than their alternatives.\relax }}{28}}
-\newlabel{fig:homEfficiency}{{\relax Figure\nobreakspace  {\relax 6}.3}{28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.4}{\ignorespaces This graph depicts the estimated probability that the efficiency exceeds one from the efficiency logistic regression model. Each line represents a different simulation configuration (number of years simulated and outlier contamination rates). There is substantial variability among the different simulations, but the SNHT and robust SNHT models perform better than the alternatives in all simulated configurations, and the efficiency improves with sample size.\relax }}{28}}
-\newlabel{fig:homFitEff}{{\relax Figure\nobreakspace  {\relax 6}.4}{28}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.5}{\ignorespaces This graph depicts the estimated TPR from the logistic regression model. The dot in each error bar is the estimated TPR averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) TPR obtained across all station and pressure level combinations.\relax }}{29}}
-\newlabel{fig:fitTPR}{{\relax Figure\nobreakspace  {\relax 6}.5}{29}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.6}{\ignorespaces This graph depicts the estimated FPR from the logistic regression model. The dot in each error bar is the estimated FPR averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) FPR obtained across all station and pressure level combinations. \relax }}{29}}
-\newlabel{fig:fitFPR}{{\relax Figure\nobreakspace  {\relax 6}.6}{29}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.7}{\ignorespaces This graph depicts the estimated efficiency from the logistic regression model. The middle of each error bar is the estimated efficiency averaged over all station and pressure level combinations. The maximum (minimum) of the error bar is the highest (lowest) efficiency obtained across all station and pressure level combinations.\relax }}{29}}
-\newlabel{fig:fitEffOrd}{{\relax Figure\nobreakspace  {\relax 6}.7}{29}}
-\@writefile{lof}{\contentsline {figure}{\numberline {\relax Figure\nobreakspace  {\relax 6}.8}{\ignorespaces Time series plot of the radiosonde temperature data at station 70219 (Bethel, Alaska, USA). The top plot shows the data prior to the quality control algorithm, and the other two show the data after for a subset (middle) and the entire record (bottom). Dashed vertical lines indicate detected change points, numbers in the top panel indicate the magnitude of the corresponding change point, and dots indicate detected random errors.\relax }}{30}}
-\newlabel{fig:caseStudy}{{\relax Figure\nobreakspace  {\relax 6}.8}{30}}
 \bibstyle{myabbrvnat}
