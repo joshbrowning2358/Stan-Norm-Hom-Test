@@ -13,19 +13,19 @@
 
 %\usepackage[hang, flushmargin]{footmisc}
 
-\setlength{\oddsidemargin}{-0.125in}
-\setlength{\topmargin}{-0.5in} \setlength{\textwidth}{6.5in}
-\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{-0.125in}
+%\setlength{\topmargin}{-0.5in} \setlength{\textwidth}{6.5in}
+%\setlength{\textheight}{9in}
 
-\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
-\setlength{\topmargin}{-40pt} \setlength{\oddsidemargin}{0pt}
-\setlength{\evensidemargin}{0pt}
+%\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+%\setlength{\topmargin}{-40pt} \setlength{\oddsidemargin}{0pt}
+%\setlength{\evensidemargin}{0pt}
 
-\setlength{\textheight}{9.4in} \setlength{\textwidth}{6.8in}
-\setlength{\topmargin}{-71pt} \setlength{\oddsidemargin}{0pt}
-\setlength{\evensidemargin}{-6pt} \tolerance=500
+%\setlength{\textheight}{9.4in} \setlength{\textwidth}{6.8in}
+%\setlength{\topmargin}{-71pt} \setlength{\oddsidemargin}{0pt}
+%\setlength{\evensidemargin}{-6pt} \tolerance=500
 %\input psfig.tex
-\setlength{\topmargin}{-56pt} \setlength{\oddsidemargin}{-6pt}
+%\setlength{\topmargin}{-56pt} \setlength{\oddsidemargin}{-6pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\wt{\widetilde}
 \def\diag{\hbox{diag}}
@@ -292,7 +292,7 @@
 
 \title{Simultaneous Treatment of Random and Systematic Errors in the Historical Radiosonde Temperature Archive}
 \degreetitle{Master of Science}
-\discipline{Statistics}
+\discipline{Applied Mathematics and Statistics}
 \department{Applied Mathematics and Statistics}
 
 \author{Joshua M. Browning}
@@ -343,14 +343,16 @@
 \newpage
 
 %%% Parts of a Thesis - Front Matter - Abstract (required)
-
+	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
 %\baselineskip=14pt
 
 %198 words
+\begin{doublespace}
 \ni  The historical radiosonde temperature archive, and indeed any large and lengthy observational dataset, must be quality controlled before it can be used properly.   Most research on quality control for such data focuses on the identification and removal of either systematic errors or random errors without considering an optimal process for treatment of both.  Additionally, little has been done to evaluate  homogenization methods that identify and correct systematic errors when applied to sub-daily data, and no research exists on using robust estimators in homogenization procedures.  In this paper, we simulate realistic radiosonde temperature data and contaminate it with both systematic and random errors.  We then evaluate (1) the performance of several homogenization algorithms, (2) the influence of removing seasonality, and (3) the sequence in which the random and systematic errors are identified and corrected.  We introduce a robust Standard Normal Homogeneity Test (SNHT) and find in simulations that it performs better than the traditional SNHT, and it is better than several other modern alternatives.  Moreover, we find that systematic errors present in the data lead to poorer performance of random error removal algorithms, but the presence of random errors is not as detrimental to the robust SNHT homogenization algorithm.
+\end{doublespace}
 
 \end{abstract}
 
@@ -449,6 +451,8 @@
 %% Parts of a Thesis - Body
 
 \bodymatter
+
+\begin{doublespace}
 
 \chapter{Introduction}
 
@@ -924,7 +928,7 @@ In the absence of metadata regarding a station's history, we recommend performin
 
 %\subsection*{Acknowledgments} The authors wish to thank the organizers and participants of the SAMSI Surface Temperature Initiative Workshop held at the National Center for Atmospheric Research in Boulder, Colorado on July 8-16, 2014 for helpful discussions regarding the content of this paper.
 
-%\end{doublespacing}
+\end{doublespace}
 
 
 \bibliographystyle{myabbrvnat}
