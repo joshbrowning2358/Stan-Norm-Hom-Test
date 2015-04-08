@@ -1,0 +1,1581 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.15)  8 APR 2015 09:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**20150408_Combine_Masters.tex
+(./20150408_Combine_Masters.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 6 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count90
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks15
+\c@AM@survey=\count91
+\AM@templatesizebox=\box27
+)
+(./20150408_Combine_Masters.aux)
+\openout1 = `20150408_Combine_Masters.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+\AtBeginShipoutBox=\box28
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen107
+\scratchbox=\box29
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen108
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=1, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=4, page=1, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page1 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1
+
+ </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.p
+df{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=16, page=2, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 2>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 2>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 2>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page2 used on input line 8.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.pdf,
+ id=30, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.pdf,
+ id=33, page=1, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf, page1 used on input line 9.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf, page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf, page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf, page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page
+.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf, page 1>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150408_Signed_Page.pdf, page1 used on input line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150408_Signed_Page.
+pdf>]
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=42, page=4, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 4>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page4 used on input line 10.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 4>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page4 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 4>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page4 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 4>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page4 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 4>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page4 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [4 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=46, page=5, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 5>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page5 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 5>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page5 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 5>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page5 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [5 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=50, page=6, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 6>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page6 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 6>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page6 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 6>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page6 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [6 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=64, page=7, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 7>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page7 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 7>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page7 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 7>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page7 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [7 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=69, page=8, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 8>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page8 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 8>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page8 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 8>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page8 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [8 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=73, page=9, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 9>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page9 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 9>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page9 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 9>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page9 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [9 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=82, page=10, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 10>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page10 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 10>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page10 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 10>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page10 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [10 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=86, page=11, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 11>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page11 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 11>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page11 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 11>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page11 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [11 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=90, page=12, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 12>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page12 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 12>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page12 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 12>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page12 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [12 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=98, page=13, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 13>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page13 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 13>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page13 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 13>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page13 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [13 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=113, page=14, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 14>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page14 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 14>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page14 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 14>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page14 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [14 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=132, page=15, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 15>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page15 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 15>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page15 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 15>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page15 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [15 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=146, page=16, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 16>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page16 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 16>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page16 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 16>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page16 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [16 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=150, page=17, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 17>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page17 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 17>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page17 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 17>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page17 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [17 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=164, page=18, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 18>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page18 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 18>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page18 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 18>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page18 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [18 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=168, page=19, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 19>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page19 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 19>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page19 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 19>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page19 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [19 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=178, page=20, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 20>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page20 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 20>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page20 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 20>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page20 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [20 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=182, page=21, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 21>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page21 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 21>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page21 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 21>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page21 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [21 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=186, page=22, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 22>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page22 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 22>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page22 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 22>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page22 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [22 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=190, page=23, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 23>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page23 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 23>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page23 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 23>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page23 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [23 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=194, page=24, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 24>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page24 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 24>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page24 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 24>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page24 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [24 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=198, page=25, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 25>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page25 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 25>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page25 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 25>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page25 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [25 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=203, page=26, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 26>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page26 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 26>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page26 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 26>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page26 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [26 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=207, page=27, 794.97pt x 614.295pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 27>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page27 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 27>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page27 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 27>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page27 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [27 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf, page is rotated 90 degrees>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=222, page=28, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 28>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page28 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 28>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page28 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 28>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page28 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [28 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=228, page=29, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 29>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page29 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 29>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page29 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 29>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page29 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [29 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=234, page=30, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 30>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page30 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 30>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page30 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 30>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page30 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [30 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=238, page=31, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 31>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page31 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 31>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page31 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 31>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page31 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [31 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=243, page=32, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 32>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page32 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 32>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page32 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 32>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page32 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [32 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=247, page=33, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 33>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page33 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 33>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page33 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 33>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page33 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [33 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=251, page=34, 794.97pt x 614.295pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 34>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page34 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 34>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page34 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 34>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page34 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [34 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf, page is rotated 90 degrees>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=255, page=35, 794.97pt x 614.295pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 35>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page35 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 35>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page35 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 35>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page35 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [35 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf, page is rotated 90 degrees>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=259, page=36, 794.97pt x 614.295pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 36>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page36 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 36>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page36 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 36>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page36 used on input line 10.
+(pdftex.def)             Requested size: 795.3441pt x 614.58406pt.
+ [36 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf, page is rotated 90 degrees>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=263, page=37, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 37>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page37 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 37>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page37 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 37>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page37 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [37 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=272, page=38, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 38>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page38 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 38>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page38 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 38>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page38 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [38 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=278, page=39, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 39>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page39 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 39>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page39 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 39>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page39 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [39 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=282, page=40, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 40>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page40 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 40>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page40 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 40>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page40 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [40 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=292, page=41, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 41>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page41 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 41>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page41 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 41>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page41 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [41 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=296, page=42, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 42>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page42 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 42>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page42 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 42>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page42 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [42 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=300, page=43, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 43>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page43 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 43>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page43 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 43>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page43 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [43 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=305, page=44, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 44>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page44 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 44>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page44 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 44>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page44 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [44 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>]
+</home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Paper.pd
+f, id=309, page=45, 614.295pt x 794.97pt>
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 45>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page45 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 45>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page45 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf Graphic file (type pdf)
+
+<use /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pape
+r.pdf, page 45>
+Package pdftex.def Info: /home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/2
+0150329_Masters_Paper.pdf, page45 used on input line 10.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [45 </home/josh/Documents/Github/Stan-Norm-Hom-Test/Paper/20150329_Masters_Pap
+er.pdf>] (./20150408_Combine_Masters.aux) ) 
+Here is how much of TeX's memory you used:
+ 2845 strings out of 494952
+ 51448 string characters out of 6179835
+ 101731 words of memory out of 5000000
+ 6052 multiletter control sequences out of 15000+600000
+ 3938 words of font info for 15 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 40i,18n,46p,250b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb>
+Output written on 20150408_Combine_Masters.pdf (45 pages, 950716 bytes).
+PDF statistics:
+ 334 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+
