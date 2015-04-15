@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  8 APR 2015 05:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.21)  10 APR 2015 05:33
 entering extended mode
 **20150329_Masters_Paper.tex
 
@@ -702,7 +702,7 @@ File: 70219_Data_Unhomogenized_zoomed_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_zoomed_no_vlines.png>
 Package pdftex.def Info: 70219_Data_Unhomogenized_zoomed_no_vlines.png used on 
-input line 475.
+input line 477.
 (pdftex.def)             Requested size: 469.75502pt x 205.5173pt.
 
 <70219_Data_Unhomogenized_no_vlines.png, id=40, 578.16pt x 252.945pt>
@@ -710,7 +710,7 @@ File: 70219_Data_Unhomogenized_no_vlines.png Graphic file (type png)
 
 <use 70219_Data_Unhomogenized_no_vlines.png>
 Package pdftex.def Info: 70219_Data_Unhomogenized_no_vlines.png used on input l
-ine 478.
+ine 480.
 (pdftex.def)             Requested size: 469.75502pt x 205.5173pt.
 
 
@@ -725,35 +725,35 @@ Norm-Hom-Test/Paper/70219_Data_Unhomogenized_no_vlines.png>] [5
 File: 35121_time_series.png Graphic file (type png)
 
 <use 35121_time_series.png>
-Package pdftex.def Info: 35121_time_series.png used on input line 535.
+Package pdftex.def Info: 35121_time_series.png used on input line 537.
 (pdftex.def)             Requested size: 422.77664pt x 181.19284pt.
 
 <35121_simulated_1.png, id=67, 505.89pt x 216.81pt>
 File: 35121_simulated_1.png Graphic file (type png)
 
 <use 35121_simulated_1.png>
-Package pdftex.def Info: 35121_simulated_1.png used on input line 536.
+Package pdftex.def Info: 35121_simulated_1.png used on input line 538.
 (pdftex.def)             Requested size: 211.38832pt x 90.59642pt.
 
 <35121_contaminated_1.png, id=68, 505.89pt x 216.81pt>
 File: 35121_contaminated_1.png Graphic file (type png)
 
 <use 35121_contaminated_1.png>
-Package pdftex.def Info: 35121_contaminated_1.png used on input line 537.
+Package pdftex.def Info: 35121_contaminated_1.png used on input line 539.
 (pdftex.def)             Requested size: 211.38832pt x 90.59642pt.
 
 <35121_simulated_2.png, id=69, 505.89pt x 216.81pt>
 File: 35121_simulated_2.png Graphic file (type png)
 
 <use 35121_simulated_2.png>
-Package pdftex.def Info: 35121_simulated_2.png used on input line 538.
+Package pdftex.def Info: 35121_simulated_2.png used on input line 540.
 (pdftex.def)             Requested size: 211.38832pt x 90.59642pt.
 
 <35121_contaminated_2.png, id=70, 505.89pt x 216.81pt>
 File: 35121_contaminated_2.png Graphic file (type png)
 
 <use 35121_contaminated_2.png>
-Package pdftex.def Info: 35121_contaminated_2.png used on input line 539.
+Package pdftex.def Info: 35121_contaminated_2.png used on input line 541.
 (pdftex.def)             Requested size: 211.38832pt x 90.59642pt.
  [8] [9 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/35121_tim
 e_series.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/351
@@ -765,121 +765,167 @@ rm-Hom-Test/Paper/35121_contaminated_2.png>]
 
 ] [11] [12] [13] [14]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 631.
- [15] [16] [17] [18] [19
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 633.
+ [15] [16]
+Overfull \hbox (33.48485pt too wide) in paragraph at lines 682--707
+ [][] 
+ []
 
-]
-<Efficiency_Model_Plot_BW_seas_adj.png, id=117, 867.24pt x 433.62pt>
+<Efficiency_Model_Plot_BW_seas_adj.png, id=105, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seas_adj.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seas_adj.png>
 Package pdftex.def Info: Efficiency_Model_Plot_BW_seas_adj.png used on input li
-ne 714.
+ne 711.
 (pdftex.def)             Requested size: 469.75502pt x 234.87912pt.
 
-<Efficiency_Model_Plot_BW_seasonal.png, id=118, 867.24pt x 433.62pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Efficiency_Model_Plot_BW_seasonal.png, id=106, 867.24pt x 433.62pt>
 File: Efficiency_Model_Plot_BW_seasonal.png Graphic file (type png)
 
 <use Efficiency_Model_Plot_BW_seasonal.png>
 Package pdftex.def Info: Efficiency_Model_Plot_BW_seasonal.png used on input li
-ne 721.
+ne 718.
 (pdftex.def)             Requested size: 469.75502pt x 234.87912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20
+[17] [18] [19 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Eff
+iciency_Model_Plot_BW_seas_adj.png>] [20 <C:/Users/rockc_000/Documents/GitHub/S
+tan-Norm-Hom-Test/Paper/Efficiency_Model_Plot_BW_seasonal.png>] [21
 
- <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/Efficiency_Model
-_Plot_BW_seas_adj.png>] [21 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-
-Test/Paper/Efficiency_Model_Plot_BW_seasonal.png>] [22
-
-] [23]
-Overfull \hbox (49.36136pt too wide) in paragraph at lines 772--786
+] [22]
+Overfull \hbox (49.36136pt too wide) in paragraph at lines 769--783
  [][] 
  []
 
-[24] [25] [26
 
-] [27
-
-
-] [28
+Overfull \hbox (11.60986pt too wide) in paragraph at lines 789--814
+ [][] 
+ []
 
 
-] <TPR_Order_Plot_BW.png, id=149, 867.24pt x 216.81pt>
+Overfull \hbox (4.789pt too wide) in paragraph at lines 819--844
+ [][] 
+ []
+
+
+Overfull \hbox (6.80844pt too wide) in paragraph at lines 849--874
+ [][] 
+ []
+
+<TPR_Order_Plot_BW.png, id=129, 867.24pt x 216.81pt>
 File: TPR_Order_Plot_BW.png Graphic file (type png)
 
 <use TPR_Order_Plot_BW.png>
-Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 886.
+Package pdftex.def Info: TPR_Order_Plot_BW.png used on input line 878.
 (pdftex.def)             Requested size: 469.75502pt x 117.43956pt.
 
-<FPR_Order_Plot_BW.png, id=150, 867.24pt x 216.81pt>
+
+! LaTeX Error: OGS Incompliant Document: Caption must be below figure  on input
+ line 881.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.881 	\includegraphics
+                       [width=\textwidth]{FPR_Order_Plot_BW}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<FPR_Order_Plot_BW.png, id=130, 867.24pt x 216.81pt>
 File: FPR_Order_Plot_BW.png Graphic file (type png)
 
 <use FPR_Order_Plot_BW.png>
-Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 893.
+Package pdftex.def Info: FPR_Order_Plot_BW.png used on input line 881.
 (pdftex.def)             Requested size: 469.75502pt x 117.43956pt.
 
-<Efficiency_Order_Plot_BW.png, id=151, 867.24pt x 216.81pt>
+
+! LaTeX Error: OGS Incompliant Document: Caption must be below figure  on input
+ line 884.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.884 	\includegraphics
+                       [width=\textwidth]{Efficiency_Order_Plot_BW}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<Efficiency_Order_Plot_BW.png, id=131, 867.24pt x 216.81pt>
 File: Efficiency_Order_Plot_BW.png Graphic file (type png)
 
 <use Efficiency_Order_Plot_BW.png>
-Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 901.
+Package pdftex.def Info: Efficiency_Order_Plot_BW.png used on input line 884.
 (pdftex.def)             Requested size: 469.75502pt x 117.43956pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29
-
- <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/TPR_Order_Plot_B
-W.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/FPR_Order_
-Plot_BW.png>] [30 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper
-/Efficiency_Order_Plot_BW.png>]
-<"70219_Data_Unhomogenized_zoomed".png, id=162, 578.16pt x 252.945pt>
+[23] [24] [25] [26] [27 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test
+/Paper/TPR_Order_Plot_BW.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Ho
+m-Test/Paper/FPR_Order_Plot_BW.png> <C:/Users/rockc_000/Documents/GitHub/Stan-N
+orm-Hom-Test/Paper/Efficiency_Order_Plot_BW.png>]
+<"70219_Data_Unhomogenized_zoomed".png, id=151, 578.16pt x 252.945pt>
 File: "70219_Data_Unhomogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Unhomogenized_zoomed".png>
 Package pdftex.def Info: "70219_Data_Unhomogenized_zoomed".png used on input li
-ne 914.
+ne 897.
 (pdftex.def)             Requested size: 422.77664pt x 184.9648pt.
 
-<"70219_Data_Homogenized_zoomed".png, id=163, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized_zoomed".png, id=152, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized_zoomed".png Graphic file (type png)
 
 <use "70219_Data_Homogenized_zoomed".png>
 Package pdftex.def Info: "70219_Data_Homogenized_zoomed".png used on input line
- 915.
+ 898.
 (pdftex.def)             Requested size: 422.77664pt x 184.9648pt.
 
-<"70219_Data_Homogenized".png, id=164, 578.16pt x 252.945pt>
+<"70219_Data_Homogenized".png, id=153, 578.16pt x 252.945pt>
 File: "70219_Data_Homogenized".png Graphic file (type png)
 
 <use "70219_Data_Homogenized".png>
-Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 916.
+Package pdftex.def Info: "70219_Data_Homogenized".png used on input line 899.
 (pdftex.def)             Requested size: 422.77664pt x 184.9648pt.
 
 
-LaTeX Warning: Float too large for page by 3.46437pt on input line 919.
+LaTeX Warning: Float too large for page by 3.46437pt on input line 902.
 
-[31
+[28
 
-] [32 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_
+] [29 <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Test/Paper/70219_Data_
 Unhomogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHub/Stan-Norm-Hom-Te
 st/Paper/70219_Data_Homogenized_zoomed.png> <C:/Users/rockc_000/Documents/GitHu
-b/Stan-Norm-Hom-Test/Paper/70219_Data_Homogenized.png>] [33
+b/Stan-Norm-Hom-Test/Paper/70219_Data_Homogenized.png>] [30
 
 ]
 
 LaTeX Warning: The bibliography style is already defined by the template on inp
-ut line 934.
+ut line 917.
 
-[34]
+[31]
 (C:\Users\rockc_000\Documents\GitHub\Stan-Norm-Hom-Test\Paper\20150329_Masters_
-Paper.bbl [35
+Paper.bbl [32
 
-] [36]) [37]
+] [33]) [34]
+
+! LaTeX Error: Required section (environment) missing: \makesubmittal.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.931 \end{document}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: It is recommended that you include the 'acknowledgments' section
  (environment).
@@ -891,31 +937,30 @@ Paper.aux
 \csm@appendicies=\count221
 ) ) 
 Here is how much of TeX's memory you used:
- 13628 strings out of 493921
- 227442 string characters out of 3147270
- 307188 words of memory out of 3000000
- 16676 multiletter control sequences out of 15000+200000
- 12610 words of font info for 49 fonts, out of 3000000 for 9000
+ 13612 strings out of 493921
+ 227198 string characters out of 3147270
+ 324188 words of memory out of 3000000
+ 16662 multiletter control sequences out of 15000+200000
+ 10938 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 65i,9n,122p,1890b,559s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,9n,122p,1890b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmtt12.pfb>
-Output written on 20150329_Masters_Paper.pdf (45 pages, 817464 bytes).
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 20150329_Masters_Paper.pdf (42 pages, 804078 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

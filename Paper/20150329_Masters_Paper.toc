@@ -8,10 +8,10 @@
 \contentsline {chapter}{\texorpdfupper {\numberline {Chapter 3}Homogenization Algorithms}}{10}
 \contentsline {subsection}{\numberline {3.1}Methodology}{10}
 \contentsline {subsection}{\numberline {3.2}Homogenization Results}{16}
-\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 4}Sequencing Study}}{22}
-\contentsline {subsection}{\numberline {4.1}Random Error Detection}{22}
-\contentsline {subsection}{\numberline {4.2}Sequencing Simulation}{23}
-\contentsline {subsection}{\numberline {4.3}Sequencing Results}{23}
-\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 5}Case Study}}{31}
-\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 6}Conclusion}}{33}
-\contentsline {section}{\texorpdfupper {References Cited}}{35}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 4}Sequencing Study}}{21}
+\contentsline {subsection}{\numberline {4.1}Random Error Detection}{21}
+\contentsline {subsection}{\numberline {4.2}Sequencing Simulation}{22}
+\contentsline {subsection}{\numberline {4.3}Sequencing Results}{22}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 5}Case Study}}{28}
+\contentsline {chapter}{\texorpdfupper {\numberline {Chapter 6}Conclusion}}{30}
+\contentsline {section}{\texorpdfupper {References Cited}}{32}
