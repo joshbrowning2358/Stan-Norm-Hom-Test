@@ -1,9 +1,0 @@
-export(pairwiseSNHT)
-export(plotSNHT)
-export(robustSNHT)
-export(robustSNHTunequal)
-export(snht)
-
-import(ggplot2)
-importFrom(mgcv, gam, s)
-importFrom(gridExtra, arrangeGrob)
