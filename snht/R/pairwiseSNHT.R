@@ -66,20 +66,25 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
     ...){
   #data quality checks
   stopifnot(is(data,"data.frame"))
-  if(ncol(data)==2)
-    stopifnot(colnames(data)==c("data","location"))
-  if(ncol(data)==3)
-    stopifnot(colnames(data)==c("data","location","time"))
+  if(ncol(data)==2){
+    stopifnot(colnames(data) %in% c("data","location"))
+    # Reorder columns
+    data = data[, c("data", "location")]
+  }
+  if(ncol(data)==3){
+    stopifnot(colnames(data) %in% c("data","location","time"))
+    # Reorder columns
+    data = data[, c("data", "location", "time")]
+  }
   stopifnot(ncol(data) %in% c(2,3))
   locs = as.character(unique(data$location))
+  stopifnot(rownames(dist) == colnames(dist))
   stopifnot(all(rownames(dist) %in% locs))
-  stopifnot(all(colnames(dist) %in% locs))
   stopifnot(all(locs %in% rownames(dist)))
-  stopifnot(all(locs %in% colnames(dist)))
-  stopifnot(k>=1) #Must have at least one neighbor
-  stopifnot(k<=length(locs)-1) #Can have at most length(locs)-1 neighbor, since self can't be used  
-  stopifnot(diag(dist)==0)
-  if(any(dist[row(dist)!=col(dist)]<=0))
+  stopifnot(k >= 1) #Must have at least one neighbor
+  stopifnot(k <= length(locs)-1) #Can have at most length(locs)-1 neighbor, since self can't be used  
+  stopifnot(diag(dist) == 0)
+  if(any(dist[row(dist) != col(dist)]<=0))
     stop("Off diagonal elements of dist must be >0")
   
   pairs = getPairs(dist, k=k)
@@ -101,8 +106,8 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
   }
   
   #Restructure data
-  data = reshape::cast(data, formula = time ~ location, value="data")
-  diffs = data.frame(time=data$time)
+  data = reshape2::dcast(data, formula = time ~ location, value.var = "data")
+  diffs = data.frame(time = data$time)
   for(i in 1:nrow(uniquePairs)){
     diffs = cbind(diffs, data[,uniquePairs[i,1]] - data[,uniquePairs[i,2]])
     colnames(diffs)[ncol(diffs)] = paste0(uniquePairs[i,1],"-",uniquePairs[i,2])
@@ -120,9 +125,10 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
   out = unconfoundCandidateMatrix(candidate = candidate, pairs = pairs,
     statistics = statistics, data = data, period = period, avgDiff = avgDiff)
   
-  out$data = reshape::melt(out$data, id.vars=c("time"))
+  out$data = reshape2::melt(data = out$data, id.vars = "time")
   rownames(out$data) = NULL
-  colnames(out$data)[colnames(out$data)=="value"] = "data"
+  colnames(out$data)[colnames(out$data) == "value"] = "data"
+  colnames(out$data)[colnames(out$data) == "variable"] = "location"
   out$data = out$data[,c("data", "location", "time")]
   return(out)
 }

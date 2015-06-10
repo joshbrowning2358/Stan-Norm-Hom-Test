@@ -55,11 +55,12 @@ unconfoundCandidateMatrix = function(candidate, pairs, statistics, data,
   #The assumption is that the changepoint in the maxCol series was the issue in the 
   #other difference series.  This seems pretty reasonable.
   
-  breaks = matrix(nrow=0, ncol=3)
+  breaks = NULL
   while(any(candidate>0)){
     colMax = apply(candidate, 2, max)
     maxVal = max(colMax)
     maxCols = colMax==maxVal
+    maxCols = names(maxCols)[maxCols]
     
     #Determine which difference series we'll need to examine
     pairsMax = pairs[maxCols]
@@ -75,25 +76,26 @@ unconfoundCandidateMatrix = function(candidate, pairs, statistics, data,
     #Note: if columns A and B have the same value in candidate and the maximum is
     #between A and B, then the first column will be used.  Tie-breaking in this case
     #is non-trivial (what if each only have candidate=1?  how can we pull other values?)
-    brkTimes = lapply(names(maxCols), function(location){
-      if(!maxCols[location])
+    brkTimes = lapply(maxCols, function(location){
+      if(!location %in% maxCols)
         return(NULL)
-      rows = which(candidate[,location]==maxVal)
-      cols = pairsMax$diff[pairsMax$loc1==location]
+      rows = which(candidate[, colnames(candidate) == location] == maxVal)
+      cols = pairsMax$diff[pairsMax$loc1 == location]
+      cols = colnames(statistics) %in% cols
       currCol = which.max(apply(statistics[rows,cols,drop=F], 2, max))
       currColTime = rows[which.max(statistics[rows,currCol])]
-      return(data.frame(time=currColTime, stat=max(statistics[currColTime,]) ) )
-    } )
+      return(data.frame(time = currColTime, stat = max(statistics[currColTime,])))
+    })
     brkTimes = do.call("rbind", brkTimes)
     brkT = brkTimes$time[which.max(brkTimes$stat)]
-    brkCol = names(maxCols)[maxCols][which.max(brkTimes$stat)]
+    brkCol = maxCols[which.max(brkTimes$stat)]
     
     #Update candidate matrix
     tWindow = brkT + -period:period #No changepoints within period observations
     candidate[tWindow, brkCol] = 0
     adjCandCols = lapply(pairs, function(x){brkCol %in% x})
     adjCandCols = names(pairs)[do.call("c",adjCandCols)]
-    candidate[tWindow, adjCandCols] = pmax( candidate[tWindow, adjCandCols]-1, 0)
+    candidate[tWindow, adjCandCols] = pmax(candidate[tWindow, adjCandCols]-1, 0)
     
     #Update statistics matrix
     adjStatCols = c(paste0(brkCol,"-",adjCandCols), paste0(adjCandCols,"-",brkCol))
@@ -108,12 +110,12 @@ unconfoundCandidateMatrix = function(candidate, pairs, statistics, data,
     data[brkT:nrow(data),brkCol] = data[brkT:nrow(data),brkCol] - shift
     
     #Append detected break to breaks
-    breaks = rbind(breaks, c(brkT, brkCol, shift) )
+    breaks = rbind(breaks, data.frame(brkT, as.numeric(brkCol), shift))
   }
   breaks = data.frame(breaks)
   colnames(breaks) = c("time", "location", "shift")
   breaks$time = as.numeric(breaks$time)
   breaks$shift = as.numeric(breaks$shift)
   
-  return( list(data = data, breaks = breaks) )
+  return(list(data = data, breaks = breaks))
 }

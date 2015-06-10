@@ -27,10 +27,10 @@ createCandidateMatrix = function(data, statistics, pairs, crit){
   locations = colnames(data)[-1]
   candidate = matrix(0, nrow=nrow(data), ncol=length(locations))
   colnames(candidate) = locations
-  for( j in 1:ncol(statistics) ){
+  for(j in 1:ncol(statistics)){
     name = colnames(statistics)[j]
     name = strsplit(name, "-")[[1]]
-    delta = as.numeric(statistics[,j]>crit)
+    delta = as.numeric(statistics[, j] > crit)
     delta[is.na(delta)] = 0
     if(name[2] %in% pairs[name[1]][[1]])
       candidate[,name[2]] = candidate[,name[2]] + delta
