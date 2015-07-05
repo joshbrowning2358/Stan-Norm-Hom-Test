@@ -116,31 +116,29 @@ upper<-matrix(c(rep(0,1),100,100,100,100, rep(0,2),200,141,141,
               rep(0,3),141,141, rep(0,4),200, rep(0,5)), 
               nrow=5,ncol=5)
 dist<-t(upper)+upper
-colnames(dist)<-rownames(dist)<-1:5
+colnames(dist)<-rownames(dist)<- paste0("station", 1:5)
 dist
 @
 
 This is the distance matrix which is needed as an input parameter for pairwiseSNHT. It contains as (i,j)-th entry the distance between location i and j. It is therefore always a symmetric matrix with diagonal 0 and can be generated through the upper or lower diagonal matrix as done in the code.
 
 <<>>=
-colnames(baseData)<-"1":"5"
-baseData <- data.frame(time=1:1000, baseData)
-baseData <- melt(baseData, id.vars = "time")
-baseData$variable <- gsub("X", "", baseData$variable)
-colnames(baseData) <- c("time", "location", "data")
-baseData <- baseData[, c("data", "location", "time")]
+colnames(baseData) <- paste0("station", 1:5)
+baseData <- data.frame(time = 1:1000, baseData)
+baseData <- melt(baseData, id.vars = "time", variable.name = "location",
+                 value.name = "data")
 
 out1 <- pairwiseSNHT(baseData, dist, k=3, period=12, crit=20, returnStat=T)
 pairs <- colnames(out1)
 pairs
-str(out1)
+out1[13:15, ]
 @
 
 \textit{pairs} are the unique pairs which are formed by using $k=3$ neighbours.\\
 
-Remark: If there are more than k neighbours with the same distance to a certain location, then more than k neighbours are considered. In this example, location 2,..4 all have the distance 100 to location 1 (see distance matrix), therefore all these 4 locations are paired with location 1. This means that all 4 difference series are used by pairwiseSNHT.\\
+Remark: If there are more than k neighbours with the same distance to a certain location, then more than k neighbours are considered. In this example, location 2,..4 all have the distance 100 to location 1 (see distance matrix), therefore all these 4 locations are paired with location 1. This means that all 4 difference series are used by pairwiseSNHT.  Moreover, station 1's 3 closest neighbours may be stations 2, 3, and 4 but the pair station1-station5 may appear.  In this case, station 5's 3 closest neighbours must include station 1.  In that case, this pair would only be used for detecting changepoints in station 5 and not in station 1.\\
 
-\textit{out1} is the matrix with the calculated SNHT statistic for each time point and each pair. Only NA's are displayed through \textit{str()} since period was chosen to be 12, i.e., for the first and last 12 values in each time series, there is not assigned any SNHT statistic. This is due to the definition of the SNHT statistic (see: \cite{haimberger07}).
+\textit{out1} is the matrix with the calculated SNHT statistic for each time point and each pair. Since period was chosen to be 12, the first and last 12 values in each time series of \textit{out1} will be NA as there is not assigned any SNHT statistic. This is due to the definition of the SNHT statistic (see: \cite{haimberger07}).
 
 Let us plot the obtained SNHT statistics for each pair.
 
@@ -148,7 +146,8 @@ Let us plot the obtained SNHT statistics for each pair.
 par(mfrow=c(4,2),mar=c(1,1,1,1))
 for(i in 1:8){
   plot(out1[,i],type="l", ylim=c(0,30),
-       xlab="time",ylab="SNHT statistic", main= pairs[i] )
+       xlab="time",ylab="SNHT statistic")
+  title(pairs[i], line = -1) 
   abline(h=20, col="red")
 }
 @
@@ -166,12 +165,13 @@ One can now check if the corrected data, which is stored in \textit{out2\$data} 
 <<>>=
 newPair2 <- out2$data
 outNew1 <- pairwiseSNHT(newPair2,dist,k=3,period=12,crit=20,returnStat=T)
-par(mfrow=c(4,2),mar=c(1,1,1,1))
 @
 <<fig = TRUE, echo = FALSE>>=
+par(mfrow=c(4,2),mar=c(1,1,1,1))
 for(i in 1:8){
   plot(outNew1[,i],type="l", ylim=c(0,30),
-       xlab="time",ylab="SNHT statistic", main= pairs[i] )
+       xlab="time",ylab="SNHT statistic")
+  title(pairs[i], line = -1) 
   abline(h=20, col="red")
 }
 @

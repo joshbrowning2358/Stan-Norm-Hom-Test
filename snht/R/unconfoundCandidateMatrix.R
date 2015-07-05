@@ -111,7 +111,7 @@ unconfoundCandidateMatrix = function(candidate, pairs, statistics, data,
     data[brkT:nrow(data),brkCol] = data[brkT:nrow(data),brkCol] - shift
     
     #Append detected break to breaks
-    breaks = rbind(breaks, data.frame(brkT, as.numeric(brkCol), shift))
+    breaks = rbind(breaks, data.frame(brkT, brkCol, shift))
   }
   if(!is.null(breaks)){
     breaks = data.frame(breaks)
