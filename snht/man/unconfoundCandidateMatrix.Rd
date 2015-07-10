@@ -26,19 +26,20 @@ previous period observations and the following period observations.  Thus,
 this argument controls the window size for the test statistics.}
 
 \item{avgDiff}{A matrix containing the average differences between time
-series pairs.  Generally this is created within pairwiseSNHT().}
+  series pairs.  Generally this is created within pairwiseSNHT().}
 }
 \value{
 A list of two elements.  The first element contains the data after
-the breaks have been removed.  The second element is a data.frame with
-information regarding the detected changepoints.
+  the breaks have been removed.  The second element is a data.frame with
+  information regarding the detected changepoints (or NULL if none are
+  found).
 }
 \description{
 This function "unconfounds" the candidate matrix.  At each time point and
-for each location, we have the number of difference series which resulted
-in a changepoint.  The location with the largest count is assumed to be
-the location where the changepoint occurs.  Assignment of changepoints
-should then proceed iteratively, where each new changepoint is assigned
-based on the current highest count.
+for each location, we have the number of difference series which resulted in
+a changepoint.  The location with the largest count is assumed to be the
+location where the changepoint occurs.  Assignment of changepoints should
+then proceed iteratively, where each new changepoint is assigned based on
+the current highest count.
 }
 

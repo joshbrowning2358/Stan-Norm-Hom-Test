@@ -5,7 +5,7 @@
 \title{Standard Normal Homogeneity Test}
 \usage{
 snht(data, period, robust = F, time = NULL, scaled = TRUE,
-    rmSeasonalPeriod = Inf, ...)
+  rmSeasonalPeriod = Inf, ...)
 }
 \arguments{
 \item{data}{The data to be analyzed for changepoints.}
@@ -15,20 +15,20 @@ previous period observations and the following period observations. Thus,
 this argument controls the window size for the test statistics.}
 
 \item{robust}{Flag indicating whether or not robust estimators should be
-used. If T, then Huber's robust estimator for the mean and variance will be
-used (see ?MASS::huber).}
+used. If T, then Huber's robust estimator for the mean and variance will
+be used (see ?MASS::huber).}
 
 \item{time}{Numeric vector specifying times for the observations. If not
-supplied, it is assumed that each observation occurs on one time period. If
-supplied, then the algorithm will create a new dataset with the same number
-of observations for each time unit by adding missing values.}
+supplied, it is assumed that each observation occurs on one time period.
+If supplied, then the algorithm will create a new dataset with the same
+number of observations for each time unit by adding missing values.}
 
 \item{scaled}{In the Haimberger paper, a typo is reported in the test
 statistic.  The denominator ought to be s^2 instead of s, as the
-distribution of the test statistic then becomes chi-squared assuming errors
-are normal.  If scaled = TRUE, the corrected version is used.  In this
-case, the test statistics can be compared to a chi-squared.  However, if
-scaled = FALSE, there is no clear distribution to compare with.}
+distribution of the test statistic then becomes chi-squared assuming
+errors are normal.  If scaled = TRUE, the corrected version is used.  In
+this case, the test statistics can be compared to a chi-squared.  However,
+if scaled = FALSE, there is no clear distribution to compare with.}
 
 \item{rmSeasonalPeriod}{This algorithm will overestimate the standard error
 (and hence incorrectly estimate the test statistic) if there is strong
@@ -41,12 +41,12 @@ Setting this argument to Inf prevents any modeling.}
 }
 \value{
 Returns a data.frame, with columns score, leftMean, and rightMean.
-Statistic is the SNHT test statistic described above, and leftMean
-(rightMean) are the means to the left (right) of the current observation.
+  Statistic is the SNHT test statistic described above, and leftMean
+  (rightMean) are the means to the left (right) of the current observation.
 
-Additionally, if time is supplied, then time is returned on the output
-data.frame. Note that new (missing) observations were introduced to the
-dataset to ensure the same number of observations occur per day.
+  Additionally, if time is supplied, then time is returned on the output
+  data.frame. Note that new (missing) observations were introduced to the
+  dataset to ensure the same number of observations occur per day.
 }
 \description{
 This function performs a standard normal homogeneity test on the data
@@ -54,21 +54,21 @@ supplied. This test searches the data for potential changepoints.
 }
 \details{
 The SNHT works by calculating the mean of the data on the previous
-period and on the following period. The test statistic at each observation
-is then computed as described in Haimberger (2007). Essentially, though, it
-just compares the means of these two periods and normalizes by the standard
-deviation.
+  period and on the following period. The test statistic at each observation
+  is then computed as described in Haimberger (2007). Essentially, though,
+  it just compares the means of these two periods and normalizes by the
+  standard deviation.
 
-Note: if there are not enough observations both before and after the
-current observation, no test is performed.
+  Note: if there are not enough observations both before and after the
+  current observation, no test is performed.
 
-Large values of the test statistic suggests the presence of a changepoint.
-Haimberger (see references) suggests values larger than 100 should be
-considered changepoints.  However, this does not apply if scaled = TRUE.
+  Large values of the test statistic suggests the presence of a changepoint.
+  Haimberger (see references) suggests values larger than 100 should be
+  considered changepoints.  However, this does not apply if scaled = TRUE.
 
-Observations which are less than period away from the start or end of the
-dataset do not have valid SNHT statistics.  Thus, the statistic for these
-observations is returned as NA.
+  Observations which are less than period away from the start or end of the
+  dataset do not have valid SNHT statistics.  Thus, the statistic for these
+  observations is returned as NA.
 }
 \examples{
 data = rnorm(1000)
@@ -85,12 +85,13 @@ out = snht( data, period=50, time=time, robust=FALSE )
 summary(out)
 }
 \author{
-Josh Browning (jbrownin@mines.edu)
+Josh Browning (jbrownin@mines.edu), Carina Schneider
+  (carina.schneider@uzh.ch)
 }
 \references{
 L. Haimberger. Homogenization of radiosonde temperature time
-series using innovation statistics. Journal of Climate, 20(7): 1377-1403,
-2007.
+  series using innovation statistics. Journal of Climate, 20(7): 1377-1403,
+  2007.
 }
 \seealso{
 \code{\link{huber}}
