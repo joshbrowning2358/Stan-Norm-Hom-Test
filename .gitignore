@@ -1,4 +1,5 @@
 snht.Rcheck/
+.Rhistory
 
 # Latex
 *.aux

@@ -1,0 +1,535 @@
+%%%
+\documentclass[11pt]{article}
+
+%% THE NEXT TWO LINES INSERT THE PACKAGES FOR JASA FORMAT:
+%\usepackage[default]{jasa_harvard}    % 	for formatting citations in text
+%\usepackage{JABES_manu}
+
+
+\usepackage{epsfig, epsf, graphicx, subfigure}
+\usepackage{pstricks, pst-node, psfrag}
+\usepackage{amssymb,amsmath}
+\usepackage{verbatim,enumerate}
+\usepackage{rotating, lscape}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{xcolor,colortbl}
+
+\usepackage{tabularx}
+\usepackage{footnote}
+\usepackage{hhline}
+%\usepackage{appendix}
+\usepackage[toc,page]{appendix}
+\usepackage[page]{appendix}
+\usepackage{ulem}
+
+\setlength{\oddsidemargin}{-0.125in}
+\setlength{\topmargin}{-0.5in} \setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-40pt} \setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+  
+\setlength{\textheight}{9.4in} \setlength{\textwidth}{6.8in}
+\setlength{\topmargin}{-71pt} \setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{-6pt} \tolerance=500
+%\input psfig.tex
+\setlength{\topmargin}{-56pt} \setlength{\oddsidemargin}{-6pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\wt{\widetilde}
+\def\diag{\hbox{diag}}
+\def\wh{\widehat}
+\def\AIC{\hbox{AIC}}
+\def\BIC{\hbox{BIC}}
+%- Makes the section title start with Appendix in the appendix environment
+\newcommand{\Appendix}
+{%\appendix
+\def\thesection{Appendix~\Alph{section}}
+%\def\thesubsection{\Alph{section}.\arabic{subsection}}
+\def\thesubsection{A.\arabic{subsection}}
+}
+\def\diag{\hbox{diag}}
+\def\log{\hbox{log}}
+\def\bias{\hbox{bias}}
+\def\Siuu{\boldSigma_{i,uu}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\BIOK{{\it Biometrika}}
+\def\whT{\widehat{\Theta}}
+\def\STATMED{{\it Statistics in Medicine}}
+\def\STATSCI{{\it Statistical Science}}
+\def\JSPI{{\it Journal of Statistical Planning \&amp; Inference}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Theory \& Methods}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\TECH{{\it Technometrics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\CDA{{\it Computational Statistics \& Data Analysis}}
+\def\JCGS{{\it Journal of Computational and Graphical Statistics}}
+\def\JCB{{\it Journal of Computational Biology}}
+\def\BIOINF{{\it Bioinformatics}}
+\def\JAMA{{\it Journal of the American Medical Association}}
+\def\JNUTR{{\it Journal of Nutrition}}
+\def\JCGS{{\it Journal of Computational and Graphical Statistics}}
+\def\LETTERS{{\it Letters in Probability and Statistics}}
+\def\JABES{{\it Journal of Agricultural and
+                      Environmental Statistics}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\JSPI{{\it Journal of Statistical Planning \& Inference}}
+\def\TECH{{\it Technometrics}}
+\def\BIOK{{\it Bio\-me\-tri\-ka}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Series A}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\SCAN{{\it Scandinavian Journal of Statistics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\ANNALS{{\it Annals of Statistics}}
+\def\whT{\widehat{\Theta}}
+\def\STATMED{{\it Statistics in Medicine}}
+\def\STATSCI{{\it Statistical Science}}
+\def\JSPI{{\it Journal of Statistical Planning \& Inference}}
+\def\JRSSB{{\it Journal of the Royal Statistical Society, Series B}}
+\def\BMCS{{\it Biometrics}}
+\def\COMMS{{\it Communications in Statistics, Theory \& Methods}}
+\def\JQT{{\it Journal of Quality Technology}}
+\def\STIM{{\it Statistics in Medicine}}
+\def\TECH{{\it Technometrics}}
+\def\AJE{{\it American Journal of Epidemiology}}
+\def\JASA{{\it Journal of the American Statistical Association}}
+\def\CDA{{\it Computational Statistics \& Data Analysis}}
+\def\dfrac#1#2{{\displaystyle{#1\over#2}}}
+\def\VS{{\vskip 3mm\noindent}}
+\def\boxit#1{\vbox{\hrule\hbox{\vrule\kern6pt
+          \vbox{\kern6pt#1\kern6pt}\kern6pt\vrule}\hrule}}
+\def\refhg{\hangindent=20pt\hangafter=1}
+\def\refmark{\par\vskip 2mm\noindent\refhg}
+\def\naive{\hbox{naive}}
+\def\itemitem{\par\indent \hangindent2\pahttprindent \textindent}
+\def\var{\hbox{var}}
+\def\cov{\hbox{cov}}
+\def\corr{\hbox{corr}}
+\def\trace{\hbox{trace}}
+\def\refhg{\hangindent=20pt\hangafter=1}
+\def\refmark{\par\vskip 2mm\noindent\refhg}
+\def\Normal{\hbox{Normal}}
+\def\povr{\buildrel p\over\longrightarrow}
+\def\ccdot{{\bullet}}
+\def\bse{\begin{eqnarray*}}
+\def\ese{\end{eqnarray*}}
+\def\be{\begin{eqnarray}}
+\def\ee{\end{eqnarray}}
+\def\bq{\begin{equation}}
+\def\eq{\end{equation}}
+\def\bse{\begin{eqnarray*}}
+\def\ese{\end{eqnarray*}}
+\def\pr{\hbox{pr}}
+\def\wh{\widehat}
+\def\trans{^{\rm T}}
+\def\myalpha{{\cal A}}
+\def\th{^{th}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Marc Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.2} % Change this 1.5 or whatever
+\newcommand{\qed}{\hfill\hfill\vbox{\hrule\hbox{\vrule\squarebox
+   {.667em}\vrule}\hrule}\smallskip}
+\newtheorem{Th}{Theorem}
+\newtheorem{Proof}{Proof}
+\newtheorem{Mth}{Main Theorem}
+\newtheorem{Def}{Definition}
+\newtheorem{Rem}{Remark}
+\newtheorem{Qes}{Question}
+\newtheorem{proposition}{Proposition}
+\newtheorem{Lem}{Lemma}
+\newtheorem{Cor}{Corollary}
+\newtheorem{Exa}{Example}
+\newtheorem{Eq}{Equation}
+%\renewcommand{\baselinestretch}{1.5}
+\def\btheta{{\boldsymbol \theta}}
+\def\balpha{{\boldsymbol \alpha}}
+\def\bmu{{\boldsymbol \mu}}
+\def\bpi{{\boldsymbol \pi}}
+\def\btau{{\boldsymbol \tau}}
+\def\bbeta{{\boldsymbol \beta}}
+\def\x{{\bf x}}
+\def\a{{\bf a}}
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mC{\mathcal{C}}
+\def\mH{\mathcal{H}}
+\def\mR{\mathcal{R}}
+\def\mD{\mathcal{D}}
+
+\newtheorem{lemm}{Lemma}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[thm]
+\newtheorem{defi}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{example}{Example}
+
+\def\bX{{\bf X}}
+\def\bY{{\bf Y}}
+\def\bZ{{\bf Z}}
+\def\bU{{\bf U}}
+\def\bT{{\bf T}}
+\def\bV{{\bf V}}
+\def\bx{{\bf x}}
+\def\by{{\bf y}}
+\def\bz{{\bf z}}
+\def\bu{{\bf u}}
+\def\bv{{\bf v}}
+\def\bs{{\bf s}}
+\def\ba{{\bf a}}
+\def\bb{{\bf b}}
+\def\bmu{{\boldsymbol \mu}}
+\def\bbeta{{\boldsymbol \beta}}
+\def\balpha{{\boldsymbol \alpha}}
+\def\bxi{{\boldsymbol \xi}}
+\def\bdelta{{\boldsymbol \delta}}
+\def\blambda{{\boldsymbol \lambda}}
+\def\btheta{{\boldsymbol \theta}}
+\def\beeta{{\boldsymbol \eta}}
+\def\bupsilon{{\boldsymbol \upsilon}}
+\def\bepsilon{{\boldsymbol \epsilon}}
+\def\R{\mathbb R}
+
+
+%\newcommand{\pr}{\mbox{Pr}}
+%\newcommand{\var}{\mbox{var}}
+%\newcommand{\cov}{\mbox{cov}}
+%\newcommand{\logit}{\mbox{logit }}
+\newcommand{\cp}{\stackrel{\mathcal{P}}{\rightarrow}}
+\newcommand{\cl}{\stackrel{\mathcal{D}}{\rightarrow}}
+\newcommand{\mystrut}{\vphantom{\int_0^1}}
+\newcommand{\p}{\stackrel{p}{\rightarrow}}
+\renewcommand{\d}{\stackrel{d}{\rightarrow}}
+\newcommand{\condind}{\perp\hspace{-1em}\perp}
+\newcommand{\sumi}{\ensuremath{\sum_{i=1}^{n}}}
+\newcommand{\sumj}{\ensuremath{\sum_{j=1}^{n}}}
+\newcommand{\eff}{\mbox{\scriptsize eff}}
+\def\my{\mathcal Y}
+\newcommand{\bl}[1]{\textcolor{blue}{#1}}
+\newcommand{\rd}[1]{\textcolor{red}{#1}}
+\newcommand{\gr}[1]{\textcolor{green}{#1}}
+
+
+
+
+\def\nh{\noindent\hangindent=1.5truecm\hangafter=1}
+\def\cl{\centerline}
+\def\ms{\medskip}
+\def\ni{\noindent}
+\def\ve{\vfill\eject}
+
+\def\A{{\rm A}}
+\def\ab{\allowbreak}
+\def\bigmi{\,\big|\,}
+\def\cI{{\cal I}}
+\def\cT{{\cal T}}
+\def\dt{{\dot t}}
+\def\da{{\dot a}}
+\def\dar{\downarrow}
+\def\ddt{{\ddot t}}
+\def\de{\delta}
+\def\De{\Delta}
+\def\ep{\epsilon}
+\def\gz{g_0}
+\def\ha{{\hat a}}
+\def\half{^{1/2}}
+\def\hg{{\hat g}}
+\def\hth{{\hat\th}}
+\def\hatt{{\hat t}}
+\def\hom{{\widehat\om}}
+\def\hOm{{\widehat\Om}}
+\def\lan{\langle}
+\def\ran{\rangle}
+\def\lfl{\lfloor}
+\def\rfl{\rfloor}
+\def\mhf{^{-1/2}}
+\def\mi{\,|\,}
+\def\mo{^{-1}}
+\def\mt{^{-2}}
+\def\mth{^{-3}}
+\def\mtht{^{-3/2}}
+\def\om{\omega}
+\def\Om{\Omega}
+\def\one{^{(1)}}
+\def\oqr{{\textstyle{1\over4}}}
+\def\otd{{\textstyle{1\over3}}}
+\def\ots{{\textstyle{1\over36}}}
+\def\part{\partial}
+\def\ra{\to}
+\def\rai{\ra\infty}
+\def\si{\sigma}
+\def\Si{\Sigma}
+\def\sumi{\sum_i\,}
+\def\sumion{\sum_{i=1}^n\,}
+\def\sumionu{\sum_{i=1}^\nu\,}
+\def\sumj{\sum_j\,}
+\def\sumjon{\sum_{j=1}^n\,}
+\def\sumjonu{\sum_{j=1}^\nu\,}
+\def\sumjonm{\sum_{j=1}^{n-1}\,}
+\def\sz{^0}
+\def\T{^{{\rm T}}}
+\def\th{\theta}
+\def\Th{\Theta}
+\def\thf{{\textstyle{1\over2}}}
+\def\two{^{(2)}}
+\def\var{{\rm var}}
+\def\z{_0}
+\def\R{\mathbb{R}}
+\def\bX{\mathbb{X}}
+\def\S{\mathbf{S}}
+\def\D{\mathbf{D}}
+\def\y{\mathbf{y}}
+\def\z{\mathbf{z}}
+\def\p{\mathbf{p}}
+\def\t{\mathbf{t}}
+\def\bA{\mathbf{A}}
+\def\v{\mathbf{v}}
+\def\u{\mathbf{u}}
+\def\s{\mathbf{s}}
+\def\w{\mathbf{w}}
+\def\x{\mathbf{x}}
+\def\c{\mathbf{c}}
+\def\eps{{\ensuremath\boldsymbol{\epsilon}}}
+\def\sig{{\ensuremath\boldsymbol{\sigma}}}
+\def\thet{{\ensuremath\boldsymbol{\theta}}}
+\def\bnu{{\ensuremath\boldsymbol{\nu}}}
+\def\bSigma{{\ensuremath\boldsymbol{\Sigma}}}
+\def\bLambda{{\ensuremath\boldsymbol{\Lambda}}}
+\def\bTheta{{\ensuremath\boldsymbol{\Theta}}}
+
+\newcommand{\bin}[2]{
+	\left(
+		\begin{array}{@{}c@{}}
+		#1 \\ #2
+		\end{array}
+	\right) }
+\newcommand{\com}[1]{\textbf{[#1]}}
+
+\newcommand{\degree}{\ensuremath{^\circ}}
+\newcommand{\thickhline}{\noalign{\hrule height 2pt}}
+\pagenumbering{arabic}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data Assimilation Papers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item \textbf{Dee et al.~(2011):} http://onlinelibrary.wiley.com/doi/10.1002/qj.828/abstract
+
+Describes in detail the data assimilation procedure for the ERA-Interim dataset, which begins in January 1989 and proceeds forward in time.  In Section 4, they describe all of the input datasets and then the quality control checks that they use.  These are mainly described in very broad terms.  In Section 4.3.2, I found the following statement:  ``Figure 13 shows the combined bias corrections applied to reported temperature observations at 50 hPa from radiosondes launched at Bethel, Alaska, at 0000 and at1200 UTC. The large adjustments in 1989 and 1995 are associated with changes in instrumentation."  So, now we know what happened in 1989 and 1995 that caused the known shifts in that series.  
+
+However, this paper should be read more carefully.  I haven't yet found answers to my two big questions, which are (1)  what kind of homogenization methods are they using, and (2)  do they apply quality control algorithms before homogenization or after?  The data assimilation community doesn't seem to use this word ``homogenization" as much.  It is only mentioned on page 586 with regard to improving the homogeneity of the ozone assimilation  by applying variational bias adjustments, which I believe is described in the next paper (Dee and Uppala 2009).  
+
+\item \textbf{Dee and Uppala~(2009):} http://onlinelibrary.wiley.com/doi/10.1002/qj.493/abstract
+
+This paper doesn't really talk about quality control methods or how outliers may affect their methodology.  Instead, they simply present a ``variational bias correction" method for satellite data that is designed to detect biases.  Biases are when the satellite data is being used to estimate surface temperature, and they systematically either over or underestimate temperature.  They also talk about needing overlapping series of concurrent observations in order to calibrate the satellite data appropriately.  They say that, ``The ERA-Interim data assimilation system is described in more detail by Simmons et al. (2007a, b) and Uppala et al. (2008)," so there may be more there on the interplay between outliers and biases (or shifts in the mean measurements).
+
+
+In the conclusion, it states, ``A key challenge in reanalysis is to properly manage changes in the observing system. This involves difficult technical aspects such as detecting and initializing new data streams, keeping track of a large variety of instrument types, handling data gaps, monitoring data quality, and correcting data biases. Production of a multi-decadal reanalysis encompassing the modern satellite era requires that most of these tasks are performed automatically."  This supports our argument that making such routines automatic is also important in data assimilation.  
+
+\item \textbf{Tavolato and Isaksen (2014): } http://onlinelibrary.wiley.com/doi/10.1002/qj.2440/abstract
+
+This paper mainly deals with QC for outliers and not homogenization.  The ``innovations" that they talk about are the difference between observational data and some reference dataset.  In the conclusion, they say, ``In data assimilation, innovations
+are used extensively for observation QC and provide generally very valuable information (Hollingsworth et al., 1986). But the
+background forecasts also have errors, sometimes very large ones, so it may be difficult to determine if an observation or the equivalent model value is the outlier."  They describe a robust approach to identifying outliers.  This paper was just published in 2014, so we didn't see it before Ashley's paper was submitted, but they use the Huber mean, and they investigate in particular the weight that is given to outlying observations in the analysis.  They do talk a little bit in Section 4 about stations that have a bias, and by this, I assume that they mean that the mean of the station is higher or lower than it should be.
+
+They also state that, ``Any observational study that involves the analysis of historical data records relies on quality control and bias adjustments based on uncertainty assessments of the input data."  
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Early Upper Air Observation Overviews}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Information on the  UADB at NCAR that we are using can be found at http://rda.ucar.edu/datasets/ds370.1/.  While there is not a peer-reviewed paper, there is a citation on the website (DSS/CISL/NCAR 2014), and the following information:
+
+``The first consolidation step was compositing stations with identical WMO station numbers across all data sources. The UADB-TRH product has nearly 1100 stations that report for 20 years or more, and over 400 stations have time series of 50 years or longer. The UADB-Wind product has about 1600 stations that report for 20 years or more, and over 500 stations have soundings for at least 50 years. Next stations with different WMO station numbers, but that are located at identical latitudes and longitudes, or nearly so (within 40 kilometers) were combined, accounting for WMO station number changes and small position relocations. The result is that even longer station time series are created; extensions occur at over 240 and 250 locations in the UADB-TRH and UADB-Wind products, respectively. The composited and combined products are both available."
+
+Note that UADB-TRH is the UADB temperature and humidity measurements, and UADB-Wind has the wind measurements.
+
+The temporal range over the entire dataset is July 20, 1922 to February 28, 2015.	
+
+\begin{itemize}
+
+\item \textbf{Stickler et al.~(2014):}  http://www.earth-syst-sci-data.net/6/29/2014/essd-6-29-2014.html
+
+ \textbf{Ramella Pralungo et al.~(2014):}  http://www.earth-syst-sci-data.net/6/185/2014/essd-6-185-2014.html
+
+In both of these papers, they note that very early upper air measurements have only been made partially available.  They define historical measurements made as those pre-1957.  Beginning in 1958, the European Re-Analysis (ERA-40) is the primary data source.   They say that in 1948, the global upper air coverage reached its current status, but at that time, many of the observations had not been digitized.  The CHUAN (Comprehensive Historical Upper-Air Network) dataset contains a large set of pre-1957 upper air data.  In Stickler et al.~(2014), they catalogue, image, and digitize many more observations that occur in the less well covered regions of the tropics, polar regions,  oceans, and in very early upper air data from the US and Europe.  In Ramella Pralungo et al.~(2014), CHAUN and the IGRA (Integrated Global Radiosonde Archive) are compared and contrasted in terms of when measurements started, and they are merged with the measurements at altitude levels mapped to standard pressure levels.
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Homogenization Method Papers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item \textbf{Freitas et al.~(2013):}  http://www.met.hu/en/ismeret-tar/kiadvanyok/idojaras/index.php?id=82
+
+
+This is a case study that uses both MASH and HOMER.  It states that ``The
+former [MASH] was selected for being one of the most widely used by the homogenization
+community, while the latter [HOMER] was selected because it is one of the most recent
+homogenization methods $\ldots$"
+
+It says that ``HOME main objective was to develop a general homogenization method
+for homogenizing climate and environmental datasets which was accomplished
+in 2011 with the release of a free software package (HOMER), implemented in
+R language (HOME, 2011). It should be noted that ACMANT is a modified and
+automated version of PRODIGE, and that HOMER integrates PRODIGE,
+ACMANT, and USHCN."
+
+References for all of the original papers where these methods were introduced are given in this paper.
+
+\begin{description}
+\item[PRODIGE] (Caussinus and Mestre 2004),
+\item[MASH] (Szentimerey 2007)
+\item[ACMANT] (Domonkos 2011)
+\item[USHCN]  (Menne and Williams 2009)
+\end{description}
+
+\item \textbf{Lindau and Venema (2013):}    http://www.met.hu/en/ismeret-tar/kiadvanyok/idojaras/index.php?id=82
+
+Not sure how helpful this one will be, but this is one of the only ones that I ran across that specifically addresses the multiple break-point problem.  Still, the introduction is good, and there is a section on ``dynamic programming," which was mentioned in one of the referee reports.
+
+
+\item\textbf{Caussinus and Mestre (2004)} http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9876.2004.05155.x/abstract
+
+I like this paper because it's one of the only ones that I've seen in a statistics journal with the application of homogenization in long series of temperature data.   They say that two of the limitations of the existing homogenization methodologies, which we have also noted, are:
+
+``(a) They rest on the existence of a so-called reference series whose reliability cannot be
+proved. The different methods for creating such series (Alexandersson, 1986; F\o rland
+and Hanssen-Bauer, 1994; Easterling and Peterson, 1993) do not guarantee their quality."
+
+``(b) The number of breaks in the series tested is many and unknown. Moreover, an unknown
+number of outliers may spoil the data."
+
+Thus, they are also mentioning the fact that having a good ``reference series" is not always possible to have and that having outliers in the data can interfere with the homogenization procedure.  This will be a good one to read through to get their take on the reference series issue and as support for our message of homogenization in the presence of outliers.
+
+\item\textbf{Hannart et al.~(2014):} http://onlinelibrary.wiley.com/doi/10.1002/joc.3925/abstract
+
+These authors are all good, well-known statisticians, and the paper is recent, so it's  worth taking a look at to see how they validate and/or simulate data and results.
+
+\textbf{Josh Comments}  In the introduction, they provide a good statistical description of homogenization that I found quite interesting.
+
+Detection of break points is often done by differencing neighboring series so as to remove the climate signal.  However, detected breaks must then be assigned to "culprit" series and this is often a manual task (although Claude and Menne published a paper on an automated approach).  This paper seeks to improve this approach of allocation of the "culprit."
+
+The homogenization method they use is described in another paper: Hannart A, Naveau P. 2009. Bayesian multiple change-points and segmentation: application to homogenization of climatic series. Water Resour. Res. 45(10): 1944?1973.  My hunch is that it'd be too slow for daily data (given that it's a Bayesian method), but it's worth investigating.
+
+The pre-processing they performed was ``Series were quality checked based on the methodology of Vincent et al. (2005).''  Given the name ``pre-processing'', this was certainly done prior to checking for changepoints.  The details of the paper are: Observed trends in indices of daily temperature extremes in South America 1960?2000.
+J. Clim. 18(23): 5011?5023
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Daily Homogenization}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item \textbf{Szentimrey (2013) :}  http://www.met.hu/en/ismeret-tar/kiadvanyok/idojaras/index.php?id=82
+
+``$\ldots$ homogenization of daily data is still in its infancy and is much more difficult problem than homogenization at monthly or annual
+scales."  
+
+Interesting comment:  ``There is a common assumption that the correction in mean is sufficient for
+monthly and annual series, and that the correction of higher order moments is
+necessary only in the case of daily data series. In general, it is tacitly assumed
+that the averaging is capable to filter out the inhomogeneities in the higher order
+moments. However, this assumption is false, for example, if there is an
+inhomogeneity in the standard deviation of daily data, we may have the same
+inhomogeneity in monthly data."
+
+In their paper, they use a simple example: if two variables $Y_1, Y_2$ are correlated and standard normal, than $E(Y_1-Y_2|Y_1$ is small$)$ is less than $E(Y_1-Y_2)$.  They use this to argue that larger temperature differences (between reference stations) at extreme values are more likely.  Thus, they refute the claim that (apparently) climatologists make which is that larger temperature differences can be seen at extreme temperatures as natural phenomenon.
+
+\item \textbf{Toreti et al.~(2010):}  http://journals.ametsoc.org/doi/abs/10.1175/2010JCLI3499.1
+
+This is probably one of the ``Italian" papers on daily homogenization.  It extends the HOM method to address the autocorrelation in daily temperatures and to avoid a ``subjective choice of regression parameters."  They show that in small samples, their HOMAD method applied to daily temperature data improves the correction.
+
+\textbf{Josh Comments}  The HOM method (and possibly extensions like HOMAD) seem to be very popular in the climate literature.  However, I think they are too complex for our study because they require comparison to a reference series.  To do this, we'd have to change our simulation approach to simulate multiple time series.
+
+I took a look at the code posted online for HOMER and HOM/SPLIDHOM.  It is freely available, and there is a decent amount of documentation, but it seems like it also assumes a very specific file type to read in data.  I'm not entirely sure how much work it would take to figure out how to use it, but it may be tricky to figure out what assumptions are made about data structure/output/$\cdots$.  I also emailed Toreti to see if he can provide us with the code he used for HOMAD (it's mentioned in the paper that the code is available in an R package from the first author).
+
+\item \textbf{Mestre et al.~(2011):}  http://journals.ametsoc.org/doi/abs/10.1175/2011JAMC2641.1
+
+These authors say that daily temperatures are needed to study features such as frequency and intensity of extreme events.  They introduce a new method called SPLIDHOM for homogenization of daily data that adjusts not only the mean but also the higher order moments of the time series.  
+
+\textbf{Josh Comments}  I thought that HOM also corrects higher order moments.  My understanding of this algorithm is that it is an alternative algorithm to HOM.  In particular, the authors state "This is a significant difference from HOM, in which the LOESS smoothing parameter is fitted empirically, as stated by the authors themselves."  It's also based on comparison to a reference series...
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\baselineskip=13.5pt
+\section*{References}
+
+\refmark Caussinus, H.  and Mestre, O. (2004) ``Detection and correction of artificial shifts in climate series," \textit{Journal of the Royal Statistical Society: Series C (Applied Statistics)}, 53:  405--425.
+
+\refmark Data Support Section/Computational and Information Systems Laboratory/National Center for Atmospheric Research/University Corporation for Atmospheric Research. (2014, updated monthly) ``NCAR Upper Air Database, 1920-ongoing," \textit{Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory}. 
+
+\hspace{.15cm}http://rda.ucar.edu/datasets/ds370.1/. Accessed Jul 03, 2015.
+
+\refmark Dee, D. P., et al. (2011) ``The ERA-Interim reanalysis: Configuration and performance of the data assimilation system," \textit{Quarterly Journal of the Royal Meteorological Society}, 137:  553--587.
+
+\refmark Dee, D. P. and Uppala, S. (2009) ``Variational bias correction of satellite radiance data in the ERA-Interim reanalysis," \textit{Quarterly Journal of the Royal Meteorological Society}, 135:  1830--1841.
+
+\refmark Domonkos, P. (2011) ``Adapted Caussinus-Mestre algorithm for networks of temperature series (ACMANT)," \textit{International Journal of Geosciences} 2: 293--309.
+
+\refmark Freitas, L.,  Gonzalez Pereira, M.,  Caramelo, L.,  Mendes, M. and  Filipe Nunes, L. (2013) ``Homogeneity of monthly air temperature in Portugal with HOMER and MASH, " \textit{Quarterly Journal of the Hungarian Meteorological Service}, 117:  69--90.
+
+\refmark Hannart, A., Mestre, O., and Naveau, P. (2014) ``An automatized homogenization procedure via pairwise comparisons with application to Argentinean temperature series," \textit{International Journal of Climatology,} 34: 3528--3545.
+
+\refmark Lindau, R. and Venema, V. (2013) ``On the multiple breakpoint problem and the number
+of significant breaks in homogenization of climate records," \textit{Quarterly Journal of the Hungarian Meteorological Service}, 117: 1--34.
+
+\refmark Menne, M. J. and Williams Jr., C. N. (2009) ``Homogenization of temperature series via pairwise comparisons," \textit{Journal of  Climate}, 22: 1700--1717.
+
+\refmark Mestre, O., Gruber, C., Prieur, C., Caussinus, H., and Jourdain, S. (2011) ``SPLIDHOM: A method for homogenization of daily temperature observations," \textit{Journal of Applied Meteorology and Climatology}, 50: 2343--2358.
+
+\refmark Ramella Pralungo, L.,   Haimberger, L.,  Stickler, A.,  and Br\"{o}nnimann, S. (2014) ``A global radiosonde and tracked balloon archive on 16 pressure levels (GRASP) back to 1905 Ð Part 1: Merging and interpolation to 00:00 and 12:00 GMT," \textit{Earth System Science Data}, 6: 185--200.
+
+\refmark Stickler, A., et al. (2014) ``Description of the ERA-CLIM historical upper-air data," \textit{Earth System Science Data}, 6: 29--48.
+
+\refmark  Szentimrey, T. (2007) ``Manual of homogenization software MASHv3.02," Hungarian Meteorological Service.
+
+\refmark Szentimrey, T. (2013) ``Theoretical questions of daily data homogenization," \textit{Quarterly Journal of the Hungarian Meteorological Service}, 117: 113--122.
+
+\refmark  Tavolato, C. and Isaksen, L. (2014) ``On the use of a Huber norm for observation quality control in the ECMWF 4D-Var," \textit{Quarterly Journal of the Royal Meteorological Society}, \textit{Early View Online},  DOI: 10.1002/qj.2440.
+
+
+\refmark  Toreti, A.,  Kuglitsch, F. G.,  Xoplaki, E.,  Luterbacher, J., and  Wanner, H. (2010) ``A novel method for the homogenization of daily temperature series and its relevance for climate change analysis," \textit{Journal of Climate}, 23: 5325--5331.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%End of Document
+\end{document}
+%%%%%%%%%%End of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
