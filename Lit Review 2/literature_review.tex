@@ -406,10 +406,13 @@ References for all of the original papers where these methods were introduced ar
 \item[USHCN]  (Menne and Williams 2009)
 \end{description}
 
+\textbf{Josh Comments}  Interesting comment: ``with MASH it is obligatory to use available functionalities to fill the missing values and perform automatic correction of outliers. On the other hand, HOMER provides a fast quality control of the data, which includes functions of the CLIMATOL R package (Guijarro, 2011), which allow the user to perform/estimate station density, correlogram, histograms, boxplots, and cluster analysis.''  The outlier detection method they used was the ``1.5 times IQR'' approach as well as ``pairwise comparison $\cdots$ by visual inspection.''  Additionally, ``MASH has an automatic procedure to detect and correct outliers which is not controlled by the user.''
+
+In the end, they find that there is no clear evidence to choose one over the other.  However, the study centers around homogenizing actual time series without simulating data, and so true evaluation of these methods seems lacking.
+
 \item \textbf{Lindau and Venema (2013):}    http://www.met.hu/en/ismeret-tar/kiadvanyok/idojaras/index.php?id=82
 
 Not sure how helpful this one will be, but this is one of the only ones that I ran across that specifically addresses the multiple break-point problem.  Still, the introduction is good, and there is a section on ``dynamic programming," which was mentioned in one of the referee reports.
-
 
 \item\textbf{Caussinus and Mestre (2004)} http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9876.2004.05155.x/abstract
 
@@ -457,7 +460,9 @@ moments. However, this assumption is false, for example, if there is an
 inhomogeneity in the standard deviation of daily data, we may have the same
 inhomogeneity in monthly data."
 
-In their paper, they use a simple example: if two variables $Y_1, Y_2$ are correlated and standard normal, than $E(Y_1-Y_2|Y_1$ is small$)$ is less than $E(Y_1-Y_2)$.  They use this to argue that larger temperature differences (between reference stations) at extreme values are more likely.  Thus, they refute the claim that (apparently) climatologists make which is that larger temperature differences can be seen at extreme temperatures as natural phenomenon.
+\textbf{Josh Comments} In their paper, they use a simple example: if two variables $Y_1, Y_2$ are correlated and standard normal, than $E(Y_1-Y_2|Y_1$ is negative$)$ is less than $E(Y_1-Y_2)$.  They use this to argue that larger temperature differences (between reference stations) at extreme values are more likely.  However, this argument seems problematic to me; I would think that $Y_1$ and $Y_2$ are correlated through some latent variable $Z$.  Additionally, if we see larger values of $\lvert Y_1 - Y_2 \rvert$ at extreme points, then I would think that implies the distribution is changing when $Z$ is low.
+
+In general, they are very critical of the current homogenization algorithms.  They make a valid point regarding the regression approach for adjusting a time-series.  It's not clear to me if the method they are analyzing is exactly what is used in HOM, but it does show that the adjustment will not preserve even the second order moment.
 
 \item \textbf{Toreti et al.~(2010):}  http://journals.ametsoc.org/doi/abs/10.1175/2010JCLI3499.1
 
@@ -471,7 +476,7 @@ I took a look at the code posted online for HOMER and HOM/SPLIDHOM.  It is freel
 
 These authors say that daily temperatures are needed to study features such as frequency and intensity of extreme events.  They introduce a new method called SPLIDHOM for homogenization of daily data that adjusts not only the mean but also the higher order moments of the time series.  
 
-\textbf{Josh Comments}  I thought that HOM also corrects higher order moments.  My understanding of this algorithm is that it is an alternative algorithm to HOM.  In particular, the authors state "This is a significant difference from HOM, in which the LOESS smoothing parameter is fitted empirically, as stated by the authors themselves."  It's also based on comparison to a reference series...
+\textbf{Josh Comments}  I thought that HOM also corrects higher order moments (in Szentimrey, 2013 it states ``higher order moments (HOM) method by ...'').  My understanding of this algorithm is that it is an alternative algorithm to HOM.  In particular, the authors state "This is a significant difference from HOM, in which the LOESS smoothing parameter is fitted empirically, as stated by the authors themselves."  It's also based on comparison to a reference series...
 
 
 \end{itemize}
