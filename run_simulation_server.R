@@ -26,10 +26,22 @@ if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb" ){
     source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
   }
 }
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
+  # Only run this if code hasn't been run already
+  if(getwd() != "~/Documents/Github/Stan-Norm-Hom-Test/"){
+    setwd("~/Documents/Github/Stan-Norm-Hom-Test/")
+    source("simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  }
+  suppressPackageStartupMessages(library(doParallel))
+  library(foreach)
+  registerDoParallel(cores=detectCores(all.tests=TRUE))
+}
 
 # cArgs = commandArgs(trailingOnly=TRUE)
 completedRuns = dir(getwd(), pattern = "Simulations.*RData")
-params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136)_", "", completedRuns)
+params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136|joshua-Ubuntu-Linux)_", "", completedRuns)
 params = gsub(".RData", "", params)
 params = data.frame(do.call("rbind", strsplit(params, split = "_")))
 colnames(params) = c("station", "pressure", "n")
@@ -62,7 +74,7 @@ startYear = 2000
 endYear = startYear + as.numeric(cArgs[3]) - 1
 cat("Using station",station,"\n")
 cat("Using pressure",pressure,"\n")
-cat("Using # of years", as.numeric(cArgs[3]))
+cat("Using # of years", as.numeric(cArgs[3]), "\n")
 runId = paste(cArgs, collapse="_")
 
 test.data = read.csv(file=paste("Data/uadb", dataset, station, "parsed_temp_cleaned.csv", sep="_") )
@@ -96,12 +108,12 @@ ar0.5 = acfUnequal(test.data, data.col=which(colnames(test.data)=="Err"), lagSca
 #Bounds for seed are +/-2147483647 (at least on my machine)
 # seeds = round(runif(500 - completedSims, min=-21474836, max=21474836))
 # Run 50 simulations:
-seeds = round(runif(50, min=-21474836, max=21474836))
+seeds = sample(-21474836:21474836, size = 100, replace = FALSE)
 
-print("Beginning model building process...")
+cat("Beginning model building process...\n")
 
 start = Sys.time()
-for(i in 1:length(seeds) )
+results = foreach(i = 1:length(seeds)) %dopar%
 {
   seed = seeds[i]
   set.seed(seed)
@@ -121,7 +133,10 @@ for(i in 1:length(seeds) )
   contam$outlierFl = F
   
   #Return statistics about the simulated dataset:
-  toBind = data.frame( ID=seed
+  # toBind = data.frame( ID=seed
+  # If in parallel, need to rm detectionStat
+  rm(detectionStat)
+  dataStat = data.frame(ID = seed
     ,outlierPct  = mean( as.numeric( sim.dat$outlierSize!=0 ) )
     ,outlierPct4 = mean( as.numeric( sim.dat$outlierSize==4 ) ) #% of outliers at 4 sigma
     ,outlierPct5 = mean( as.numeric( sim.dat$outlierSize==5 ) ) #% of outliers at 5 sigma
@@ -135,10 +150,10 @@ for(i in 1:length(seeds) )
     ,simBr3Time = as.Date(paste(sim.dat$Year,sim.dat$Day_Of_Year),"%Y %j")[sim.dat$Breaks!=0][3]
     ,n = nrow(sim.dat)
   )
-  if(exists("dataStat"))
-    dataStat = rbind(dataStat, toBind)
-  else
-    dataStat = toBind
+#   if(exists("dataStat"))
+#     dataStat = rbind(dataStat, toBind)
+#   else
+#     dataStat = toBind
   
   for(outlierType in 5)
   #Type 1: Global robust mean/sd ("Tier 1")
@@ -309,14 +324,18 @@ for(i in 1:length(seeds) )
   } #Close outlierType for loop
 
 
-  if(i %% 10==0)
-    cat("Run",i,"completed.  nrow(dataStat):",nrow(dataStat),"  nrow(det...):", nrow(detectionStat), "\n")
-  if(i %% 50==0)
-    save(detectionStat, dataStat, file=paste0("Simulations_nonRobust_",nrow(dataStat),"_",Sys.info()[4],"_",runId,".RData"))
-
+#   if(i %% 10==0)
+#     cat("Run",i,"completed.  nrow(dataStat):",nrow(dataStat),"  nrow(det...):", nrow(detectionStat), "\n")
+#   if(i %% 50==0)
+#     save(detectionStat, dataStat, file=paste0("Simulations_nonRobust_",nrow(dataStat),"_",Sys.info()[4],"_",runId,".RData"))
+  cat(".")
+  return(merge(dataStat, detectionStat))
 }
-Sys.time()-start
+
+cat("Saving results...\n")
+results2 = do.call("rbind", results)
+save(results, results2, file=paste0("Simulations_nonRobust_",length(results),"_",Sys.info()[4],"_",runId,".RData"))
+cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours")
 
 # Do a new simulation by re-sourcing itself
-rm(detectionStat, dataStat)
 source("run_simulation_server.R")
