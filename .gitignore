@@ -1,6 +1,7 @@
 snht.Rcheck/
 .Rhistory
 *.RData
+Data
 
 # Latex
 *.aux
