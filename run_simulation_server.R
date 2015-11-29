@@ -28,6 +28,18 @@ if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb"){
   library(foreach)
   registerDoParallel(4)
 }
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jmds"){
+  # Only run this if code hasn't been run already
+  if(getwd() != "~/GitHub/Stan-Norm-Hom-Test/"){
+    setwd("~/GitHub/Stan-Norm-Hom-Test/")
+    source("simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  }
+  suppressPackageStartupMessages(library(doParallel))
+  library(foreach)
+  registerDoParallel(cores=detectCores(all.tests=TRUE))
+}
 if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
   # Only run this if code hasn't been run already
   if(getwd() != "~/Documents/Github/Stan-Norm-Hom-Test/"){
@@ -41,9 +53,10 @@ if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
   registerDoParallel(cores=detectCores(all.tests=TRUE))
 }
 
+
 # cArgs = commandArgs(trailingOnly=TRUE)
 completedRuns = dir(getwd(), pattern = "Simulations.*RData")
-params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136|joshua-Ubuntu-Linux)_", "", completedRuns)
+params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136|joshua-Ubuntu-Linux|jmds)_", "", completedRuns)
 params = gsub(".RData", "", params)
 params = data.frame(do.call("rbind", strsplit(params, split = "_")))
 colnames(params) = c("station", "pressure", "n")
