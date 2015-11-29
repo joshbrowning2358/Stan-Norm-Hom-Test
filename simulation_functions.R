@@ -10,8 +10,8 @@ library(reshape)
 library(mgcv)
 library(MASS)
 #Change point libraries:
-library(changepoint)
-library(bcpmeta)
+# library(changepoint)
+# library(bcpmeta)
 
 
 ########################################################################################################

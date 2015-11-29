@@ -1,26 +1,77 @@
 if(Sys.info()[1]=="Windows" & Sys.info()[4]=="JOSH_LAPTOP"){
-  setwd("C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC")
-  source("Code/simulation_functions.R")
-  library(snht)
-  removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  # Only run this code if it hasn't been run already:
+  if(getwd() != "C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC"){
+    setwd("C:/Users/rockc_000/Documents/Professional Files/Mines/Research/Wind QC")
+    source("Code/simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  }
 }
 if(Sys.info()[1]=="Linux" & grepl("(ch120|bb136)",Sys.info()[4]) ){
-  setwd("~/Research/Wind_QC")
-  source("Code/simulation_functions.R")
-  source("~/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
-  source("~/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
-  source("~/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
+  # Only run this code if it hasn't been run already:
+  if(getwd() != "~/Research/Wind_QC"){
+    setwd("~/Research/Wind_QC")
+    source("Code/simulation_functions.R")
+    source("~/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
+    source("~/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
+    source("~/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
+  }
 }
 if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb" ){
-  setwd("/media/storage/Professional Files/Mines/Research/Wind QC")
-  source("Code/simulation_functions.R")
-  source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
-  source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
-  source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
+  if(getwd() != "/media/storage/Professional Files/Mines/Research/Wind QC"){
+    setwd("/media/storage/Professional Files/Mines/Research/Wind QC")
+    source("Code/simulation_functions.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
+  }
+}
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jmds"){
+  # Only run this if code hasn't been run already
+  if(getwd() != "~/GitHub/Stan-Norm-Hom-Test/"){
+    setwd("~/GitHub/Stan-Norm-Hom-Test/")
+    source("simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  }
+  suppressPackageStartupMessages(library(doParallel))
+  library(foreach)
+  registerDoParallel(cores=detectCores(all.tests=TRUE))
+}
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
+  # Only run this if code hasn't been run already
+  if(getwd() != "~/Documents/Github/Stan-Norm-Hom-Test/"){
+    setwd("~/Documents/Github/Stan-Norm-Hom-Test/")
+    source("simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+  }
+  suppressPackageStartupMessages(library(doParallel))
+  library(foreach)
+  registerDoParallel(cores=detectCores(all.tests=TRUE))
 }
 
-cArgs = commandArgs(trailingOnly=TRUE)
-cArgs = c("35121", "300", "10")
+
+# cArgs = commandArgs(trailingOnly=TRUE)
+completedRuns = dir(getwd(), pattern = "Simulations.*RData")
+params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136|joshua-Ubuntu-Linux|jmds)_", "", completedRuns)
+params = gsub(".RData", "", params)
+params = data.frame(do.call("rbind", strsplit(params, split = "_")))
+colnames(params) = c("station", "pressure", "n")
+n = gsub("^[A-Za-z_]*", "", completedRuns)
+n = as.numeric(gsub("_.*", "", n))
+completedCounts = aggregate(n, by = params, FUN = sum)
+allRows = expand.grid(c("35121", "74794", "82332", "85543", "94150", "51777",
+                        "70133", "70261", "72387", "72456"),
+                      c("100", "300", "850"), c("10", "20", "40"))
+colnames(allRows) = colnames(params)
+counts = merge(allRows, completedCounts, by = colnames(allRows), all.x = TRUE)
+counts$x[is.na(counts$x)] = 0
+counts$station = as.character(counts$station)
+counts$pressure = as.character(counts$pressure)
+counts$n = as.character(counts$n)
+stillToRun = (1:90)[counts$x < 500]
+cArgs = counts[sample(stillToRun, size = 1), 1:3]
 
 if(length(cArgs)!=3)
   stop("Exactly three args are required: station, pressure and years!")
@@ -36,7 +87,7 @@ startYear = 2000
 endYear = startYear + as.numeric(cArgs[3]) - 1
 cat("Using station",station,"\n")
 cat("Using pressure",pressure,"\n")
-cat("Using # of years", as.numeric(cArgs[3]))
+cat("Using # of years", as.numeric(cArgs[3]), "\n")
 runId = paste(cArgs, collapse="_")
 
 test.data = read.csv(file=paste("Data/uadb", dataset, station, "parsed_temp_cleaned.csv", sep="_") )
@@ -58,23 +109,24 @@ test.data$Err = test.data$Reading - test.data$Preds
 ar0.5 = acfUnequal(test.data, data.col=which(colnames(test.data)=="Err"), lagScale=.5)[1,2]
 
 ## Determine completed files and start from there
-files = dir(".", pattern = paste0("Simulations_.*_", runId, "\\.RData"))
-simNumber = as.numeric(gsub("(Simulations_|_ch.*|_bb.*)", "", files))
-completedSims = 0
-if(length(simNumber) >= 1){
-    bestFile = files[grep(paste0(max(simNumber), "_(ch|bb)"), files)]
-    load(bestFile)
-    completedSims = nrow(dataStat)
-}
+# files = dir(".", pattern = paste0("Simulations_.*_", runId, "\\.RData"))
+# simNumber = as.numeric(gsub("(Simulations_|_ch.*|_bb.*)", "", files))
+# completedSims = 0
+# if(length(simNumber) >= 1){
+#     bestFile = files[grep(paste0(max(simNumber), "_(ch|bb)"), files)]
+#     load(bestFile)
+#     completedSims = nrow(dataStat)
+# }
 
 #Bounds for seed are +/-2147483647 (at least on my machine)
 # seeds = round(runif(500 - completedSims, min=-21474836, max=21474836))
-seeds = round(runif(500 - completedSims, min=-21474836, max=21474836))
+# Run 50 simulations:
+seeds = sample(-21474836:21474836, size = 100, replace = FALSE)
 
-print("Beginning model building process...")
+cat("Beginning model building process...\n")
 
 start = Sys.time()
-for(i in 1:length(seeds) )
+results = foreach(i = 1:length(seeds)) %dopar%
 {
   seed = seeds[i]
   set.seed(seed)
@@ -94,7 +146,10 @@ for(i in 1:length(seeds) )
   contam$outlierFl = F
   
   #Return statistics about the simulated dataset:
-  toBind = data.frame( ID=seed
+  # toBind = data.frame( ID=seed
+  # If in parallel, need to rm detectionStat
+  rm(detectionStat)
+  dataStat = data.frame(ID = seed
     ,outlierPct  = mean( as.numeric( sim.dat$outlierSize!=0 ) )
     ,outlierPct4 = mean( as.numeric( sim.dat$outlierSize==4 ) ) #% of outliers at 4 sigma
     ,outlierPct5 = mean( as.numeric( sim.dat$outlierSize==5 ) ) #% of outliers at 5 sigma
@@ -108,10 +163,10 @@ for(i in 1:length(seeds) )
     ,simBr3Time = as.Date(paste(sim.dat$Year,sim.dat$Day_Of_Year),"%Y %j")[sim.dat$Breaks!=0][3]
     ,n = nrow(sim.dat)
   )
-  if(exists("dataStat"))
-    dataStat = rbind(dataStat, toBind)
-  else
-    dataStat = toBind
+#   if(exists("dataStat"))
+#     dataStat = rbind(dataStat, toBind)
+#   else
+#     dataStat = toBind
   
   for(outlierType in 5)
   #Type 1: Global robust mean/sd ("Tier 1")
@@ -282,10 +337,18 @@ for(i in 1:length(seeds) )
   } #Close outlierType for loop
 
 
-  if(i %% 10==0)
-    cat("Run",i,"completed.  nrow(dataStat):",nrow(dataStat),"  nrow(det...):", nrow(detectionStat), "\n")
-  if(i %% 50==0)
-    save(detectionStat, dataStat, file=paste0("Simulations_nonRobust_",nrow(dataStat),"_",Sys.info()[4],"_",runId,".RData"))
-
+#   if(i %% 10==0)
+#     cat("Run",i,"completed.  nrow(dataStat):",nrow(dataStat),"  nrow(det...):", nrow(detectionStat), "\n")
+#   if(i %% 50==0)
+#     save(detectionStat, dataStat, file=paste0("Simulations_nonRobust_",nrow(dataStat),"_",Sys.info()[4],"_",runId,".RData"))
+  cat(".")
+  return(merge(dataStat, detectionStat))
 }
-Sys.time()-start
+
+cat("Saving results...\n")
+results2 = do.call("rbind", results)
+save(results, results2, file=paste0("Simulations_nonRobust_",length(results),"_",Sys.info()[4],"_",runId,".RData"))
+cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours")
+
+# Do a new simulation by re-sourcing itself
+source("run_simulation_server.R")
