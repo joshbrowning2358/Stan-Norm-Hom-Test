@@ -17,14 +17,16 @@ if(Sys.info()[1]=="Linux" & grepl("(ch120|bb136)",Sys.info()[4]) ){
     source("~/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
   }
 }
-if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb" ){
-  if(getwd() != "/media/storage/Professional Files/Mines/Research/Wind QC"){
-    setwd("/media/storage/Professional Files/Mines/Research/Wind QC")
-    source("Code/simulation_functions.R")
-    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
-    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
-    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb"){
+  if(getwd() != "/media/storage/Github/Stan-Norm-Hom-Test/"){
+    setwd("/media/storage/Github/Stan-Norm-Hom-Test/")
+    source("simulation_functions.R")
+    library(snht)
+    removeSeasonalPeriod = snht:::removeSeasonalPeriod
   }
+  suppressPackageStartupMessages(library(doParallel))
+  library(foreach)
+  registerDoParallel(4)
 }
 if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
   # Only run this if code hasn't been run already
@@ -162,7 +164,7 @@ results = foreach(i = 1:length(seeds)) %dopar%
   #Type 4: Type 1 and then Type 2 ("Combined")
   #Type 5: Type 1 and then Type 3 ("Hourly Combined")
   {
-    for(homogType in 2)
+    for(homogType in 1)
     #Type 1: SNHT
     #Type 2: Robust SNHT
     #Type 3: PELT (implemented in package changepoint)
