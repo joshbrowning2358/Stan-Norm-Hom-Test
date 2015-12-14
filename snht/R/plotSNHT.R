@@ -50,5 +50,5 @@ plotSNHT = function(data, stat, time = NULL, alpha = NULL){
                                color = "red", linetype = 4)
     pData = pData + ggplot2::geom_vline(xintercept = stat$time[which.max(stat$score)],
                                color = "red", linetype = 4)
-    print(gridExtra::arrangeGrob(pData, pStat))
+    print(gridExtra::grid.arrange(pData, pStat))
 }

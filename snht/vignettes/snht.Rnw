@@ -42,6 +42,14 @@ E-mail: jbrownin@mines.edu
 
 \begin{document}
 
+<<include=FALSE>>=
+library(knitr)
+opts_chunk$set(
+concordance=TRUE
+)
+@
+
+
 <<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
 library(knitr)
 opts_chunk$set(fig.path = 'figure/', fig.align = 'center', fig.show = 'hold',
