@@ -337,6 +337,8 @@ Describes in detail the data assimilation procedure for the ERA-Interim dataset,
 
 However, this paper should be read more carefully.  I haven't yet found answers to my two big questions, which are (1)  what kind of homogenization methods are they using, and (2)  do they apply quality control algorithms before homogenization or after?  The data assimilation community doesn't seem to use this word ``homogenization" as much.  It is only mentioned on page 586 with regard to improving the homogeneity of the ozone assimilation  by applying variational bias adjustments, which I believe is described in the next paper (Dee and Uppala 2009).  
 
+\textbf{Josh Comments:} They don't seem to discuss the specifics of the quality control algorithms they apply to radiosonde temperatures, likely because they have so many different data inputs and QA processes!  They perform ``a suite of quality control and data selection steps... (such as) checks for completeness of records, physical feasability, ...".  Section 4 lays out the general approach to the QC process and then discusses each data input separately.  For radiosonde temperature records, they use ``the RAOBCORE\_T\_1.3 set of adjustments'' from: Haimberger L, Tavolato C, Sperka S. 2008. Toward elimination of the warm  bias  in  historic  radiosonde  temperature  records:  Some  new results from a comprehensive intercomparison of upper-air data. J. Climate 21: 4587-4606.  In the Haimberger paper, they detect breakpoints using the SNHT.  To me, it sounds like they accept the quality control methods used on the input data without performing further checks.  However, during the reanalysis, they mention that they do try to adjust observations that are considered incorrect by comparing them to model forecasts.
+
 \item \textbf{Dee and Uppala~(2009):} http://onlinelibrary.wiley.com/doi/10.1002/qj.493/abstract
 
 This paper doesn't really talk about quality control methods or how outliers may affect their methodology.  Instead, they simply present a ``variational bias correction" method for satellite data that is designed to detect biases.  Biases are when the satellite data is being used to estimate surface temperature, and they systematically either over or underestimate temperature.  They also talk about needing overlapping series of concurrent observations in order to calibrate the satellite data appropriately.  They say that, ``The ERA-Interim data assimilation system is described in more detail by Simmons et al. (2007a, b) and Uppala et al. (2008)," so there may be more there on the interplay between outliers and biases (or shifts in the mean measurements).
@@ -414,6 +416,8 @@ In the end, they find that there is no clear evidence to choose one over the oth
 
 Not sure how helpful this one will be, but this is one of the only ones that I ran across that specifically addresses the multiple break-point problem.  Still, the introduction is good, and there is a section on ``dynamic programming," which was mentioned in one of the referee reports.
 
+\textbf{Josh Comments: } I got lost in section 4.  In equation 7, they seem to be claiming that averaging standard normal random data over many permutations will provide a particular solution (rather than a distribution).  They later use this idea to justify that $v$ is bounded between 0 and 1, and this argument motivates most of the remainder of the work.
+
 \item\textbf{Caussinus and Mestre (2004)} http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9876.2004.05155.x/abstract
 
 I like this paper because it's one of the only ones that I've seen in a statistics journal with the application of homogenization in long series of temperature data.   They say that two of the limitations of the existing homogenization methodologies, which we have also noted, are:
@@ -426,6 +430,8 @@ and Hanssen-Bauer, 1994; Easterling and Peterson, 1993) do not guarantee their q
 number of outliers may spoil the data."
 
 Thus, they are also mentioning the fact that having a good ``reference series" is not always possible to have and that having outliers in the data can interfere with the homogenization procedure.  This will be a good one to read through to get their take on the reference series issue and as support for our message of homogenization in the presence of outliers.
+
+\textbf{Josh Comments:} This paper also mentions outlier detection in addition to changepoint detection.  Their approach is a bit different from ours: "But, if a detected changepoint remains constant throughout the set of comparisons of a candidate station with its neighbours, it can be attributed to this candidate station. The detection of the outliers follows the same principle."  Detection of changepoints and outliers is done by a penalized maximum likelihood approach, where the penalty increases with the number of changepoints.  However, given the computational infeasability of maximizing such a likelihood, they use reference series and metadata to first determine candidates or possible changepoints/outliers prior to optimizing.  It's also unclear to me how the outliers are determined in this maximization process...
 
 \item\textbf{Hannart et al.~(2014):} http://onlinelibrary.wiley.com/doi/10.1002/joc.3925/abstract
 
