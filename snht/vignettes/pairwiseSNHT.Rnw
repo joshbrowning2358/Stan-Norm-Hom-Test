@@ -1,4 +1,4 @@
-%\VignetteIndexEntry{faoswsSeed: A package for the imputation of the seed domain for the Statistical Working System}
+%\VignetteIndexEntry{Pairwise SNHT}
 %\VignetteEngine{knitr::knitr}
 \documentclass[nojss]{jss}
 \usepackage{url}
