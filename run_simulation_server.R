@@ -349,8 +349,16 @@ results = foreach(i = 1:length(seeds)) %dopar%
 
 cat("Saving results...\n")
 results2 = do.call("rbind", results)
-save(results, results2, file=paste0("Simulations_robust_",length(results),"_",Sys.info()[4],"_",runId,".RData"))
-cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours")
+
+
+
+
+
+save(results, results2, file=paste0("Simulations_nonRobust_", length(results),
+                                    "_", rnorm(1), "_", Sys.info()[4], "_",
+                                    runId, ".RData"))
+cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours\n")
+
 
 # Do a new simulation by re-sourcing itself
 source("run_simulation_server.R")

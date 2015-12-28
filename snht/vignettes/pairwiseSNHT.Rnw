@@ -1,4 +1,4 @@
-%\VignetteIndexEntry{faoswsSeed: A package for the imputation of the seed domain for the Statistical Working System}
+%\VignetteIndexEntry{Pairwise SNHT}
 %\VignetteEngine{knitr::knitr}
 \documentclass[nojss]{jss}
 \usepackage{url}
@@ -34,14 +34,21 @@ of the package \pkg{snht} for changepoint detection.}
 
 \Address{
 Carina Schneider\\
-Masters Student\\
+Master's Student\\
 University of Zurich, Switzerland\\
-E-mail: carina.schneider@uzh.ch
+E-mail: carinamariaschneider@gmail.com
 %URL: \url{https://github.com/rockclimber112358/Stan-Norm-Hom-Test}
 }
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
+
+<<include=FALSE>>=
+library(knitr)
+opts_chunk$set(
+concordance=TRUE
+)
+@
+
 
 <<setup, include=FALSE, cache=FALSE, echo=FALSE>>=
 library(knitr)
@@ -54,29 +61,31 @@ options(replace.assign = TRUE, width = 80)
 \section{Methodology}
 
 \subsection{Main idea}
-The pairwiseSNHT algorithm performs a relative homogeneity test, i.e., reference series are used to detect changepoints at a certain location. For this purpose it calculates pairwise difference series from highly correlated neighbour time series as described in \cite{menne09}. This has the advantage that overall periodic or linear trends are no longer present in the difference series which then can be investigated through the Standard Normal Homogeneity Test (snht).  This of course only works under the assumption that "similar variations in climate occur at nearby locations", \cite{menne09}.\\
+The pairwiseSNHT algorithm performs a relative homogeneity test, i.e., reference series are used to detect change points at a certain location. For this purpose it calculates pairwise difference series from highly correlated neighbor time series as described in \cite{menne09}. This has the advantage that overall periodic or linear trends are no longer present in the difference series which then can be investigated through the Standard Normal Homogeneity Test (snht).  This of course only works under the assumption that "similar variations in climate occur at nearby locations", \cite{menne09}.\\
 
-Relative homogeneity tests for analyzing a time series at one location with the help of reference series often have the disadvantage that reference series must first be investigated for homogeneity to guarantee that the inhomogeneity is found at the right location, \cite{menne09}. The pairwiseSNHT therefore investigates for each location more than one difference series. In concrete terms, it investigates for each location $k$ difference series. These $k$ difference series come about through subtracting the $k$ closest neighbour series from the investigated location series.  It then counts the number of inhomogeneities that occured at a certain time invovling a specific location. The locations with the highest counts of inhomogeneities are then assumed to be the locations where the changepoints occured.\\
+Relative homogeneity tests for analyzing a time series at one location with the help of reference series often have the disadvantage that reference series must first be investigated for homogeneity to guarantee that the inhomogeneity is found at the right location, \cite{menne09}. The pairwiseSNHT therefore investigates for each location more than one difference series. In concrete terms, it investigates for each location $k$ difference series. These $k$ difference series come about through subtracting the $k$ closest neighbor series from the investigated location series.  It then counts the number of inhomogeneities that occurred at a certain time involving a specific location. The locations being involved with the highest counts of inhomogeneities are then assumed to be the locations where the change points occurred.\\
 
-If however the same maximal count of inhomogeneities are measured for two neighbour locations, pairwiseSNHT just assumes that the inhomogeneity occured at the location with the lower enumeration number. This is, so to speak, aribitrary since tie-breaking is non-trivial.
+If, however, the same maximal count of inhomogeneities are measured for two neighbor locations, pairwiseSNHT just assumes that the inhomogeneity occurred at the location with the lower enumeration number. This is, so to speak, arbitrary since tie-breaking is non-trivial.
 
-\subsection{Preperation and execution steps}
+
+\subsection{Code review}
 
 \begin{enumerate}
 \item Calculate a distance matrix with as (i,j)-th entry the geographical distance between locations i and j.
-\item Choose k (number of neighbours for each location), period (see decription of the snht), critical value (threshold for the SNHT statistic, if it exceeds this critical value then a changepoint is assumed to have occured).
+\item Choose k (number of neighbors for each location), period (see description of the snht), critical value (threshold for the SNHT statistic, if it exceeds this critical value then a change point is assumed to have occurred).
 \item Pass the above arguments into the pairwiseSNHT function, i.e.:
 <<eval=FALSE>>=
 pairwiseSNHT(data, dist, k, period, crit, returnStat=TRUE/FALSE)
 @
-\item pairwiseSNHT calculates unique pairs of neighbour locations using the distance matrix and $k$.
+\item pairwiseSNHT calculates unique pairs of neighbor locations using the distance matrix and $k$.
 \item The snht function is applied to each pair, i.e., its difference series is applied to snht with scaled=TRUE (snht statistic has a chi-squared distribution) and robust=FALSE (non-robust estimator is used) and the period that was set as an input parameter in\\
-lpairwiseSNHT.
-\item If returnStat=TRUE, a matrix with dimension time x (number of paris) containing the snht statistic is returned.
-\item If returnStat=FALSE, a candiate matrix is created with dimension (time x number of locations) containing the number of changepoints at each location and time.
-\item This candidate matrix is then given to the function \textit{unconfoundCandidateMatrix()} which looks for the largest counts in the candidate matrix and in that way assigns the changepoints to a location and time. It also returns the magnitude of the changepoint.
+pairwiseSNHT.
+\item If returnStat=TRUE, a matrix with dimension time x (number of pairs) containing the snht statistic is returned.
+\item If returnStat=FALSE, a candidate matrix is created with dimension (time x number of locations) containing the number of change points at each location and time.
+\item This candidate matrix is then given to the function \textit{unconfoundCandidateMatrix()} which looks for the largest counts in the candidate matrix and in that way assigns the change points to a location and time. It also returns the magnitude of the change point.
 \item In the end a data.frame is returned containing the corrected data and the location, time of all the breaks and their magnitude. These can be accessed through \textit{output\$breaks}, \textit{output\$data}.
 \end{enumerate}
+
 
 \section{Usage of the PairwiseSNHT}
 
@@ -84,22 +93,24 @@ This section is intended to show how the function pairwiseSNHT is used in R.
 
 \subsection{Example 1: Seasonal data, no linear trend, shift at center location}
 
-Let us consider 5 stations where station 1 is surrounded by station 2,...,5, all having the distance 100 to station 1. The data these stations measured is assumed to be periodic, see below.  First, though, let's load the required libraries:
+Let us consider 5 stations where station 1 is surrounded by station 2,...,5, all having the distance 1 to station 1. The data these stations measured is assumed to be periodic, see below.  First, though, let's load the required libraries:
 
 <<>>=
 library(snht)
 library(reshape2)
 library(ggplot2)
+library(mvtnorm)
 @
 
 <<>>=
-set.seed(3)
-baseData = matrix(rnorm(5000), nrow=1000)
-baseData = baseData + cos(1:1000*2*pi/200)
-baseData[401:1000, 1] = cos(401:1000*2*pi/200) +
-    rnorm(600, mean = 1)
+set.seed(2)
+Cor<-rbind(c(0.5,0.8,0.8,0.8,0.8),c(0,0.5,0.8,0.5,0.6),
+c(0,0,0.5,0.8,0.5),c(0,0,0,0.5,0.6),c(0,0,0,0,0.5))
+Cor<-t(Cor)+Cor
+baseData<-rmvnorm(mean=rep(0,5),sig=Cor,n=1000)+cos(1:1000*2*pi/200)
+baseData[401:1000,1]<-baseData[401:1000,1]+0.5
 @
-<<fig = TRUE, echo = FALSE>>=
+<<echo = FALSE>>=
 toPlot = data.frame(baseData)
 toPlot$Time = 1:1000
 toPlot = melt(toPlot, id.vars = "Time")
@@ -111,68 +122,71 @@ ggplot(toPlot, aes(x = Time)) +
 
 <<>>=
 dist<-matrix(0,5,5)
-#dist is a symmetric matrix
-upper<-matrix(c(rep(0,1),100,100,100,100, rep(0,2),200,141,141,
-              rep(0,3),141,141, rep(0,4),200, rep(0,5)), 
-              nrow=5,ncol=5)
-dist<-t(upper)+upper
-colnames(dist)<-rownames(dist)<- paste0("station", 1:5)
+dist<-dist(rbind(c(1,0),c(1,1),c(0,0),c(1,-1),c(2,0)))
+dist<-as.matrix(dist)
+colnames(dist)<-rownames(dist)<-1:5
 dist
 @
 
-This is the distance matrix which is needed as an input parameter for pairwiseSNHT. It contains as (i,j)-th entry the distance between location i and j. It is therefore always a symmetric matrix with diagonal 0 and can be generated through the upper or lower diagonal matrix as done in the code.
+This is the distance matrix which is needed as an input parameter for pairwiseSNHT. It contains as (i,j)-th entry the distance between location i and j. It is therefore always a symmetric matrix with diagonal 0.
 
 <<>>=
-colnames(baseData) <- paste0("station", 1:5)
+colnames(baseData) <-"1":"5"
 baseData <- data.frame(time = 1:1000, baseData)
 baseData <- melt(baseData, id.vars = "time", variable.name = "location",
                  value.name = "data")
+baseData$location<-gsub("X","",baseData$location)
 
-out1 <- pairwiseSNHT(baseData, dist, k=3, period=12, crit=20, returnStat=T)
+out1 <- pairwiseSNHT(baseData, dist, k=3, period=200, 
+crit=qchisq(1-0.05/600,df=1), returnStat=T)
+
 pairs <- colnames(out1)
 pairs
-out1[13:15, ]
+out1[300:302, ]
 @
 
-\textit{pairs} are the unique pairs which are formed by using $k=3$ neighbours.\\
+\textit{pairs} are the unique pairs which are formed by using $k=3$ neighbors.\\
 
-Remark: If there are more than k neighbours with the same distance to a certain location, then more than k neighbours are considered. In this example, location 2,..4 all have the distance 100 to location 1 (see distance matrix), therefore all these 4 locations are paired with location 1. This means that all 4 difference series are used by pairwiseSNHT.  Moreover, station 1's 3 closest neighbours may be stations 2, 3, and 4 but the pair station1-station5 may appear.  In this case, station 5's 3 closest neighbours must include station 1.  In that case, this pair would only be used for detecting changepoints in station 5 and not in station 1.\\
+Remark: If there are more than k neighbors with the same distance to a certain location, then more than k neighbors are considered. In this example, location 2,..,5 all have the distance 1 to location 1 (see distance matrix), therefore all these 4 locations are paired with location 1. This means that all 4 difference series are used by pairwiseSNHT. Moreover, station 1's 3 closest neighbours may be stations 2, 3, and 4 but the pair station1-station5 may appear.  In this case, station 5's 3 closest neighbours must include station 1.  In that case, this pair would only be used for detecting changepoints in station 5 and not in station 1.\\
 
-\textit{out1} is the matrix with the calculated SNHT statistic for each time point and each pair. Since period was chosen to be 12, the first and last 12 values in each time series of \textit{out1} will be NA as there is not assigned any SNHT statistic. This is due to the definition of the SNHT statistic (see: \cite{haimberger07}).
+
+\textit{out1} is the matrix with the calculated SNHT statistic for each time point and each pair. Since period was chosen to be 200, the first and last 200 values in each time series of \textit{out1} will be NA as there is not assigned any SNHT statistic. This is due to the definition of the SNHT statistic (see: \cite{haimberger07}).
 
 Let us plot the obtained SNHT statistics for each pair.
 
-<<fig = TRUE, echo = FALSE>>=
+<<echo = FALSE>>=
 par(mfrow=c(4,2),mar=c(1,1,1,1))
 for(i in 1:8){
-  plot(out1[,i],type="l", ylim=c(0,30),
+  plot(out1[,i],type="l",ylim=c(0,100),
        xlab="time",ylab="SNHT statistic")
   title(pairs[i], line = -1) 
-  abline(h=20, col="red")
+  abline(h=qchisq(1-0.05/600,df=1), col="red")
 }
 @
 
-One can now clearly see that it is most likely that a changepoint occured at time 400. This changepoint as well as its magnitude is also obtained through setting returnStat=FALSE in pairwiseSNHT. Furthermore, the corrected data can be accessed through \textit{out2\$breaks} respectively \textit{out2\$data}.
+One can now clearly see that it is most likely that a change point occurred at time 400. This change point as well as its magnitude is also obtained through setting returnStat=FALSE in pairwiseSNHT. Furthermore, the corrected data can be accessed through \textit{out2\$breaks} respectively \textit{out2\$data}.
 
 <<>>=
-out2 <- pairwiseSNHT(baseData, dist, k=3, period=12, crit=20, returnStat=F)
+out2 <- pairwiseSNHT(baseData, dist, k=3, period=200, 
+crit=qchisq(1-0.05/600,df=1), returnStat=F)
 out2$breaks
 str(out2$data)
 @
 
-One can now check if the corrected data, which is stored in \textit{out2\$data} provides better results, i.e., the SNHT statistic does no longer exceed the critical value.
+One can now check that the corrected data, which is stored in \textit{out2\$data} provides better results, i.e., the SNHT statistic does no longer exceed the critical value.
 
 <<>>=
 newPair2 <- out2$data
-outNew1 <- pairwiseSNHT(newPair2,dist,k=3,period=12,crit=20,returnStat=T)
+outNew1 <- pairwiseSNHT(newPair2,dist,k=3,period=200,
+                        crit=qchisq(1-0.05/600,df=1),returnStat=T)
 @
-<<fig = TRUE, echo = FALSE>>=
+<<echo = FALSE>>=
 par(mfrow=c(4,2),mar=c(1,1,1,1))
 for(i in 1:8){
-  plot(outNew1[,i],type="l", ylim=c(0,30),
+  plot(outNew1[,i],type="l",ylim=c(0,100),
        xlab="time",ylab="SNHT statistic")
   title(pairs[i], line = -1) 
-  abline(h=20, col="red")
+  abline(h=qchisq(1-0.05/600,df=1), col="red")
 }
 @
 

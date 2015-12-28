@@ -2,9 +2,9 @@ Package: snht
 Type: Package
 Title: Standard Normal Homogeneity Test
 Version: 1.0.3
-Date: 2015-09-02
+Date: 2015-12-14
 Depends: ggplot2, gridExtra, mgcv
-Imports: zoo, plyr, reshape2
+Imports: zoo, plyr, reshape2, mvtnorm
 Authors@R: c(person("Josh", "Browning", role = c("aut", "cre"),
 		     email = "jbrownin@mines.edu"),
 	         person("Carina", "Schneider", role = "aut",
