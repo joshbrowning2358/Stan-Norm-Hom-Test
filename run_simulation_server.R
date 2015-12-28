@@ -177,7 +177,7 @@ results = foreach(i = 1:length(seeds)) %dopar%
   #Type 4: Type 1 and then Type 2 ("Combined")
   #Type 5: Type 1 and then Type 3 ("Hourly Combined")
   {
-    for(homogType in 1)
+    for(homogType in 2)
     #Type 1: SNHT
     #Type 2: Robust SNHT
     #Type 3: PELT (implemented in package changepoint)
@@ -349,7 +349,7 @@ results = foreach(i = 1:length(seeds)) %dopar%
 
 cat("Saving results...\n")
 results2 = do.call("rbind", results)
-save(results, results2, file=paste0("Simulations_nonRobust_",length(results),"_",Sys.info()[4],"_",runId,".RData"))
+save(results, results2, file=paste0("Simulations_robust_",length(results),"_",Sys.info()[4],"_",runId,".RData"))
 cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours")
 
 # Do a new simulation by re-sourcing itself
