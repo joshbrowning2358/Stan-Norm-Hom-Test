@@ -349,11 +349,6 @@ results = foreach(i = 1:length(seeds)) %dopar%
 
 cat("Saving results...\n")
 results2 = do.call("rbind", results)
-
-
-
-
-
 save(results, results2, file=paste0("Simulations_nonRobust_", length(results),
                                     "_", rnorm(1), "_", Sys.info()[4], "_",
                                     runId, ".RData"))
