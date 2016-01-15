@@ -339,5 +339,6 @@ save(results, results2, file=paste0("Simulations_robust_", length(results),
                                     runId, ".RData"))
 cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours\n")
 
+
 # Do a new simulation by re-sourcing itself
 source("run_simulation_server.R")
