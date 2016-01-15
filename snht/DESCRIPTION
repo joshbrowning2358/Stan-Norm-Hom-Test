@@ -4,11 +4,11 @@ Title: Standard Normal Homogeneity Test
 Version: 1.0.3
 Date: 2015-12-14
 Depends: ggplot2, gridExtra, mgcv
-Imports: zoo, plyr, reshape2, mvtnorm
+Imports: zoo, plyr, reshape2, mvtnorm, methods
 Authors@R: c(person("Josh", "Browning", role = c("aut", "cre"),
 		     email = "jbrownin@mines.edu"),
 	         person("Carina", "Schneider", role = "aut",
-             email = "carina.schneider@uzh.ch"))
+             email = "carinamariaschneider@gmail.com"))
 Author: Josh Browning [aut, cre],
   Carina Schneider [aut]
 Maintainer: Josh Browning <jbrownin@mines.edu>
