@@ -549,31 +549,31 @@ In summary, the simulation process is as follows:
 
 \subsection{Sequencing Results}
 
-The percent of error contamination as well as the number of simulated change points in the data can strongly influence TPR and FPR.  Thus, we again fit logistic regression models to the simulation results, where we model each of TPR, FPR, and the probability that efficiency is positive as the response variables.  The dependent variables are sample size, outlier contamination rate, station, pressure level, and sequencing.
+The percent of error contamination as well as the number of simulated change points in the data can strongly influence TPR and FPR.  Thus, we again fit logistic regression models to the simulation results, where we model each of TPR, FPR, and the probability that efficiency is positive as the response variables.  The dependent variables are sample size, outlier contamination rate, station, pressure level, sequencing, and type of homogenization (robust or traditional SNHT).
 
-We begin by fitting five logistic models for each of the three responses, first with only main effects and then models with all $k$-way interaction terms, where $k=2,3,4,5$.  The deviances are given in Table~\ref{tab:devSeq}.  We again find that the deviance does not decrease much when 3-way interaction terms are included in the model, and thus we use models with 2-way interaction terms for all three responses.
+We begin by fitting five logistic models for each of the three responses, first with only main effects and then models with all $k$-way interaction terms, where $k=2,3,4,5$.  The deviances are given in Table~\ref{tab:devSeq}.  For the FPR and efficiency models, we find that the deviance does not decrease much when 3-way interaction terms are included in the model, and thus we use models with 2-way interaction terms.  For the TPR model, a decrease in the deviance of 2\% when including two-way interactions seems insubstantial after the 63\% decrease in deviance from the intercept model to the linear terms model, and thus we use the linear terms model for TPR.
 
-For the TPR model, we find that there is no significant difference between the sequencings ``Ran-Sys-Ran,'' ``Sys-Ran,'' and ``Sys-Ran-Sys.''  Table~\ref{tab:fitTPR} shows the fitted TPR averaged across all stations and pressure levels, and the number in parentheses shows the percent of instances when that model attains the highest fitted TPR.  Additionally, these effects are plotted in Figure~\ref{fig:fitTPR}.  The table shows that the ``Ran-Sys'' sequencing performs best when the outlier contamination rate is small and when the sample size is relatively small.  The other sequences perform  similarly and do much better than the ``Ran-Sys" sequence when the sample size is medium to large and as the outlier contamination rate increases.  
+For the TPR model, Table~\ref{tab:fitTPR} shows the estimated coefficients from the TPR logistic regression model.  We find that there is no significant difference between the sequencings ``Ran-Sys-Ran,'' ``Sys-Ran,'' and ``Sys-Ran-Sys'' even at the significance level of $\alpha = 0.10$, but that these three sequencings are significantly better than the ``Ran-Sys'' sequencing at even the $\alpha=0.01$ significance level.  This agrees with our initial hypothesis: random error detection will be less accurate if systematic errors have not been removed from the dataset.  Moreover, using the robust SNHT leads to a small but significant (at the $\alpha = 0.01$ significance level) improvement in the TPR.  Additionally, these effects are plotted in Figure~\ref{fig:fitTPR}.
 
-For the FPR model, we did not find a substantial difference among the four sequencings.  Table~\ref{tab:fitFPR} shows the fitted false positive rates averaged across all stations and pressure levels, and these effects are plotted in Figure~\ref{fig:fitFPR}.  In almost all simulations, ``Ran-Sys-Ran'' attained the lowest FPR; however, FPR is quite low across all models.  Due to this fact, and the conclusions from the TPR model, we recommend one of the sequencings ``Ran-Sys-Ran'', ``Sys-Ran'', or ``Sys-Ran-Sys'' if the end goal is to maximize FPR and minimize TPR.
+Table~\ref{tab:fitFPR} shows the fitted false positive rates averaged across all stations and pressure levels, and these effects are plotted in Figure~\ref{fig:fitFPR}.  The figure clearly depicts that there is not a substantial or significant difference among the four sequencings.  In almost all simulations, the ``Ran-Sys'' sequencing with a traditional SNHT homogenization algorithm attained the lowest FPR; however, FPR is quite low across all models.  Due to this fact, and the conclusions from the TPR model, we recommend one of the sequencings ``Ran-Sys-Ran'', ``Sys-Ran'', or ``Sys-Ran-Sys'' if the end goal is to minimize FPR and maximize TPR.
 
-Lastly, results from fitting the efficiency model are shown in Table~\ref{tab:fitEff}.  The largest fitted efficiency is almost always obtained with the sequence ``Sys-Ran''.  However, as shown in Figure~\ref{fig:fitEffOrd}, the difference among the four sequencings is not substantial.  Thus, we conclude that when using the robust homogenization algorithm, the sequencing chosen does not have a large effect on the efficiency of the final homogenized data.
+Lastly, results from fitting the efficiency model are shown in Table~\ref{tab:fitEff}.  Note that, in terms of efficiency, the ``Ran-Sys'' and ``Ran-Sys-Ran'' models will have identical performance.  The largest fitted probability of positive efficiency is almost always obtained with the sequence ``Ran-Sys''.  Additionally, efficiency is optimized by the robust model in the cases of longer time series or higher outlier contamination rates, and the traditional model is preferred with shorter time series and lower outlier contamination rates. These results differ from those in the homogenization study (see Table~\ref{tab:homOrd}); previously the nonrobust estimator had a lower probability of positive efficiency in all cases. However, the current results are different in that a random error check is performed prior to the homogenization; in this scenario, the nonrobust SNHT is the best estimator for some configurations. As shown in Figure~\ref{fig:fitEffOrd}, the difference among the four sequencings and the difference between the robust or traditional SNHT is not significant.  Thus, we conclude that the probability of positive efficiencies between the different algorithms are not significantly different but that the ``Ran-Sys'' and ``Ran-Sys-Ran'' sequencings are preferred and that the robust SNHT is preferred when many outliers are present or when we have long time series.
 
-
+In practice, when applying a quality-control algorithm to a historical dataset, we can only use one sequencing and we wish to maximize TPR, minimize FPR, and maximize efficiency simultaneously.  The sequencing maximizing both TPR and efficiency is ``Ran-Sys-Ran.''  The difference between the various sequencings for the FPR is very minimal, and thus this sequencing is also a reasonable choice.  The robust SNHT leads to only a small improvement in the TPR, and thus the choice between the robust or traditional SNHT should maximize efficiency and thus is based on the length of the time series and assumed outlier contamination percentage.
 
 \section{Case Study}
 
-In \cite{haimberger07}, station 70219 (Bethel, Alaska, USA) is analyzed for change points during the period 1958 to 2005.  We perform a similar analysis to the temperatures observed at this station from 1951 to 2014, as shown in Figure~\ref{fig:BasicTS}, although we use raw radiosonde temperatures  rather than the difference between the observed temperature  and a reanalysis.  We apply the robust SNHT to this time series followed by the outlier detection algorithm described in Section~\ref{sec:ranErr} in  the Sys-Ran sequence.  As the dataset contains 53 years of data, we use a window of 2 years, $N=730$.
+In \cite{haimberger07}, station 70219 (Bethel, Alaska, USA) is analyzed for change points during the period 1958 to 2005.  We perform a similar analysis to the temperatures observed at this station from 1951 to 2014, as shown in Figure~\ref{fig:BasicTS}, although we use raw radiosonde temperatures  rather than the difference between the observed temperature  and a reanalysis.  We apply the robust SNHT to this time series followed by the outlier detection algorithm described in Section~\ref{sec:ranErr} in  the Ran-Sys-Ran sequence.  As the dataset contains 53 years of data, we use a window of 2 years, $N=730$.
 
-The algorithm detects a total of 17 change points and 15 outliers.  The detected change points have mean shifts ranging from $-4.21^\circ$C to 2.80$^\circ$C, and the average absolute shift is 2.18$^\circ$C. The global random error detection algorithm identifies 10 errors whose test statistics range from 7.71 to 23.61 and average 14.23.  The windowed random error detection algorithm detects an additional 5 errors, and their test statistics range from 5.24 to 6.52 and average 5.69. Figure~\ref{fig:caseStudy} depicts a plot of the time series before and after the quality control algorithm has been applied.  Only a subset of the data is plotted in the middle panel in order to show the effects of homogenization more clearly.  In the 10 year period shown, three change points are detected as indicated by the dashed vertical lines.  The detected change points shift the mean of the process, and the corrections made in the quality controlled dataset seem to improve the homogeneity of the final product. The results found here are similar to those in \cite{haimberger07} who found 13 change points, and when we restrict our analysis to the same time period, we identify 14 change points.
+The algorithm detects a total of 17 change points and 22 outliers.  The detected change points have mean shifts ranging from $-4.19^\circ$C to 2.86$^\circ$C, and the average absolute shift is 2.17$^\circ$C. The global random error detection algorithm identifies 17 errors whose test statistics range from 6.05 to 29.41 and average 13.17.  The windowed random error detection algorithm detects an additional 5 errors, and their test statistics range from 5.68 to 7.85 and average 6.49. The random error detection algorithm applied after homogenization detects no additional errors. Figure~\ref{fig:caseStudy} depicts a plot of the time series before and after the quality control algorithm has been applied.  Only a subset of the data is plotted in the middle panel in order to show the effects of homogenization more clearly.  In the 10 year period shown, three change points are detected as indicated by the dashed vertical lines.  The detected change points shift the mean of the process, and the corrections made in the quality controlled dataset seem to improve the homogeneity of the final product. The results found here are similar to those in \cite{haimberger07} who found 13 change points, and when we restrict our analysis to the same time period, we identify 14 change points.
 
 \section{Conclusion}
 
 In this study we evaluate several different homogenization techniques, and we find that the robust SNHT method with seasonality removed performs the best among those considered.  It attains a high efficiency, indicating that this method is reasonably effective at returning the data to its uncontaminated state.  It attains higher efficiencies than the BinSeg and PELT algorithms, and it outperforms the non-robust SNHT even when the outlier contamination rate is small.  The optimal period may be a function of the size of the dataset, but the 365 day period is optimal for datasets with 40 years or less.
 
-We also evaluate the effect that the sequence in which the random error detection and homogenization algorithms are applied have on the final performance of the overall quality control routine.  We find that failing to remove systematic errors before searching for random errors leads to a much lower true positive rate of the error removal algorithm in most cases.  However,  the removal of random errors first does not have a large influence on the detection of systematic errors when a homogenization method that is robust to random errors is applied.
+We also evaluate the effect that the sequence in which the random error detection and homogenization algorithms are applied have on the final performance of the overall quality control routine.  We find that failing to remove systematic errors before searching for random errors leads to a much lower true positive rate of the error removal algorithm in most cases.  Additionally,  failing to remove random errors before detecting systematic errors leads to a lower efficiency.  Therefore, we must use a sequencing of length three, and we find that ``Ran-Sys-Ran'' outperforms ``Sys-Ran-Sys'' by a slight, insignificant amount for both TPR and efficiency.
 
-In the absence of metadata regarding a station's history or for very old historical records, we recommend performing data homogenization first with the robust SNHT followed by random error detection.  This two step procedure performs significantly better than its reversal, and it performs similarly to three step procedures.  The three step procedures do not perform significantly better than ``Sys-Ran.''  Since the three step procedures are more computationally expensive, especially given the size of the radiosonde archive, we recommend against their use.  Our recommended approach can be applied throughout the archive with minimal human intervention;   however, gains in random and systematic error detection may be realized if metadata, multiple pressure levels, or multiple station locations are combined, as in \cite{ignaccolo14}.  More work is needed to determine how to best handle both types of errors  when such additional information is incorporated.   
+In the absence of metadata regarding a station's history or for very old historical records, we recommend performing random error detection first followed by the SNHT and then an additional random error detection. The robust SNHT should be used in cases where we have a long time-series or many outliers while the traditional SNHT is preferred otherwise.  This three step procedure performs only slightly better than the other three step sequencing, and it substantially outperforms the two step procedures.  Our recommended approach can be applied throughout the archive with minimal human intervention;   however, gains in random and systematic error detection may be realized if metadata, multiple pressure levels, or multiple station locations are combined, as in \cite{ignaccolo14}.  More work is needed to determine how to best handle both types of errors  when such additional information is incorporated.   
 
 \subsection*{Acknowledgments} The authors wish to thank the organizers and participants of the SAMSI Surface Temperature Initiative Workshop held at the National Center for Atmospheric Research in Boulder, Colorado on July 8-16, 2014 for helpful discussions regarding the content of this paper.
 
@@ -592,13 +592,12 @@ In the absence of metadata regarding a station's history or for very old histori
 	\centering
 	\begin{tabular}{lcc}
   		\hline
-		Model Type & Deviance & \% Reduction\\
+		Model Type & Deviance & \% Reduction \\ 
 		\hline
-		Intercept Only & 1973919 & ---\\ 
-  		Main Effects & 1564061 & 20.76\%\\ 
-  		2-Way Interactions & 1505738 & 3.73\%\\ 
-  		3-Way Interactions & 1483785 & 1.46\% \\ 
-  		4-Way Interactions & 1475014 & 0.59\% \\ 
+		Intercept Only & 1973919 & - \\ 
+		Linear Terms & 1539236 & 22.02\% \\ 
+		2-Way Interactions & 1474259 & 3.29\% \\ 
+		3-Way Interactions & 1448078 & 1.33\% \\ 
    		\hline
 	\end{tabular}
 	\caption{Deviance for the efficiency logistic regression models.}
@@ -612,33 +611,26 @@ In the absence of metadata regarding a station's history or for very old histori
 	\centering
 	\begin{tabular}{cc|cccc|cccc}
 		\hline
-		\# of & Outlier & \multicolumn{4}{c}{Estimated Efficiency} & \multicolumn{4}{c}{Change in Efficiency with Seasonal Model} \\ 
-		Years & Contam. & SNHT-365 & robust-365 & robust-730 & BinSeg-2-log(n) & SNHT-365 & robust-365 & robust-730 & BinSeg-2-log(n)\\ 
+		\# of & Chngpt & \multicolumn{4}{c}{Estimated Efficiency} & \multicolumn{4}{c}{Change in Efficiency with Seasonal Model} \\ 
+		Years & Contam & SNHT-365 & robust-365 & robust-730 & BinSeg-2-log(n) & SNHT-365 & robust-365 & robust-730 & BinSeg-2-log(n)\\ 
 		\hline
-		 & 0\% & 95.7\% (3\%) & 97.5\% (3\%) & 96.5\% (0\%) & 60.3\% (0\%) & 2.3\% (3\%) & \textbf{1.3\% (90\%)} & 0.8\% (0\%) & 27.3\% (0\%) \\ 
-		 & 1\% & 95.6\% (0\%) & 97.8\% (7\%) & 96.8\% (0\%) & 62.0\% (0\%) & 2.3\% (0\%) & \textbf{1.0\% (93\%)} & 0.7\% (0\%) & 25.9\% (0\%) \\ 
-		 10 & 2\% & 95.5\% (0\%) & 98.1\% (10\%) & 97.0\% (0\%) & 63.8\% (0\%) & 2.2\% (0\%) & \textbf{0.9\% (90\%)} & 0.5\% (0\%) & 24.4\% (0\%) \\ 
-		 & 5\% & 95.1\% (0\%) & 98.8\% (17\%) & 97.6\% (0\%) & 68.7\% (0\%) & 2.0\% (0\%) & \textbf{0.5\% (83\%)} & 0.1\% (0\%) & 20.3\% (0\%) \\ 
-		 & 10\% & 94.4\% (0\%) & 99.4\% (30\%) & 98.3\% (0\%) & 76.0\% (0\%) & 1.4\% (0\%) & \textbf{0.1\% (70\%)} & -0.4\% (0\%) & 14.2\% (0\%) \\ 
+		 & 1 chngpt/decade & 94.3\% (0\%) & 98.4\% (30\%) & 97.8\% (0\%) & 54.0\% (0\%) & 2.5\% (0\%) & \textbf{0.7\% (70\%)} & 0.3\% (0\%) & 28.6\% (0\%) \\ 
+		 10 & 2 chngpts/decade & 95.3\% (0\%) & 98.3\% (30\%) & 97.3\% (0\%) & 66.8\% (0\%) & 2.1\% (0\%) & \textbf{0.8\% (70\%)} & 0.4\% (0\%) & 22.6\% (0\%) \\ 
+		 & 3 chngpts/decade & 96.1\% (0\%) & 98.2\% (30\%) & 96.6\% (0\%) & 77.6\% (0\%) & 1.8\% (0\%) & \textbf{0.8\% (70\%)} & 0.5\% (0\%) & 16.1\% (0\%) \\ 
 		 \hline
-		 & 0\% & 96.0\% (0\%) & 97.6\% (3\%) & 97.2\% (7\%) & 68.5\% (0\%) & 2.0\% (0\%) & \textbf{1.0\% (90\%)} & 0.4\% (0\%) & 21.7\% (0\%) \\ 
-		 & 1\% & 95.9\% (0\%) & 97.9\% (10\%) & 97.4\% (3\%) & 69.9\% (0\%) & 1.9\% (0\%) & \textbf{0.9\% (87\%)} & 0.3\% (0\%) & 20.5\% (0\%) \\ 
-		 20 & 2\% & 95.7\% (0\%) & 98.2\% (17\%) & 97.6\% (0\%) & 71.4\% (0\%) & 1.9\% (0\%) & \textbf{0.7\% (83\%)} & 0.2\% (0\%) & 19.2\% (0\%) \\ 
-		 & 5\% & 95.3\% (0\%) & 98.8\% (23\%) & 98.0\% (0\%) & 75.4\% (0\%) & 1.6\% (0\%) & \textbf{0.3\% (77\%)} & -0.2\% (0\%) & 15.7\% (0\%) \\ 
-		 & 10\% & 94.5\% (0\%) & 99.4\% (30\%) & 98.6\% (0\%) & 81.1\% (0\%) & 1.0\% (0\%) & \textbf{0.1\% (70\%)} & -0.5\% (0\%) & 10.7\% (0\%) \\ 
+		 & 1 chngpt/decade & 95.0\% (0\%) & 98.6\% (37\%) & 98.4\% (0\%) & 64.0\% (0\%) & 1.8\% (0\%) & \textbf{0.5\% (63\%)} & 0.0\% (0\%) & 22.7\% (0\%) \\ 
+		 20 & 2 chngpts/decade & 95.5\% (0\%) & 98.4\% (33\%) & 97.8\% (0\%) & 73.8\% (0\%) & 1.7\% (0\%) & \textbf{0.6\% (67\%)} & 0.0\% (0\%) & 17.6\% (0\%) \\ 
+		 & 3 chngpts/decade & 95.9\% (0\%) & 98.1\% (30\%) & 97.0\% (0\%) & 81.7\% (0\%) & 1.5\% (0\%) & \textbf{0.7\% (70\%)} & 0.1\% (0\%) & 12.8\% (0\%) \\ 
 		 \hline
-		 & 0\% & 96.5\% (0\%) & 97.9\% (0\%) & 98.2\% (27\%) & 81.7\% (0\%) & 1.3\% (0\%) & \textbf{0.6\% (70\%)} & -0.1\% (3\%) & 12.2\% (0\%) \\ 
-		 & 1\% & 96.3\% (0\%) & 98.1\% (3\%) & 98.3\% (27\%) & 82.6\% (0\%) & 1.2\% (0\%) & \textbf{0.5\% (70\%)} & -0.2\% (0\%) & 11.4\% (0\%) \\ 
-		 40 & 2\% & 96.2\% (0\%) & 98.4\% (7\%) & 98.4\% (23\%) & 83.4\% (0\%) & 1.1\% (0\%) & \textbf{0.4\% (70\%)} & -0.3\% (0\%) & 10.6\% (0\%) \\ 
-		 & 5\% & 95.7\% (0\%) & 98.9\% (17\%) & 98.6\% (13\%) & 85.7\% (0\%) & 0.8\% (0\%) & \textbf{0.1\% (70\%)} & -0.5\% (0\%) & 8.5\% (0\%) \\ 
-		 & 10\% & 94.6\% (0\%) & \textbf{99.4\% (53\%)} & 99.0\% (0\%) & 88.9\% (0\%) & -0.1\% (0\%) & -0.1\% (47\%) & -0.7\% (0\%) & 5.5\% (0\%) \\ 
-		\hline
+		 & 1 chngpt/decade & 96.2\% (0\%) & 99.0\% (47\%) & 99.2\% (7\%) & 80.7\% (0\%) & 0.7\% (0\%) & \textbf{0.2\% (47\%)} & -0.2\% (0\%) & 11.8\% (0\%) \\ 
+		 40 & 2 chngpts/decade & 95.9\% (0\%) & 98.6\% (53\%) & 98.6\% (0\%) & 84.8\% (0\%) & 0.8\% (0\%) & \textbf{0.3\% (47\%)} & -0.4\% (0\%) & 9.5\% (0\%) \\ 
+		 & 3 chngpts/decade & 95.6\% (0\%) & 98.0\% (53\%) & 97.7\% (0\%) & 88.1\% (0\%) & 0.9\% (0\%) & \textbf{0.4\% (47\%)} & -0.6\% (0\%) & 7.5\% (0\%) \\ 
+		 \hline
 	\end{tabular}
-\caption{The first set of columns show the fitted efficiency averaged over all station and pressure level combinations when the seasonality is not removed.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given model obtained the highest fitted efficiency.  The second set of columns shows the change in efficiency when the seasonality is fit and removed first.    Bolded numbers are the best within each row.  For brevity, only those models with the best efficiencies are included here.  }
+\caption{The first set of columns show the fitted probability of positive efficiency averaged over all station and pressure level combinations when the seasonality is not removed.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given model obtained the highest fitted probability of positive efficiency.  The second set of columns shows the change in probability of positive efficiency when the seasonality is fit and removed first.    Bolded numbers are the best within each row.  For brevity, only those models with the best probability of positive efficiency are included here.}
 \label{tab:homOrd}
 \end{footnotesize}
 \end{table}
-
 \end{landscape}
 
 \begin{table}[ht]
@@ -646,51 +638,49 @@ In the absence of metadata regarding a station's history or for very old histori
 \begin{tabular}{l|cc|cc|cc}
   \hline
 	& \multicolumn{2}{c|}{\textbf{TPR}} & \multicolumn{2}{c|}{\textbf{FPR}} & \multicolumn{2}{c}{\textbf{Efficiency}}\\
-	Model Type & Deviance & \% Reduction & Deviance & \% Reduction & Deviance & \% Reduction\\
-  \hline
-	Intercept Only & 6278771 & --- & 6236556 & --- & 72340 & ---\\
-	Main Effects  & 4652806 & 25.90\% & 1638936 & 73.72\% & 62567 & 13.51\%\\
-	2-Way Interactions  & 4102415 & 11.83\% & 322156 & 80.34\% & 61498 & 1.71\%\\
-	3-Way Interactions  & 4055216 & 1.15\% & 292667 & 9.15\% & 61195 & 0.50\%\\
-	4-Way Interactions  & 4045588 & 0.24\% & 289578 & 1.06\% & 61049 & 0.24\%\\
-	5-Way Interactions  & 4043083 & 0.06\% & 289187 & 0.14\% & 61030 & 0.03\%\\
+	Model Type & Deviance & \% Reduction & Deviance & \% Reduction & Deviance & \% Reduction \\ 
+	\hline
+	Intercept Only & 73733264 & - & 16318581 & - & 144476 & - \\ 
+	Linear Terms & 27283481 & 63\% & 5920274 & 63.72\% & 131823 & 8.76\% \\ 
+	2-Way Interactions & 26704211 & 2.12\% & 1118133 & 81.11\% & 129102 & 2.06\% \\ 
+	3-Way Interactions & 26507711 & 0.74\% & 1028341 & 8.03\% & 128173 & 0.72\% \\ 
+	4-Way Interactions & 26446311 & 0.23\% & 1013260 & 1.47\% & 127742 & 0.34\% \\ 
+	5-Way Interactions & 26431890 & 0.05\% & 1010137 & 0.31\% & 127618 & 0.1\% \\ 
    \hline
 \end{tabular}
 \caption{Deviance for the sequencing logistic regression models.}
 \label{tab:devSeq}
 \end{table}
 
-\begin{landscape}
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{cc|llll}
-	  \hline
-	  Number & Outlier & & & &\\
-	  of Years & Contamination & Ran-Sys & Ran-Sys-Ran & Sys-Ran & Sys-Ran-Sys\\ 
-	  \hline
-	  & 0\% & \textbf{57.2\% (100\%)} & 48.2\% (0\%) & 48.2\% (0\%) & 48.2\% (0\%) \\ 
-	  & 1\% & \textbf{55.5\% (100\%)} & 48.4\% (0\%) & 48.4\% (0\%) & 48.4\% (0\%) \\ 
-	  20 & 2\% & \textbf{53.7\% (100\%)} & 48.6\% (0\%) & 48.6\% (0\%) & 48.6\% (0\%) \\ 
-	  & 5\% & 48.6\% (20\%) & \textbf{49.3\% (50\%)} & 49.3\% (0\%) & 49.3\% (30\%) \\ 
-	  & 10\% & 40.0\% (0\%) & \textbf{50.5\% (67\%)} & 50.5\% (0\%) & 50.5\% (33\%) \\
-	  \hline
-	  & 0\% & \textbf{53.8\% (100\%)} & 49.1\% (0\%) & 49.1\% (0\%) & 49.1\% (0\%) \\ 
-	  & 1\% & \textbf{51.9\% (100\%)} & 49.2\% (0\%) & 49.2\% (0\%) & 49.2\% (0\%) \\ 
-	  40 & 2\% & \textbf{50.1\% (77\%)} & 49.3\% (13\%) & 49.3\% (0\%) & 49.3\% (10\%) \\ 
-	  & 5\% & 44.5\% (0\%) & \textbf{49.6\% (63\%)} & 49.6\% (0\%) & 49.6\% (37\%) \\ 
-	  & 10\% & 35.6\% (0\%) & \textbf{50.2\% (63\%)} & 50.2\% (0\%) & 50.2\% (37\%) \\ 
-	  \hline
-	  & 0\% & 47.0\% (0\%) & 50.9\% (47\%) & 50.9\% (0\%) & \textbf{50.9\% (53\%)} \\ 
-	  & 1\% & 44.9\% (0\%) & 50.8\% (47\%) & 50.8\% (0\%) & \textbf{50.8\% (53\%)} \\ 
-	  80 & 2\% & 42.8\% (0\%) & 50.6\% (47\%) & 50.6\% (0\%) & \textbf{50.6\% (53\%)} \\ 
-	  & 5\% & 36.8\% (0\%) & 50.2\% (47\%) & 50.2\% (0\%) & \textbf{50.2\% (53\%)} \\ 
-	  & 10\% & 27.6\% (0\%) & 49.5\% (43\%) & 49.5\% (0\%) & \textbf{49.5\% (57\%)} \\ 
-	  \hline
+	\begin{tabular}{lrr}
+		\hline
+		Variable & Estimate & Standard Error \\ 
+		\hline
+		(Intercept) & 4.2961 & 0.0019 \\ 
+		Seq: Ran-Sys-Ran & 4.9604 & 0.0025 \\ 
+		Seq: Sys-Ran & 4.9555 & 0.0025 \\ 
+		Seq: Sys-Ran-Sys & 4.9555 & 0.0025 \\ 
+		station: 51777 & 0.0471 & 0.0015 \\ 
+		station: 70133 & -0.1686 & 0.0014 \\ 
+		station: 70261 & -0.2697 & 0.0014 \\ 
+		station: 72387 & -0.0933 & 0.0015 \\ 
+		station: 72456 & -0.1471 & 0.0014 \\ 
+		station: 74794 & -0.2349 & 0.0014 \\ 
+		station: 82332 & -0.2366 & 0.0014 \\ 
+		station: 85543 & -0.1904 & 0.0014 \\ 
+		station: 94150 & -0.1222 & 0.0014 \\ 
+		pressure: 300 & 0.1576 & 0.0008 \\ 
+		pressure: 850 & 0.1903 & 0.0008 \\ 
+		outlier \% & -23.6029 & 0.0118 \\ 
+		n & -0.0001 & 0.0000 \\ 
+		robust & 0.0025 & 0.0006 \\ 
+		\hline
 	\end{tabular}
-	\caption{Fitted TPR averaged over all station and pressure level combinations.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted TPR. Bolded numbers are the best within each row.}
+	\caption{Coefficients and standard errors from the TPR regression model.  All coefficients are significant at the 0.01 level.}
 	\label{tab:fitTPR}
 \end{table}
-\end{landscape}
 
 \begin{landscape}
 \begin{table}[ht]
@@ -698,28 +688,26 @@ In the absence of metadata regarding a station's history or for very old histori
 	\begin{tabular}{cc|llll}
 		\hline
 		Number & Outlier & & & &\\ 
-		of Years & Contamination & Ran-Sys & Ran-Sys-Ran & Sys-Ran & Sys-Ran-Sys\\ 
+		of Years & Contamination & Nonrobust Ran-Sys & Nonrobust Sys-Ran & Robust Ran-Sys & Robust Ran-Sys-Ran\\ 
 		\hline
-		& 0\% & 0.079\% (3\%) & \textbf{0.071\% (93\%)} & 0.079\% (0\%) & 0.079\% (3\%) \\ 
-		& 1\% & 0.076\% (3\%) & \textbf{0.066\% (93\%)} & 0.076\% (0\%) & 0.075\% (3\%) \\ 
-		20 & 2\% & 0.072\% (0\%) & \textbf{0.060\% (97\%)} & 0.072\% (0\%) & 0.072\% (3\%) \\ 
-		& 5\% & 0.064\% (0\%) & \textbf{0.047\% (100\%)} & 0.064\% (0\%) & 0.064\% (0\%) \\ 
-		& 10\% & 0.053\% (0\%) & \textbf{0.032\% (100\%)} & 0.053\% (0\%) & 0.054\% (0\%) \\ 
-		\hline
-		& 0\% & 0.079\% (0\%) & \textbf{0.065\% (97\%)} & 0.079\% (0\%) & 0.078\% (3\%) \\ 
-		& 1\% & 0.075\% (0\%) & \textbf{0.060\% (97\%)} & 0.075\% (0\%) & 0.075\% (3\%) \\ 
-		40 & 2\% & 0.072\% (0\%) & \textbf{0.055\% (97\%)} & 0.072\% (0\%) & 0.072\% (3\%) \\ 
-		& 5\% & 0.064\% (0\%) & \textbf{0.043\% (100\%)} & 0.064\% (0\%) & 0.064\% (0\%) \\ 
-		& 10\% & 0.053\% (0\%) & \textbf{0.029\% (100\%)} & 0.053\% (0\%) & 0.053\% (0\%) \\ 
-		\hline
-		& 0\% & 0.078\% (0\%) & \textbf{0.054\% (100\%)} & 0.078\% (0\%) & 0.078\% (0\%) \\ 
-		& 1\% & 0.074\% (0\%) & \textbf{0.049\% (100\%)} & 0.074\% (0\%) & 0.074\% (0\%) \\ 
-		80 & 2\% & 0.071\% (0\%) & \textbf{0.045\% (100\%)} & 0.071\% (0\%) & 0.071\% (0\%) \\ 
-		& 5\% & 0.063\% (0\%) & \textbf{0.035\% (100\%)} & 0.063\% (0\%) & 0.063\% (0\%) \\ 
-		& 10\% & 0.052\% (0\%) & \textbf{0.024\% (100\%)} & 0.052\% (0\%) & 0.053\% (0\%) \\
+		& 0\% & \textbf{0.116\% (60\%)} & 0.133\% (3\%) & 0.116\% (33\%) & 0.134\% (3\%) \\ 
+		& 1\% & \textbf{0.105\% (63\%)} & 0.125\% (3\%) & 0.106\% (30\%) & 0.127\% (3\%) \\ 
+		20 & 2\% & \textbf{0.095\% (67\%)} & 0.118\% (3\%) & 0.096\% (27\%) & 0.120\% (3\%) \\ 
+		& 5\% & \textbf{0.070\% (87\%)} & 0.099\% (0\%) & 0.073\% (13\%) & 0.103\% (0\%) \\ 
+		& 10\% & \textbf{0.044\% (97\%)} & 0.076\% (0\%) & 0.047\% (3\%) & 0.081\% (0\%) \\ 
+		& 0\% & \textbf{0.103\% (63\%)} & 0.133\% (3\%) & 0.104\% (30\%) & 0.135\% (3\%) \\ 
+		& 1\% & \textbf{0.093\% (63\%)} & 0.125\% (3\%) & 0.095\% (30\%) & 0.128\% (3\%) \\ 
+		40 & 2\% & \textbf{0.084\% (70\%)} & 0.118\% (0\%) & 0.086\% (27\%) & 0.121\% (3\%) \\ 
+		& 5\% & \textbf{0.063\% (87\%)} & 0.099\% (0\%) & 0.065\% (13\%) & 0.103\% (0\%) \\ 
+		& 10\% & \textbf{0.039\% (97\%)} & 0.075\% (0\%) & 0.042\% (3\%) & 0.081\% (0\%) \\ 
+		& 0\% & \textbf{0.082\% (67\%)} & 0.133\% (0\%) & 0.085\% (33\%) & 0.138\% (0\%) \\ 
+		& 1\% & \textbf{0.074\% (70\%)} & 0.125\% (0\%) & 0.077\% (30\%) & 0.130\% (0\%) \\ 
+		80 & 2\% & \textbf{0.067\% (73\%)} & 0.118\% (0\%) & 0.070\% (27\%) & 0.123\% (0\%) \\ 
+		& 5\% & \textbf{0.050\% (87\%)} & 0.098\% (0\%) & 0.052\% (13\%) & 0.104\% (0\%) \\ 
+		& 10\% & \textbf{0.031\% (100\%)} & 0.075\% (0\%) & 0.033\% (0\%) & 0.082\% (0\%) \\ 
 		\hline
 	\end{tabular}
-	\caption{Fitted FPR averaged over all station and pressure level combinations.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the lowest fitted FPR. Bolded numbers are the best within each row.}
+	\caption{Fitted FPR averaged over all station and pressure level combinations.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the lowest fitted FPR. Bolded numbers are the best within each row.  Sequencings that never obtained the lowest fitted FPR were removed for space reasons.}
 	\label{tab:fitFPR}
 \end{table}
 \end{landscape}
@@ -727,31 +715,29 @@ In the absence of metadata regarding a station's history or for very old histori
 \begin{landscape}
 \begin{table}[ht]
 	\centering
-	\begin{tabular}{cc|llll}
+	\begin{tabular}{cc|lllll}
 		\hline
 		Number & Outlier & & & &\\ 
-		of Years & Contamination & Ran-Sys & Ran-Sys-Ran & Sys-Ran & Sys-Ran-Sys\\ 
+		of Years & Contamination & Nonrobust Ran-Sys & Robust Ran-Sys & Robust Sys-Ran & Robust Sys-Ran-Sys\\ 
 		\hline
-		& 0\% & 84.7\% (0\%) & 84.8\% (0\%) & \textbf{84.9\% (100\%)} & 84.8\% (0\%) \\ 
-		& 1\% & 86.3\% (0\%) & 86.5\% (0\%) & \textbf{86.5\% (100\%)} & 86.5\% (0\%) \\ 
-		20 & 2\% & 87.8\% (0\%) & 88.0\% (0\%) & \textbf{88.0\% (100\%)} & 88.0\% (0\%) \\ 
-		& 5\% & 91.6\% (0\%) & 91.7\% (0\%) & \textbf{91.7\% (100\%)} & 91.7\% (0\%) \\ 
-		& 10\% & 95.5\% (0\%) & 95.6\% (0\%) & \textbf{95.6\% (100\%)} & 95.6\% (0\%) \\ 
-		\hline
-		& 0\% & 93.1\% (0\%) & 93.2\% (0\%) & \textbf{93.2\% (100\%)} & 93.2\% (0\%) \\ 
-		& 1\% & 94.4\% (0\%) & 94.5\% (0\%) & \textbf{94.5\% (100\%)} & 94.5\% (0\%) \\ 
-		40 & 2\% & 95.5\% (0\%) & 95.6\% (0\%) & \textbf{95.6\% (100\%)} & 95.6\% (0\%) \\ 
-		& 5\% & 97.7\% (0\%) & 97.7\% (0\%) & \textbf{97.7\% (100\%)} & 97.7\% (0\%) \\ 
-		& 10\% & 99.2\% (0\%) & 99.2\% (0\%) & \textbf{99.2\% (100\%)} & 99.2\% (0\%) \\ 
-		\hline
-		& 0\% & 98.7\% (0\%) & 98.7\% (0\%) & \textbf{98.7\% (100\%)} & 98.7\% (0\%) \\ 
-		& 1\% & 99.1\% (0\%) & 99.2\% (0\%) & \textbf{99.2\% (100\%)} & 99.2\% (0\%) \\ 
-		80 & 2\% & 99.4\% (0\%) & 99.4\% (0\%) & \textbf{99.4\% (100\%)} & 99.4\% (0\%) \\ 
-		& 5\% & 99.8\% (0\%) & 99.8\% (0\%) & \textbf{99.8\% (100\%)} & 99.8\% (0\%) \\ 
-		& 10\% & 100.0\% (0\%) & 100.0\% (0\%) & \textbf{100.0\% (100\%)} & 100.0\% (0\%) \\ 
+		& 0\% & \textbf{91.2\% (100\%)} & 83.9\% (0\%) & 86.0\% (0\%) & 84.5\% (0\%) \\ 
+		& 1\% & \textbf{91.7\% (100\%)} & 85.9\% (0\%) & 87.1\% (0\%) & 86.3\% (0\%) \\ 
+		20 & 2\% & \textbf{92.2\% (100\%)} & 87.6\% (0\%) & 88.0\% (0\%) & 87.9\% (0\%) \\ 
+		& 5\% & \textbf{93.5\% (87\%)} & 91.8\% (0\%) & 90.6\% (0\%) & 91.8\% (13\%) \\ 
+		& 10\% & 95.2\% (17\%) & \textbf{96.0\% (83\%)} & 93.7\% (0\%) & 95.8\% (0\%) \\ 
+		& 0\% & \textbf{94.4\% (70\%)} & 93.2\% (0\%) & 93.7\% (30\%) & 93.0\% (0\%) \\ 
+		& 1\% & \textbf{95.0\% (67\%)} & 94.4\% (0\%) & 94.5\% (33\%) & 94.2\% (0\%) \\ 
+		40 & 2\% & \textbf{95.5\% (60\%)} & 95.4\% (40\%) & 95.2\% (0\%) & 95.2\% (0\%) \\ 
+		& 5\% & 96.8\% (13\%) & \textbf{97.5\% (87\%)} & 96.8\% (0\%) & 97.3\% (0\%) \\ 
+		& 10\% & 98.2\% (0\%) & \textbf{99.1\% (100\%)} & 98.4\% (0\%) & 99.0\% (0\%) \\ 
+		& 0\% & 97.6\% (0\%) & \textbf{98.9\% (100\%)} & 98.8\% (0\%) & 98.7\% (0\%) \\ 
+		& 1\% & 98.1\% (0\%) & \textbf{99.2\% (100\%)} & 99.1\% (0\%) & 99.0\% (0\%) \\ 
+		80 & 2\% & 98.5\% (0\%) & \textbf{99.4\% (100\%)} & 99.3\% (0\%) & 99.3\% (0\%) \\ 
+		& 5\% & 99.2\% (0\%) & \textbf{99.8\% (100\%)} & 99.7\% (0\%) & 99.7\% (0\%) \\ 
+		& 10\% & 99.8\% (0\%) & \textbf{100.0\% (100\%)} & 99.9\% (0\%) & 99.9\% (0\%) \\  
   		\hline
 	\end{tabular}
-	\caption{Fitted efficiency averaged over all station and pressure level combinations.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted efficiency. Bolded numbers are the highest within each row.}
+	\caption{Fitted probability of positive efficiency averaged over all station and pressure level combinations.  Numbers in parentheses indicate the percent of station and pressure level combinations where the given sequencing obtained the highest fitted probability of positive efficiency. Bolded numbers are the highest within each row.}
 	\label{tab:fitEff}
 \end{table}
 \end{landscape}
@@ -794,20 +780,20 @@ In the absence of metadata regarding a station's history or for very old histori
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{Efficiency_Model_Plot_BW_seasonal.png}
-	\caption{This graph depicts the estimated probability that the efficiency exceeds one from the efficiency logistic regression model.  Each line represents a different simulation configuration (number of years simulated and outlier contamination rates).  There is substantial variability among the different simulations, but  the SNHT and robust SNHT models perform better than the alternatives in all simulated configurations, and the efficiency improves with sample size.}
+	\caption{This graph depicts the fitted probability of positive efficiency from the efficiency logistic regression model.  Each line represents a different simulation configuration (number of years simulated and outlier contamination rates).  There is substantial variability among the different simulations, but  the SNHT and robust SNHT models perform better than the alternatives in all simulated configurations, and the probability of positive efficiency improves with sample size.}
 	\label{fig:homFitEff}
 \end{figure}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{TPR_Order_Plot_BW}
-	\caption{This graph depicts the estimated TPR from the logistic regression model.  The dot in each error bar is the estimated TPR averaged over all station and pressure level combinations.  The maximum (minimum) of the error bar is the highest (lowest) TPR obtained across all station and pressure level combinations.}
-	\label{fig:fitTPR}
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=\textwidth]{TPR_Comparison_results}
+%	\caption{This graph depicts the estimated coefficients from the logistic r egression model for TPR.  The error bars indicate the confidence intervals around the coefficients based on their standard errors.}
+%	\label{fig:fitTPR}
+%\end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{FPR_Order_Plot_BW}
+	\includegraphics[width=\textwidth]{FPR_Comparison_Order_Plot_BW}
 	\caption{This graph depicts the estimated FPR from the logistic regression model.  The dot in each error bar is the estimated FPR averaged over all station and pressure level combinations.  The maximum (minimum) of the error bar is the highest (lowest) FPR obtained across all station and pressure level combinations.  }
 	\label{fig:fitFPR}
 \end{figure}
@@ -815,8 +801,8 @@ In the absence of metadata regarding a station's history or for very old histori
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{Efficiency_Order_Plot_BW}
-	\caption{This graph depicts the estimated efficiency from the logistic regression model.  The middle of each error bar is the estimated efficiency averaged over all station and pressure level combinations.  The maximum (minimum) of the error bar is the highest (lowest) efficiency obtained across all station and pressure level combinations.}
+	\includegraphics[width=\textwidth]{Efficiency_Comparison_Order_Plot_BW}
+	\caption{This graph depicts the estimated probability of positive efficiency from the logistic regression model.  The middle of each error bar is the estimated probability of a positive efficiency averaged over all station and pressure level combinations.  The maximum (minimum) of the error bar is the highest (lowest) probability obtained across all station and pressure level combinations.}
 	\label{fig:fitEffOrd}
 \end{figure}
 
