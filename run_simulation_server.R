@@ -164,7 +164,7 @@ results = foreach(i = 1:length(seeds)) %dopar%
   #Type 4: Type 1 and then Type 2 ("Combined")
   #Type 5: Type 1 and then Type 3 ("Hourly Combined")
   {
-    for(homogType in 2)
+    for(homogType in 1:2)
     #Type 1: SNHT
     #Type 2: Robust SNHT
     #Type 3: PELT (implemented in package changepoint)
