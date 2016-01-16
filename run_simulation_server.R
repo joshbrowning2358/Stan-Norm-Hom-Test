@@ -17,28 +17,14 @@ if(Sys.info()[1]=="Linux" & grepl("(ch120|bb136)",Sys.info()[4]) ){
     source("~/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
   }
 }
-if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb"){
-  if(getwd() != "/media/storage/Github/Stan-Norm-Hom-Test/"){
-    setwd("/media/storage/Github/Stan-Norm-Hom-Test/")
-    source("simulation_functions.R")
-    library(snht)
-    removeSeasonalPeriod = snht:::removeSeasonalPeriod
+if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jb" ){
+  if(getwd() != "/media/storage/Professional Files/Mines/Research/Wind QC"){
+    setwd("/media/storage/Professional Files/Mines/Research/Wind QC")
+    source("Code/simulation_functions.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHT.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/robustSNHTunequal.R")
+    source("/media/storage/Github/Stan-Norm-Hom-Test/snht/R/snht.R")
   }
-  suppressPackageStartupMessages(library(doParallel))
-  library(foreach)
-  registerDoParallel(4)
-}
-if(Sys.info()[1]=="Linux" & Sys.info()[4]=="jmds"){
-  # Only run this if code hasn't been run already
-  if(getwd() != "~/GitHub/Stan-Norm-Hom-Test/"){
-    setwd("~/GitHub/Stan-Norm-Hom-Test/")
-    source("simulation_functions.R")
-    library(snht)
-    removeSeasonalPeriod = snht:::removeSeasonalPeriod
-  }
-  suppressPackageStartupMessages(library(doParallel))
-  library(foreach)
-  registerDoParallel(cores=detectCores(all.tests=TRUE))
 }
 if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
   # Only run this if code hasn't been run already
@@ -53,10 +39,9 @@ if(Sys.info()[1]=="Linux" & Sys.info()[4]=="joshua-Ubuntu-Linux"){
   registerDoParallel(cores=detectCores(all.tests=TRUE))
 }
 
-
 # cArgs = commandArgs(trailingOnly=TRUE)
 completedRuns = dir(getwd(), pattern = "Simulations.*RData")
-params = gsub(".*(JOSH_LAPTOP|jb|ch120|bb136|joshua-Ubuntu-Linux|jmds)_", "", completedRuns)
+params = gsub(".*(JOSH_LAPTOP|jb|jmds|ch120|bb136|joshua-Ubuntu-Linux)_", "", completedRuns)
 params = gsub(".RData", "", params)
 params = data.frame(do.call("rbind", strsplit(params, split = "_")))
 colnames(params) = c("station", "pressure", "n")
@@ -349,7 +334,7 @@ results = foreach(i = 1:length(seeds)) %dopar%
 
 cat("Saving results...\n")
 results2 = do.call("rbind", results)
-save(results, results2, file=paste0("Simulations_nonRobust_", length(results),
+save(results, results2, file=paste0("Simulations_robust_", length(results),
                                     "_", rnorm(1), "_", Sys.info()[4], "_",
                                     runId, ".RData"))
 cat("Elapsed time:", difftime(Sys.time(), start, units = "hours"), "hours\n")
