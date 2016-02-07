@@ -66,6 +66,9 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
     ...){
   #data quality checks
   stopifnot(is(data,"data.frame"))
+  if(is(data, "data.table")){
+    stop("data must be a data.frame, not a data.table")
+  }
   if(ncol(data)==2){
     stopifnot(colnames(data) %in% c("data","location"))
     # Reorder columns

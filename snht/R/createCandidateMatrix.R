@@ -32,10 +32,14 @@ createCandidateMatrix = function(data, statistics, pairs, crit){
     name = strsplit(name, "-")[[1]]
     delta = as.numeric(statistics[, j] > crit)
     delta[is.na(delta)] = 0
+    ## The ith list element of pairs specifies which stations are adjacent to 
+    ## station i.  Thus, when updating the candidate matrix, we should update 
+    ## column "a" if the pair "a"-"b" is significant and "b" is in pairs["a"]. 
+    ## Also, we should update column "b" if "a" is pairs["b"].
     if(name[2] %in% pairs[name[1]][[1]])
-      candidate[,name[2]] = candidate[,name[2]] + delta
+      candidate[, name[1]] = candidate[, name[1]] + delta
     if(name[1] %in% pairs[name[2]][[1]])
-      candidate[,name[1]] = candidate[,name[1]] + delta
+      candidate[, name[2]] = candidate[, name[2]] + delta
   }    
   return(candidate)
 }

@@ -15,7 +15,7 @@ if(Sys.info()[1]=="Linux" & grepl("(ch120|bb136)",Sys.info()[4]) ){
   # Only run this code if it hasn't been run already:
   if(getwd() != "~/Research/Wind_QC"){
     setwd("~/Research/Wind_QC")
-    source("simulation_functions.R")
+    source("Code/simulation_functions.R")
   }
   registerDoParallel(1)
 }
