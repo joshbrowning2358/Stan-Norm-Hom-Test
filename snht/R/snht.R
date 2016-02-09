@@ -92,11 +92,14 @@ snht = function(data, period, robust = F, time = NULL, scaled = TRUE
   }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2 * period >= length(data) - 1)
+  if(2 * period >= length(data) - 1 & is.null(time))
     stop("period is too large to compute statistics!")
-  if(!is.null(time))
+  if(!is.null(time)){
     if(length(time) != length(data))
       stop("If time is not NULL, it must be the same length as data!")
+    if(2 * period >= max(time) - min(time))
+      stop("period is too large to compute statistics!")
+  }
   if(rmSeasonalPeriod < Inf & rmSeasonalPeriod > length(data)/2)
     stop("Seasonal period must be <= half of the number of observations")
   if(length(data) < 5)
@@ -107,7 +110,7 @@ snht = function(data, period, robust = F, time = NULL, scaled = TRUE
       out = robustSNHTunequal( data = data, period = period, time = time, estimator = NULL
         ,scaled = scaled, rmSeasonalPeriod = rmSeasonalPeriod )
     else
-      out = robustSNHTunequal( data=data, period=period, time=time, scaled=scaled
+      out = robustSNHTunequal(data=data, period=period, time=time, scaled=scaled
                               ,estimator=function(x){ #Use the mean and sd for non-robust fit
                                   x = x[!is.na(x)]
                                   return( c(mean(x), sd(x)) )

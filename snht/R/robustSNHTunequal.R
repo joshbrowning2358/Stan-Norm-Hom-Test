@@ -61,8 +61,12 @@ robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=TRUE
   }
   if(!is.numeric(data))
     stop("data must be numeric!")
-  if(2 * period >= length(data) - 1)
+  if(2 * period >= length(data) - 1 & is.null(time))
     stop("period is too large to compute statistics!")
+  if(is.null(time)){
+    if(2 * period >= max(time) - min(time))
+      stop("period is too large to compute statistics!")
+  }
   if(!is.numeric(time))
     stop("time must be numeric!")
   if(!is.null(estimator) & !is(estimator,"function"))

@@ -107,7 +107,12 @@ unconfoundCandidateMatrix = function(candidate, pairs, statistics, data,
     #Update data
     adjMeanCols = c(paste0(brkCol,"-",pairs[[brkCol]]), paste0(pairs[[brkCol]],"-",brkCol))
     adjMeanCols = adjMeanCols[adjMeanCols %in% colnames(statistics)]
-    shift = mean(avgDiff[brkT,adjMeanCols], na.rm=T)
+    currentDiff = avgDiff[brkT,adjMeanCols]
+    #If brkCol isn't first in a pair, the value should be negated (as it's a
+    #difference between brkCol and the pair station that we're interested in):
+    reverseCols = grep(paste0(brkCol, "$"), names(currentDiff))
+    currentDiff[reverseCols] = -currentDiff[reverseCols]
+    shift = mean(currentDiff, na.rm=T)
     data[brkT:nrow(data),brkCol] = data[brkT:nrow(data),brkCol] - shift
     
     #Append detected break to breaks
