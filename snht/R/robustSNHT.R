@@ -59,6 +59,8 @@
 ##' @keywords ~snht ~homogeneity ~robust
 ##' 
 ##' @export
+##'
+##' @importFrom zoo rollapply
 ##' 
 
 robustSNHT <- function(data, period, scaled = TRUE, rmSeasonalPeriod = Inf

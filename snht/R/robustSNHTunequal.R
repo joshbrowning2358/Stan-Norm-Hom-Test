@@ -50,6 +50,8 @@
 ##' @keywords ~snht ~homogeneity ~robust
 ##' 
 ##' @export
+##'
+##' @importFrom plyr ddply
 ##' 
 
 robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=TRUE

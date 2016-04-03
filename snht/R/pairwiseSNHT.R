@@ -60,6 +60,10 @@
 ##' keyword ~snht ~homogeneity ~pairwise
 ##' 
 ##' @export
+##'
+##' @importFrom plyr ddply
+##' @importFrom reshape2 dcast
+##' @importFrom reshape2 melt
 ##' 
 
 pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,

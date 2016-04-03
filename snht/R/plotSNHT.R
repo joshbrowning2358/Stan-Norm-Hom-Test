@@ -15,6 +15,9 @@
 ##' @return No object is returned, but a plot is instead generated.
 ##' 
 ##' @export
+##'
+##' @import ggplot2
+##' @importFrom gridExtra grid.arrange
 ##' 
 
 plotSNHT = function(data, stat, time = NULL, alpha = NULL){
@@ -40,15 +43,15 @@ plotSNHT = function(data, stat, time = NULL, alpha = NULL){
                  "missing values.  Please check your time vector.")
     }
     
-    pData = ggplot2::qplot(x = time, y = data)
-    pStat = ggplot2::qplot(x = stat$time, y = stat$score, geom = "line") +
-        ggplot2::labs(x = "time", y = "SNHT Statistic")
+    pData = qplot(x = time, y = data)
+    pStat = qplot(x = stat$time, y = stat$score, geom = "line") +
+        labs(x = "time", y = "SNHT Statistic")
     if(!is.null(alpha))
-        pStat = pStat + ggplot2::geom_hline(yintercept = qchisq(1-alpha, df = 1),
+        pStat = pStat + geom_hline(yintercept = qchisq(1-alpha, df = 1),
                                    linetype = 4, color = "blue")
-    pStat = pStat + ggplot2::geom_vline(xintercept = stat$time[which.max(stat$score)],
+    pStat = pStat + geom_vline(xintercept = stat$time[which.max(stat$score)],
                                color = "red", linetype = 4)
-    pData = pData + ggplot2::geom_vline(xintercept = stat$time[which.max(stat$score)],
+    pData = pData + geom_vline(xintercept = stat$time[which.max(stat$score)],
                                color = "red", linetype = 4)
     print(gridExtra::grid.arrange(pData, pStat))
 }

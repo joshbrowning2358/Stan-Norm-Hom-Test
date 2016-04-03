@@ -14,6 +14,8 @@
 ##' 
 ##' @author Josh Browning (jbrownin@@mines.edu)
 ##' 
+##' @importFrom mgcv gam
+##'
 
 removeSeasonalPeriod = function(x, period, time = 1:length(x)){
     timeOfPeriod = (time - time[1]) %% period

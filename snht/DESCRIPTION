@@ -2,24 +2,21 @@ Package: snht
 Type: Package
 Title: Standard Normal Homogeneity Test
 Version: 1.0.4
-Date: 2016-02-07
-Depends:
+Date: 2016-04-02
+Imports:
+    mgcv,
     ggplot2,
     gridExtra,
-    mgcv
-Imports:
     zoo,
     plyr,
-    reshape2,
-    mvtnorm,
-    methods
+    reshape2
 Authors@R: c(person("Josh", "Browning", role = c("aut", "cre"),
-		     email = "jbrownin@mines.edu"),
+		     email = "rockclimber112358@gmail.com"),
 	         person("Carina", "Schneider", role = "aut",
              email = "carinamariaschneider@gmail.com"))
 Author: Josh Browning [aut, cre],
     Carina Schneider [aut]
-Maintainer: Josh Browning <jbrownin@mines.edu>
+Maintainer: Josh Browning <rockclimber112358@gmail.com>
 Description: Implementation of robust and non-robust Standard Normal Homogeneity
     Test (SNHT) for changepoint detection. This test statistic is equal sided,
     as proposed in "Homogenization of Radiosonde Temperature Time Series Using
@@ -31,5 +28,6 @@ Description: Implementation of robust and non-robust Standard Normal Homogeneity
 License: GPL-3
 VignetteBuilder: knitr
 Suggests:
+    mvtnorm,
     knitr
 RoxygenNote: 5.0.1
