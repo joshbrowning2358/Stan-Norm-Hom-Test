@@ -9,7 +9,8 @@ Imports:
     gridExtra,
     zoo,
     plyr,
-    reshape2
+    reshape2,
+    methods
 Authors@R: c(person("Josh", "Browning", role = c("aut", "cre"),
 		     email = "rockclimber112358@gmail.com"),
 	         person("Carina", "Schneider", role = "aut",

@@ -15,6 +15,7 @@
 ##' @author Josh Browning (jbrownin@@mines.edu)
 ##' 
 ##' @importFrom mgcv gam
+##' @importFrom stats glm predict
 ##'
 
 removeSeasonalPeriod = function(x, period, time = 1:length(x)){

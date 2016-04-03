@@ -82,6 +82,7 @@
 ##' @keywords ~snht ~homogeneity
 ##'   
 ##' @export
+##' @importFrom stats sd
 ##' 
 
 snht = function(data, period, robust = F, time = NULL, scaled = TRUE

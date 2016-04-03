@@ -18,6 +18,8 @@
 ##'
 ##' @import ggplot2
 ##' @importFrom gridExtra grid.arrange
+##' @importFrom methods is
+##' @importFrom stats qchisq
 ##' 
 
 plotSNHT = function(data, stat, time = NULL, alpha = NULL){

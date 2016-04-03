@@ -64,6 +64,7 @@
 ##' @importFrom plyr ddply
 ##' @importFrom reshape2 dcast
 ##' @importFrom reshape2 melt
+##' @importFrom methods is
 ##' 
 
 pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,

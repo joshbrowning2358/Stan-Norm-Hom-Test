@@ -52,6 +52,7 @@
 ##' @export
 ##'
 ##' @importFrom plyr ddply
+##' @importFrom methods is
 ##' 
 
 robustSNHTunequal <- function(data, period, time, estimator=NULL, scaled=TRUE
