@@ -1,8 +1,8 @@
 Package: snht
 Type: Package
 Title: Standard Normal Homogeneity Test
-Version: 1.0.4
-Date: 2016-04-02
+Version: 1.0.5
+Date: 2017-10-17
 Imports:
     mgcv,
     ggplot2,
