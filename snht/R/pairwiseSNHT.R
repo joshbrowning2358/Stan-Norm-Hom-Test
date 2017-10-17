@@ -66,6 +66,14 @@
 ##' @importFrom reshape2 melt
 ##' @importFrom methods is
 ##' 
+##' @examples
+##' dist = matrix(1, nrow=2, ncol=2)
+##' colnames(dist) = c(1, 2)
+##' rownames(dist) = c(1, 2)
+##' dist = dist - diag(2)
+##' pairwiseSNHT(data=data.frame(data=c(rep(1, 10), rep(2, 10), rep(3, 10), rep(4, 10)),
+##'                              location=rep(1:2, each=10)), dist=dist, k=1)
+
 
 pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
     ...){
@@ -122,7 +130,7 @@ pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
   }
   
   #Compute snht statistics
-  statistics = apply(diffs[,-1], 2, snht, period=period, time=diffs[,1], ...)
+  statistics = apply(diffs[, -1, drop=FALSE], 2, snht, period=period, time=diffs[,1], ...)
   avgDiff = do.call("cbind", lapply(statistics, function(x) x$rightMean-x$leftMean ) )
   statistics = do.call("cbind", lapply(statistics, function(x) x$score))
   if(returnStat)
