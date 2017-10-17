@@ -72,7 +72,7 @@
 ##' rownames(dist) = c(1, 2)
 ##' dist = dist - diag(2)
 ##' pairwiseSNHT(data=data.frame(data=c(rep(1, 10), rep(2, 10), rep(3, 10), rep(4, 10)),
-##'                              location=rep(1:2, each=10)), dist=dist, k=1)
+##'                              location=rep(1:2, each=10)), dist=dist, k=1, period=2)
 
 
 pairwiseSNHT <- function(data, dist, k, period, crit=100, returnStat=FALSE,
